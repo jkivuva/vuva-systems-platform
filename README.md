@@ -1,116 +1,56 @@
 # Vuva Systems Platform
 
-Production website, interactive system demonstrations, public AI consultant and a private
-prospecting dashboard for Vuva Systems — served as a dependency-light Cloudflare Worker.
+The production site for [Vuva Systems](https://vuvasystems.com), plus a
+small internal tool for managing prospects and WhatsApp outreach.
 
-## Surfaces
+**Live site:** https://vuvasystems.com
 
-| Path | What it is |
-|---|---|
-| `/` | Public marketing site — positioning, systems, work, architecture, AI automation, capabilities, services, contact |
-| `/demos/logistics/` | Vuva Logistics Intelligence Platform (interactive demo; Limitless Logistics reference) |
-| `/demos/healthcare/` | VuvaCare — hospital operations (Demonstration System) |
-| `/demos/realestate/` | Vuva PropertyOS — property management (Demonstration System) |
-| `/demos/hospitality/` | Vuva HospitalityOS — restaurant & delivery (Blitz Restaurant reference) |
-| `/demos/retail/` | Vuva CommerceOS — retail & distribution (Demonstration System) |
-| `/internal/` | **Private** Vuva AI — Prospecting dashboard (Basic-auth gated at the edge) |
-| `/webhook`, `/health` | Meta WhatsApp Cloud API webhook (signed verification) |
+Built and operated by [Joshua Kivuva](https://github.com/jkivuva). Every
+third-party integration is server-side, env-gated, and fails closed if
+its credentials are missing.
 
-## Architecture
+## Stack
 
-- `site/` — static site (vanilla HTML/CSS/JS, no framework, no build step)
-  - `site/index.html` — single-page marketing site
-  - `site/assets/css/styles.css` — design system (tokens, components, sections, responsive)
-  - `site/assets/js/pricing.js` — **centralized pricing config** for the quotation engine
-  - `site/assets/js/vuva-ai.js` — public Vuva AI consultation + quotation engine
-  - `site/assets/js/app.js` — navigation, reveal, contact form, capability explorer
-  - `site/demos/` — shared demo shell (`demo.css`, `demo.js`) + five industry demos
-  - `site/internal/` — private prospecting dashboard (sample data)
-- `src/worker.js` — routing, www→apex redirect, security headers, internal-area auth
-- `src/whatsapp-webhook.js` — Meta webhook verification and signed delivery handler
-- `src/node-server.js` — standalone Node webhook adapter
+Cloudflare Workers · Cloudflare D1 · Node.js 22 · `node:test` ·
+WhatsApp Business Cloud API · Tavily (lead discovery) · Wrangler
 
-## Vuva AI (public)
+## What's inside
 
-A client-side business consultant: it asks industry-aware questions, analyses answers,
-recommends a system and produces an **estimated** investment range from `pricing.js`.
-It never fabricates pricing — budgets are visitor-supplied and estimates are clearly labelled.
+- The public site served from a single Worker entry (`src/worker.js`).
+  Includes a strict Content-Security-Policy with a hashed script-src,
+  security headers on every response, and a canonical-www redirect.
+- A signed WhatsApp webhook handler (`src/whatsapp-webhook.js`) that
+  verifies `x-hub-signature-256` *before* parsing the payload and
+  refuses to log the access token. A 250-line test suite
+  (`test/whatsapp-webhook.test.js`) covers the happy path, missing
+  signature, wrong signature, malformed JSON, missing secret, and
+  unconfigured verification token.
+- An internal area at `/internal` gated by a timing-safe Basic-auth
+  compare, reached only over the Worker. The internal API
+  (`src/internal-api.js`) proxies Tavily, talks to D1 with prepared
+  statements and `ON CONFLICT … DO UPDATE` upserts, and sends
+  WhatsApp messages without ever exposing tokens to the browser.
+- A lightweight telemetry ingest endpoint for the mobile boot watch.
+- 45 tests across two `node:test` suites, all passing.
 
-## Vuva AI — Prospecting (internal)
-
-A private dashboard (Overview, Discover, Prospects, Research, Opportunities, Outreach,
-Reports, Settings) connected to real services through a server-side API under
-`/internal/api/*`:
-
-| Endpoint | Purpose |
-|---|---|
-| `GET /internal/api/config` | Which integrations are configured |
-| `POST /internal/api/search` | Tavily company discovery |
-| `GET/POST/DELETE /internal/api/prospects` | D1 prospect persistence |
-| `POST /internal/api/outreach` | WhatsApp Business Cloud API send |
-
-Company discovery uses keyword heuristics over public snippets — signals and scores are
-clearly-labelled estimates, never fabricated facts. All third-party keys stay server-side.
-
-### Internal auth
-
-The `/internal` route is protected by HTTP Basic Auth at the edge. Set both Worker secrets
-or the area **fails closed (503)**:
-
-```bash
-npx wrangler secret put INTERNAL_AUTH_USER
-npx wrangler secret put INTERNAL_AUTH_PASS
-```
-
-### Database
-
-Prospects are stored in Cloudflare **D1** (`vuva-prospects`, binding `DB`). Schema lives in
-`migrations/`; apply with:
-
-```bash
-npx wrangler d1 migrations apply vuva-prospects --remote
-```
-
-## Business configuration
-
-Public contact details are centralized in `site/assets/js/config.js`. Project pricing is
-centralized in `site/assets/js/pricing.js`.
-
-## Local development
-
-Requires Node.js 22 or newer.
+## Running it locally
 
 ```bash
 npm install
-npm test
-npm run preview   # wrangler dev — serves the site and webhook locally
+npm test                      # 45 tests across 2 suites
+npm run check                 # npm test && wrangler deploy --dry-run
+npm run dev                   # wrangler dev (local worker)
+npm run deploy                # wrangler deploy (production)
 ```
 
-## Quality checks
+Secrets are configured per-environment in Cloudflare (D1 binding,
+Tavily API key, WhatsApp access token, internal Basic-auth
+credentials). They are never committed to this repository.
 
-```bash
-npm run check     # node test suite + wrangler deploy dry-run
-```
+## Live
 
-## Deployment
+https://vuvasystems.com
 
-```bash
-npm run check
-npm run deploy
-```
+---
 
-Domains in `wrangler.jsonc`: `vuvasystems.com` (canonical) and `www.vuvasystems.com` (308 → apex).
-
-## Required Worker secrets
-
-| Variable | Purpose |
-|---|---|
-| `WHATSAPP_VERIFY_TOKEN` | Meta GET webhook verification |
-| `META_APP_SECRET` | `X-Hub-Signature-256` validation on every POST |
-| `INTERNAL_AUTH_USER` | Internal dashboard Basic-auth username |
-| `INTERNAL_AUTH_PASS` | Internal dashboard Basic-auth password |
-| `TAVILY_API_KEY` | Web search for company discovery (Tavily) |
-| `WHATSAPP_ACCESS_TOKEN` | WhatsApp Cloud API outbound token |
-| `WHATSAPP_PHONE_NUMBER_ID` | WhatsApp sender phone-number-id |
-
-Secrets are set through Wrangler and are never committed or exposed in frontend code.
+Operated by [Vuva Systems](https://vuvasystems.com).
