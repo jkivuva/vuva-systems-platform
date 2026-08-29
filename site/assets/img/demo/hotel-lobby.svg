@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Hotel reception lobby">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241c14"/><stop offset="1" stop-color="#14100a"/></linearGradient><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c3022"/><stop offset="1" stop-color="#2a2016"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#wall)"/><rect x="0" y="400" width="800" height="100" fill="#1c150e"/>
+<rect x="240" y="280" width="330" height="120" rx="10" fill="#5a4632"/>
+<rect x="240" y="280" width="330" height="18" rx="8" fill="#7a5f42"/>
+<rect x="180" y="80" width="450" height="170" rx="10" fill="#332619"/>
+<path d="M405 120l-30 84h60z" fill="none" stroke="#d9a441" stroke-width="5"/>
+<text x="405" y="236" text-anchor="middle" fill="#d9a441" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="bold" letter-spacing="0">THE SERENA ANNEX</text>
+<g transform="translate(300,262) scale(1.15)"><path d="M-34 46 Q0 18 34 46 L34 60 L-34 60 Z" fill="#d9a441"/><circle cx="0" cy="-2" r="20" fill="#8a5a3b"/><path d="M-20 -6 Q-20 -26 0 -26 Q20 -26 20 -6 L20 -12 Q20 -30 0 -30 Q-20 -30 -20 -12 Z" fill="#141110"/></g><g transform="translate(500,262) scale(1.15)"><path d="M-34 46 Q0 18 34 46 L34 60 L-34 60 Z" fill="#d9a441"/><circle cx="0" cy="-2" r="20" fill="#6e4526"/><path d="M-20 -6 Q-20 -26 0 -26 Q20 -26 20 -6 L20 -12 Q20 -30 0 -30 Q-20 -30 -20 -12 Z" fill="#201a16"/></g><path d="M120 400q-20-60 10-90 M130 400q10-50 40-64 M112 400q-30-30 -52-30" stroke="#4a6b3a" stroke-width="7" fill="none"/>
+<rect x="96" y="398" width="56" height="34" fill="#332619"/>
+<text x="40" y="60" text-anchor="start" fill="#f3e8d0" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">RECEPTION · CHECK-IN OPEN</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".45"/>
+</svg>

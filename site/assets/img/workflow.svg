@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Workflow automation — a business rule routing work automatically">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<rect x="595" y="208" width="110" height="64" rx="10" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="640" y="245" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="13">DONE</text>
+<rect x="385" y="308" width="110" height="64" rx="10" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="430" y="345" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="13">PATH B</text>
+<rect x="385" y="108" width="110" height="64" rx="10" fill="#12301f" stroke="#40dca9" stroke-width="2"/>
+<text x="430" y="145" text-anchor="middle" fill="#40dca9" font-family="ui-monospace, monospace" font-size="13">PATH A</text>
+<rect x="205" y="208" width="130" height="64" rx="10" fill="#12301f" stroke="#40dca9" stroke-width="2"/>
+<text x="260" y="245" text-anchor="middle" fill="#40dca9" font-family="ui-monospace, monospace" font-size="13">RULE</text>
+<rect x="45" y="208" width="110" height="64" rx="10" fill="#12301f" stroke="#40dca9" stroke-width="2"/>
+<text x="90" y="245" text-anchor="middle" fill="#40dca9" font-family="ui-monospace, monospace" font-size="13">START</text>
+<path d="M135 240h70" stroke="#40dca9" stroke-width="3"/>
+<path d="M315 226q60-6 70-52" fill="none" stroke="#40dca9" stroke-width="3"/>
+<path d="M315 254q60 6 70 52" fill="none" stroke="#aeb9b4" stroke-width="2.5" stroke-dasharray="4 6" opacity=".5"/>
+<path d="M500 140q80 10 86 74" fill="none" stroke="#40dca9" stroke-width="3"/>
+<path d="M500 340q80-10 86-74" fill="none" stroke="#aeb9b4" stroke-width="2" stroke-dasharray="4 6" opacity=".4"/>
+<text x="250" y="190" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">VALUE > 50K?</text>
+<text x="345" y="176" text-anchor="middle" fill="#40dca9" font-family="ui-monospace, monospace" font-size="12">YES</text>
+<text x="345" y="312" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">NO</text>
+<text x="640" y="190" text-anchor="middle" fill="#40dca9" font-family="ui-monospace, monospace" font-size="12">AUTO-APPROVED</text>
+<text x="640" y="372" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">SENIOR REVIEW</text>
+<text x="60" y="464" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="15">ROUTING RULES YOUR TEAM CAN READ AND CHANGE</text>
+</svg>

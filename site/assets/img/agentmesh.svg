@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Agent mesh — specialised AI agents orchestrated around one core">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<path d="M400 90L400 240" stroke="#0a8a63" stroke-width="1.5" stroke-dasharray="1 7" opacity=".8"/>
+<rect x="338" y="68" width="124" height="44" rx="8" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="400" y="95" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">CUSTOMER</text>
+<path d="M620 170L400 240" stroke="#0a8a63" stroke-width="1.5" stroke-dasharray="1 7" opacity=".8"/>
+<rect x="558" y="148" width="124" height="44" rx="8" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="620" y="175" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">SALES</text>
+<path d="M620 320L400 240" stroke="#0a8a63" stroke-width="1.5" stroke-dasharray="1 7" opacity=".8"/>
+<rect x="558" y="298" width="124" height="44" rx="8" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="620" y="325" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">OPS</text>
+<path d="M400 396L400 240" stroke="#0a8a63" stroke-width="1.5" stroke-dasharray="1 7" opacity=".8"/>
+<rect x="338" y="374" width="124" height="44" rx="8" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="400" y="401" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">SUPPORT</text>
+<path d="M180 320L400 240" stroke="#0a8a63" stroke-width="1.5" stroke-dasharray="1 7" opacity=".8"/>
+<rect x="118" y="298" width="124" height="44" rx="8" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="180" y="325" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">ANALYTICS</text>
+<path d="M180 170L400 240" stroke="#0a8a63" stroke-width="1.5" stroke-dasharray="1 7" opacity=".8"/>
+<rect x="118" y="148" width="124" height="44" rx="8" fill="#0e1513" stroke="#33413b" stroke-width="1.2"/>
+<text x="180" y="175" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">DOCS</text>
+<circle cx="400" cy="240" r="46" fill="#10241c" stroke="#40dca9" stroke-width="2.5"/>
+<circle cx="400" cy="240" r="20" fill="none" stroke="#40dca9" stroke-width="2.5"/>
+<circle cx="400" cy="240" r="6" fill="#40dca9"/>
+<text x="60" y="464" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="15">ONE CORE · SIX SPECIALISTS · AUDITED ACTIONS</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Immersive web experience concept — scroll-driven depth and motion">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<path d="M0 220 Q200 180 400 200 T800 210 V500 H0 Z" fill="#15171d" fill-opacity="0.125"/>
+<path d="M0 180 Q200 140 400 160 T800 170" fill="none" stroke="#d9a441" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M0 282 Q200 242 400 262 T800 272 V500 H0 Z" fill="#1a1d24" fill-opacity="0.225"/>
+<path d="M0 242 Q200 202 400 222 T800 232" fill="none" stroke="#d9a441" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M0 344 Q200 304 400 324 T800 334 V500 H0 Z" fill="#15171d" fill-opacity="0.325"/>
+<path d="M0 304 Q200 264 400 284 T800 294" fill="none" stroke="#d9a441" stroke-opacity="0.65" stroke-width="2"/>
+<path d="M0 406 Q200 366 400 386 T800 396 V500 H0 Z" fill="#1a1d24" fill-opacity="0.42500000000000004"/>
+<path d="M0 366 Q200 326 400 346 T800 356" fill="none" stroke="#d9a441" stroke-opacity="0.8500000000000001" stroke-width="2"/>
+<circle cx="620" cy="120" r="34" fill="url(#goldgrad)" opacity=".9"/>
+<text x="80" y="90" text-anchor="start" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="13">SCROLL IS THE STORYBOARD</text>
+</svg>

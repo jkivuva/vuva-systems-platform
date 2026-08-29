@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111715">
+  <title>Vuva HospitalityOS · Restaurant &amp; Delivery (Demo)</title>
+  <meta name="description" content="Interactive demonstration of Vuva HospitalityOS: order to delivery, kitchen, dispatch, rider tracking and multi-branch management.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/demos/demo.css?v=3">
+</head>
+<body data-demo="hospitality">
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> Vuva HospitalityOS</span>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Demonstration system</span>
+    </header>
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav">
+          <li><button class="demo-nav-btn" data-panel-nav="dashboard"><span class="d-icon">▦</span>Management Dashboard</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="orderflow"><span class="d-icon">⇢</span>Order Flow</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="orders"><span class="d-icon">▤</span>Orders</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="kitchen"><span class="d-icon">✚</span>Kitchen</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="dispatch"><span class="d-icon">◎</span>Dispatch</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="riders"><span class="d-icon">◉</span>Riders</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="branches"><span class="d-icon">▣</span>Branches</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="payments"><span class="d-icon">◈</span>Payments</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="analytics"><span class="d-icon">◔</span>Analytics</button></li>
+        </ul>
+        <div class="demo-side-note">Sample data only. Blitz Restaurant is Vuva’s real multi-branch restaurant &amp; delivery project.</div>
+      </aside>
+
+      <main class="demo-main">
+        <section class="demo-panel" id="dashboard">
+          <div class="demo-panel-head"><div><h2>Management Dashboard</h2><p>Orders, revenue and riders across the branches.</p></div><span class="badge is-ok">Live</span></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Orders today</span><span class="d-value">214</span><span class="d-delta up">▲ 12%</span></div>
+            <div class="d-stat"><span class="d-label">Revenue today</span><span class="d-value">KSh 312k</span><span class="d-delta up">▲ vs yesterday</span></div>
+            <div class="d-stat"><span class="d-label">Active branches</span><span class="d-value">9</span></div>
+            <div class="d-stat"><span class="d-label">Riders active</span><span class="d-value">14</span><span class="d-delta flat">avg 28m</span></div>
+          </div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Revenue by branch</h3><span class="d-hint">Today</span></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><rect x="20" y="120" width="80" height="40" fill="#40dca9"/><rect x="120" y="90" width="80" height="70" fill="#40dca9" opacity=".7"/><rect x="220" y="50" width="80" height="110" fill="#087957"/><rect x="320" y="100" width="60" height="60" fill="#4f9de0"/></svg></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Order status</h3><span class="d-hint">Live</span></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><circle cx="200" cy="90" r="70" fill="none" stroke="#2b3530" stroke-width="18"/><circle cx="200" cy="90" r="70" fill="none" stroke="#40dca9" stroke-width="18" stroke-dasharray="360 440" transform="rotate(-90 200 90)"/><text x="200" y="86" text-anchor="middle" font-size="22" fill="#101614" font-weight="bold">82%</text><text x="200" y="106" text-anchor="middle" font-size="10" fill="#5d6965">on time</text></svg></div></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="orderflow">
+          <div class="demo-panel-head"><div><h2>Customer Order Flow</h2><p>The journey of an order, start to finish.</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <div class="d-feed">
+              <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Order</strong>: customer places order online<small>#ORD-2041 · Ruai branch</small></div></div>
+              <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Payment</strong>: M-Pesa payment confirmed<small>KSh 1,450 received</small></div></div>
+              <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Confirmation</strong>: WhatsApp confirmation sent<small>ETA promised: 30 min</small></div></div>
+              <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Preparation</strong>: kitchen starts order<small>Kitchen display updated</small></div></div>
+              <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Dispatch</strong>: rider assigned<small>Rider #7 · 4 min to pick-up</small></div></div>
+              <div class="d-feed-item"><span class="d-time">…</span><div class="d-body"><strong>Tracking</strong>: customer follows rider live<small>Map link shared</small></div></div>
+              <div class="d-feed-item"><span class="d-time">…</span><div class="d-body"><strong>Delivery</strong>: delivered, proof captured<small>Customer notified</small></div></div>
+            </div>
+          </div></div>
+        </section>
+
+        <section class="demo-panel" id="orders">
+          <div class="demo-panel-head"><div><h2>Orders</h2><p>Every order and where it stands.</p></div><div class="d-toolbar"><button class="chip is-dark" type="button">All</button><button class="chip" type="button">In progress</button><button class="chip" type="button">Delivered</button></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Order</th><th>Branch</th><th>Items</th><th>Total</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="num strong">ORD-2041</td><td class="muted">Ruai</td><td class="num">3</td><td class="num">KSh 1,450</td><td><span class="badge is-info">In delivery</span></td></tr>
+              <tr><td class="num strong">ORD-2040</td><td class="muted">South B</td><td class="num">2</td><td class="num">KSh 890</td><td><span class="badge is-ok">Delivered</span></td></tr>
+              <tr><td class="num strong">ORD-2039</td><td class="muted">Machakos</td><td class="num">5</td><td class="num">KSh 2,340</td><td><span class="badge is-warn">Preparing</span></td></tr>
+              <tr><td class="num strong">ORD-2038</td><td class="muted">Wote</td><td class="num">1</td><td class="num">KSh 420</td><td><span class="badge is-neutral">Pending</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="kitchen">
+          <div class="demo-panel-head"><div><h2>Kitchen</h2><p>What the kitchen is working through.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Preparing</h3><span class="badge is-warn">4</span></div><div class="d-card-body"><div class="d-feed"><div class="d-feed-item"><span class="d-time">12m</span><div class="d-body"><strong>ORD-2039</strong><small>Chicken burger ×2 · Chips ×2 · Soda</small></div></div><div class="d-feed-item"><span class="d-time">6m</span><div class="d-body"><strong>ORD-2043</strong><small>Pizza large ×1 · Fries</small></div></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Ready for dispatch</h3><span class="badge is-ok">3</span></div><div class="d-card-body"><div class="d-feed"><div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>ORD-2042</strong><small>Packaged · awaiting rider</small></div></div><div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>ORD-2044</strong><small>Packaged · awaiting rider</small></div></div></div></div></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="dispatch">
+          <div class="demo-panel-head"><div><h2>Dispatch</h2><p>Send riders out with orders that are packed.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Order</th><th>Branch</th><th>Rider</th><th>Pick-up</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="num strong">ORD-2042</td><td class="muted">Ruai</td><td class="muted">Rider #7</td><td class="num">2 min</td><td><span class="badge is-info">Assigned</span></td></tr>
+              <tr><td class="num strong">ORD-2044</td><td class="muted">South B</td><td class="muted">—</td><td class="num">—</td><td><span class="badge is-warn">Awaiting rider</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="riders">
+          <div class="demo-panel-head"><div><h2>Riders</h2><p>Who is riding and how deliveries are going.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Rider</th><th>Status</th><th>Deliveries</th><th>Avg time</th><th>Rating</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Rider #7</td><td><span class="badge is-info">On delivery</span></td><td class="num">18</td><td class="num">26m</td><td class="num">4.8</td></tr>
+              <tr><td class="strong">Rider #12</td><td><span class="badge is-ok">Available</span></td><td class="num">15</td><td class="num">29m</td><td class="num">4.7</td></tr>
+              <tr><td class="strong">Rider #3</td><td><span class="badge is-info">On delivery</span></td><td class="num">21</td><td class="num">25m</td><td class="num">4.9</td></tr>
+              <tr><td class="strong">Rider #9</td><td><span class="badge is-neutral">Offline</span></td><td class="num">12</td><td class="num">31m</td><td class="num">4.5</td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="branches">
+          <div class="demo-panel-head"><div><h2>Branches</h2><p>How each branch is doing.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Branch</th><th>Location</th><th>Orders today</th><th>Revenue</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Blitz Restaurant Ruai</td><td class="muted">Nairobi</td><td class="num">46</td><td class="num">KSh 71k</td><td><span class="badge is-ok">Open</span></td></tr>
+              <tr><td class="strong">Blitz Restaurant South B</td><td class="muted">Nairobi</td><td class="num">38</td><td class="num">KSh 58k</td><td><span class="badge is-ok">Open</span></td></tr>
+              <tr><td class="strong">Blitz Restaurant Machakos</td><td class="muted">Machakos</td><td class="num">27</td><td class="num">KSh 41k</td><td><span class="badge is-ok">Open</span></td></tr>
+              <tr><td class="strong">Blitz Restaurant Wote</td><td class="muted">Makueni</td><td class="num">19</td><td class="num">KSh 28k</td><td><span class="badge is-neutral">Closing soon</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="payments">
+          <div class="demo-panel-head"><div><h2>Payments</h2><p>Payments taken and how they add up.</p></div></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Collected today</span><span class="d-value">KSh 312k</span></div>
+            <div class="d-stat"><span class="d-label">M-Pesa</span><span class="d-value">71%</span></div>
+            <div class="d-stat"><span class="d-label">Card</span><span class="d-value">21%</span></div>
+            <div class="d-stat"><span class="d-label">Cash</span><span class="d-value">8%</span></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="analytics">
+          <div class="demo-panel-head"><div><h2>Analytics</h2><p>Sales and delivery numbers.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Orders by hour</h3></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,150 50,140 100,120 150,90 200,60 250,80 300,110 350,130 400,145" fill="none" stroke="#40dca9" stroke-width="3"/></svg></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Top items</h3></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><rect x="20" y="120" width="70" height="40" fill="#40dca9"/><rect x="110" y="80" width="70" height="80" fill="#087957"/><rect x="200" y="100" width="70" height="60" fill="#40dca9" opacity=".7"/><rect x="290" y="130" width="70" height="30" fill="#4f9de0"/></svg></div></div>
+          </div>
+        </section>
+
+        <p class="demo-disclaimer"><strong>Demonstration system.</strong> Vuva HospitalityOS uses sample data. Blitz Restaurant is Vuva’s real multi-branch restaurant and delivery project; this demo shows the class of system built for it, not live production data.</p>
+      </main>
+    </div>
+  </div>
+
+  <button class="demo-ai-fab" data-ai-open>◈ Ask the Hospitality AI</button>
+  <div class="demo-ai-modal" data-ai-modal>
+    <div class="demo-ai-card">
+      <div class="demo-ai-head"><span class="ai-avatar">V</span><span class="ai-id">Hospitality AI</span><span class="ai-sub">Demo data</span><button class="demo-ai-close" data-ai-close aria-label="Close">×</button></div>
+      <div class="demo-ai-suggest" data-ai-suggest></div>
+      <div class="demo-ai-body" data-ai-body></div>
+      <div class="demo-ai-input"><input type="text" data-ai-input placeholder="Ask about orders, branches, riders…" aria-label="Ask the Hospitality AI"><button data-ai-send aria-label="Send">→</button></div>
+    </div>
+  </div>
+  <script type="module" src="/demos/demo.js"></script>
+</body>
+</html>

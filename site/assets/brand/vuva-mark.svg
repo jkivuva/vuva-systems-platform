@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Vuva Systems symbol</title>
+  <desc id="desc">An abstract V formed by connected system paths.</desc>
+  <g fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M8 11h11l13 35 13-35h11" stroke-width="7"/>
+    <path d="M18.5 11 32 46 45.5 11" stroke-width="2" opacity=".55"/>
+  </g>
+  <g fill="currentColor">
+    <rect x="5" y="8" width="6" height="6"/>
+    <rect x="29" y="43" width="6" height="6"/>
+    <rect x="53" y="8" width="6" height="6"/>
+  </g>
+</svg>

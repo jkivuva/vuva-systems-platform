@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Construction project system — site progress, milestones and materials">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<path d="M120 400V150h14v250M134 170l150 40M134 210l150 40" stroke="#40dca9" stroke-width="4" fill="none"/>
+<path d="M284 210v-60h44" stroke="#40dca9" stroke-width="4" fill="none"/>
+<path d="M284 152l-20 18" stroke="#faf7f2" stroke-width="3"/>
+<rect x="296" y="146" width="40" height="26" fill="none" stroke="#faf7f2" stroke-width="3"/>
+<path d="M104 400h48v-24h-48z" fill="#40dca9" opacity=".85"/>
+<rect x="400" y="330" width="56" height="70" fill="none" stroke="#33413b" stroke-width="3"/>
+<rect x="400" y="330" width="56" height="49" fill="url(#acc)" opacity=".35"/>
+<rect x="484" y="280" width="56" height="120" fill="none" stroke="#33413b" stroke-width="3"/>
+<rect x="484" y="280" width="56" height="84" fill="url(#acc)" opacity=".35"/>
+<rect x="568" y="305" width="56" height="95" fill="none" stroke="#33413b" stroke-width="3"/>
+<rect x="568" y="305" width="56" height="66" fill="url(#acc)" opacity=".35"/>
+<rect x="652" y="250" width="56" height="150" fill="none" stroke="#33413b" stroke-width="3"/>
+<rect x="652" y="250" width="56" height="105" fill="url(#acc)" opacity=".35"/>
+<rect x="480" y="90" width="260" height="74" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="502" y="118" text-anchor="13" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">PHASE 3 · STRUCTURE</text>
+<rect x="502" y="132" width="216" height="8" fill="none" stroke="#33413b"/>
+<rect x="502" y="132" width="142" height="8" fill="#40dca9"/>
+<text x="60" y="464" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="15">MATERIALS · SUBCONTRACTORS · SNAG LISTS</text>
+</svg>

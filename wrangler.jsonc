@@ -1,0 +1,37 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vuva-systems-whatsapp-webhook",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-08-19",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./site",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "not_found_handling": "404-page"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vuva-prospects",
+      "database_id": "f030e98b-23cd-4ead-b00c-7ca9051d244e"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "vuvasystems.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.vuvasystems.com",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  }
+}

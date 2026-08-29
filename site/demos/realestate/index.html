@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111715">
+  <title>Vuva PropertyOS · Property Management (Demo)</title>
+  <meta name="description" content="Interactive demonstration of Vuva PropertyOS: properties, tenants, rent collection, maintenance and viewing bookings.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/demos/demo.css?v=3">
+</head>
+<body data-demo="realestate">
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> Vuva PropertyOS</span>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Demonstration system</span>
+    </header>
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav">
+          <li><button class="demo-nav-btn" data-panel-nav="dashboard"><span class="d-icon">▦</span>Dashboard</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="properties"><span class="d-icon">▣</span>Properties</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="units"><span class="d-icon">▤</span>Units</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="tenants"><span class="d-icon">◫</span>Tenants</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="rent"><span class="d-icon">◈</span>Rent &amp; Payments</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="vacancies"><span class="d-icon">▦</span>Vacancies</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="maintenance"><span class="d-icon">✚</span>Maintenance</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="viewings"><span class="d-icon">⇢</span>Viewings</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="documents"><span class="d-icon">▥</span>Documents</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="analytics"><span class="d-icon">◔</span>Analytics</button></li>
+        </ul>
+        <div class="demo-side-note">Sample data only. Vuva PropertyOS is not running for any real property portfolio.</div>
+      </aside>
+
+      <main class="demo-main">
+        <section class="demo-panel" id="dashboard">
+          <div class="demo-panel-head"><div><h2>Portfolio Overview</h2><p>Properties, tenants and rent in one view.</p></div><span class="badge is-ok">Live</span></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Properties</span><span class="d-value">24</span></div>
+            <div class="d-stat"><span class="d-label">Units</span><span class="d-value">186</span></div>
+            <div class="d-stat"><span class="d-label">Occupancy</span><span class="d-value">94%</span><span class="d-delta up">▲ 12 vacant</span></div>
+            <div class="d-stat"><span class="d-label">Rent collected</span><span class="d-value">92%</span><span class="d-delta up">KSh 1.84M / 2.0M</span></div>
+          </div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Rent collection</h3><span class="d-hint">This month</span></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true"><rect x="10" y="30" width="330" height="100" fill="#2b3530"/><rect x="10" y="30" width="304" height="100" fill="#40dca9"/><text x="330" y="80" font-size="12" fill="#40dca9">92%</text></svg></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Portfolio mix</h3><span class="d-hint">By unit type</span></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 160" aria-hidden="true"><rect x="20" y="100" width="70" height="40" fill="#40dca9"/><rect x="110" y="60" width="70" height="80" fill="#087957"/><rect x="200" y="120" width="70" height="20" fill="#4f9de0"/><rect x="290" y="80" width="70" height="60" fill="#d9a441"/><text x="55" y="152" text-anchor="middle" font-size="10">1-bed</text><text x="145" y="152" text-anchor="middle" font-size="10">2-bed</text><text x="235" y="152" text-anchor="middle" font-size="10">3-bed</text><text x="325" y="152" text-anchor="middle" font-size="10">Studio</text></svg></div></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="properties">
+          <div class="demo-panel-head"><div><h2>Properties</h2><p>The buildings you manage.</p></div><button class="button button-accent" type="button">Add property</button></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Property</th><th>Location</th><th>Units</th><th>Occupancy</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Kilimani Heights</td><td class="muted">Kilimani</td><td class="num">42</td><td class="num">95%</td><td><span class="badge is-ok">Healthy</span></td></tr>
+              <tr><td class="strong">Westlands Court</td><td class="muted">Westlands</td><td class="num">28</td><td class="num">89%</td><td><span class="badge is-ok">Healthy</span></td></tr>
+              <tr><td class="strong">Lavington Green</td><td class="muted">Lavington</td><td class="num">36</td><td class="num">92%</td><td><span class="badge is-ok">Healthy</span></td></tr>
+              <tr><td class="strong">South B Apartments</td><td class="muted">South B</td><td class="num">30</td><td class="num">83%</td><td><span class="badge is-warn">Watch</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="units">
+          <div class="demo-panel-head"><div><h2>Units</h2><p>Each unit and what is happening with it.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Unit</th><th>Property</th><th>Type</th><th>Rent</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">A-204</td><td class="muted">Kilimani Heights</td><td class="muted">2-bed</td><td class="num">KSh 55,000</td><td><span class="badge is-ok">Occupied</span></td></tr>
+              <tr><td class="strong">B-101</td><td class="muted">Westlands Court</td><td class="muted">2-bed</td><td class="num">KSh 48,000</td><td><span class="badge is-neutral">Vacant</span></td></tr>
+              <tr><td class="strong">C-302</td><td class="muted">Lavington Green</td><td class="muted">3-bed</td><td class="num">KSh 85,000</td><td><span class="badge is-ok">Occupied</span></td></tr>
+              <tr><td class="strong">A-105</td><td class="muted">Kilimani Heights</td><td class="muted">1-bed</td><td class="num">KSh 38,000</td><td><span class="badge is-warn">Notice</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="tenants">
+          <div class="demo-panel-head"><div><h2>Tenants</h2><p>Current tenants and their leases.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Tenant</th><th>Unit</th><th>Lease end</th><th>Rent status</th><th>Balance</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Brian Kimani</td><td class="muted">A-204</td><td class="num">Mar 2027</td><td><span class="badge is-ok">Paid</span></td><td class="num">KSh 0</td></tr>
+              <tr><td class="strong">Esther Moraa</td><td class="muted">C-302</td><td class="num">Jan 2027</td><td><span class="badge is-ok">Paid</span></td><td class="num">KSh 0</td></tr>
+              <tr><td class="strong">Kevin Otieno</td><td class="muted">A-105</td><td class="num">Dec 2026</td><td><span class="badge is-danger">Overdue</span></td><td class="num">KSh 38,000</td></tr>
+              <tr><td class="strong">Faith Wanjiru</td><td class="muted">B-204</td><td class="num">Sep 2027</td><td><span class="badge is-ok">Paid</span></td><td class="num">KSh 0</td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="rent">
+          <div class="demo-panel-head"><div><h2>Rent &amp; Payments</h2><p>Rent collected and what is outstanding.</p></div></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Due this month</span><span class="d-value">KSh 2.0M</span></div>
+            <div class="d-stat"><span class="d-label">Collected</span><span class="d-value">KSh 1.84M</span></div>
+            <div class="d-stat"><span class="d-label">Overdue tenants</span><span class="d-value">4</span><span class="d-delta down">▼ needs follow-up</span></div>
+            <div class="d-stat"><span class="d-label">M-Pesa share</span><span class="d-value">68%</span></div>
+          </div>
+          <div class="d-card"><div class="d-card-body"><div class="d-feed">
+            <div class="d-feed-item"><span class="d-time">08:12</span><div class="d-body">M-Pesa rent received → <strong>KSh 55,000</strong><small>Brian Kimani · A-204</small></div></div>
+            <div class="d-feed-item"><span class="d-time">Yesterday</span><div class="d-body">Automated reminder sent to <strong>Kevin Otieno</strong><small>Overdue rent · WhatsApp</small></div></div>
+            <div class="d-feed-item"><span class="d-time">Yesterday</span><div class="d-body">Receipt issued → <strong>Faith Wanjiru</strong><small>KSh 42,000 · email</small></div></div>
+          </div></div></div>
+        </section>
+
+        <section class="demo-panel" id="vacancies">
+          <div class="demo-panel-head"><div><h2>Vacancies</h2><p>Empty units and how long they have been empty.</p></div><span class="badge is-warn">12 vacant · 6%</span></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Unit</th><th>Property</th><th>Type</th><th>Rent</th><th>Vacant since</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">B-101</td><td class="muted">Westlands Court</td><td class="muted">2-bed</td><td class="num">KSh 48,000</td><td class="num">4 days</td></tr>
+              <tr><td class="strong">A-301</td><td class="muted">Kilimani Heights</td><td class="muted">1-bed</td><td class="num">KSh 38,000</td><td class="num">11 days</td></tr>
+              <tr><td class="strong">S-205</td><td class="muted">South B Apartments</td><td class="muted">Studio</td><td class="num">KSh 26,000</td><td class="num">22 days</td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="maintenance">
+          <div class="demo-panel-head"><div><h2>Maintenance</h2><p>Repair requests and where each one stands.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Request</th><th>Unit</th><th>Type</th><th>Priority</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="num strong">MT-118</td><td class="muted">A-105</td><td class="muted">Plumbing</td><td><span class="badge is-danger">Urgent</span></td><td><span class="badge is-info">In progress</span></td></tr>
+              <tr><td class="num strong">MT-119</td><td class="muted">C-302</td><td class="muted">Electrical</td><td><span class="badge is-warn">High</span></td><td><span class="badge is-info">Scheduled</span></td></tr>
+              <tr><td class="num strong">MT-120</td><td class="muted">B-204</td><td class="muted">Painting</td><td><span class="badge is-neutral">Normal</span></td><td><span class="badge is-ok">Done</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="viewings">
+          <div class="demo-panel-head"><div><h2>Viewings</h2><p>Viewings booked and completed.</p></div><button class="button button-accent" type="button">Book viewing</button></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Time</th><th>Prospect</th><th>Unit</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="num">11:00</td><td class="strong">Naomi Chebet</td><td class="muted">B-101 · 2-bed</td><td><span class="badge is-info">Confirmed</span></td></tr>
+              <tr><td class="num">14:00</td><td class="strong">David Mutua</td><td class="muted">A-301 · 1-bed</td><td><span class="badge is-info">Confirmed</span></td></tr>
+              <tr><td class="num">16:30</td><td class="strong">—</td><td class="muted">S-205 · Studio</td><td><span class="badge is-neutral">Open slot</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="documents">
+          <div class="demo-panel-head"><div><h2>Documents</h2><p>Leases and other documents.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Document</th><th>Tenant / Unit</th><th>Type</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Lease · Brian Kimani</td><td class="muted">A-204</td><td class="muted">PDF</td><td><span class="badge is-ok">Signed</span></td></tr>
+              <tr><td class="strong">Lease · Esther Moraa</td><td class="muted">C-302</td><td class="muted">PDF</td><td><span class="badge is-ok">Signed</span></td></tr>
+              <tr><td class="strong">Move-in inspection</td><td class="muted">B-204</td><td class="muted">Form</td><td><span class="badge is-warn">Awaiting sign-off</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="analytics">
+          <div class="demo-panel-head"><div><h2>Analytics</h2><p>How the whole portfolio is doing.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Revenue trend</h3></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,140 60,120 120,125 180,90 240,95 300,60 360,65 400,40" fill="none" stroke="#40dca9" stroke-width="3"/></svg></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Occupancy by property</h3></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><rect x="20" y="80" width="70" height="80" fill="#40dca9"/><rect x="120" y="60" width="70" height="100" fill="#087957"/><rect x="220" y="70" width="70" height="90" fill="#40dca9" opacity=".7"/><rect x="320" y="40" width="70" height="120" fill="#d9a441"/></svg></div></div>
+          </div>
+        </section>
+
+        <p class="demo-disclaimer"><strong>Demonstration system.</strong> Vuva PropertyOS uses fictional demonstration data only. It shows what Vuva can engineer for property management. It is not a client system.</p>
+      </main>
+    </div>
+  </div>
+
+  <button class="demo-ai-fab" data-ai-open>◈ Ask the Leasing AI</button>
+  <div class="demo-ai-modal" data-ai-modal>
+    <div class="demo-ai-card">
+      <div class="demo-ai-head"><span class="ai-avatar">V</span><span class="ai-id">Property AI</span><span class="ai-sub">Demo data</span><button class="demo-ai-close" data-ai-close aria-label="Close">×</button></div>
+      <div class="demo-ai-suggest" data-ai-suggest></div>
+      <div class="demo-ai-body" data-ai-body></div>
+      <div class="demo-ai-input"><input type="text" data-ai-input placeholder="Ask about units, rent, viewings…" aria-label="Ask the Property AI"><button data-ai-send aria-label="Send">→</button></div>
+    </div>
+  </div>
+  <script type="module" src="/demos/demo.js"></script>
+</body>
+</html>

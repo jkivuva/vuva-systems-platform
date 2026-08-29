@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Canvas backpack product shot">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26221c"/><stop offset="1" stop-color="#15120d"/></linearGradient><radialGradient id="hal" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#hal)"/><ellipse cx="400" cy="420" rx="220" ry="30" fill="#00000033"/>
+<g transform="translate(400,250)">
+<path d="M-100-60q0-60 100-60t100 60l16 190h-232z" fill="#8a6a44"/>
+<path d="M-100-60q0-60 100-60t100 60l6 70h-212z" fill="#6b5138"/>
+<rect x="-60" y="30" width="120" height="80" rx="12" fill="#5a4632"/>
+<rect x="-16" y="52" width="32" height="36" rx="6" fill="#d9a441"/>
+<path d="M-70 -84q70-44 140 0" stroke="#3c2f1e" stroke-width="14" fill="none"/>
+</g>
+<text x="400" y="466" text-anchor="middle" fill="#e8e4de" font-family="ui-monospace, monospace" font-size="17" font-weight="bold" letter-spacing="2">FIELD PACK 24L · KSH 4,200</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".2"/>
+</svg>

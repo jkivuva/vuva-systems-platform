@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Pharmacy inventory and dispensing — prescriptions against live stock">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<rect x="100" y="260" width="34" height="70" rx="8" fill="none" stroke="#0a8a63" stroke-width="2.5"/>
+<rect x="100" y="248" width="34" height="12" rx="4" fill="#faf7f2"/>
+<rect x="162" y="234" width="34" height="96" rx="8" fill="none" stroke="#40dca9" stroke-width="2.5"/>
+<rect x="162" y="222" width="34" height="12" rx="4" fill="#faf7f2"/>
+<rect x="224" y="270" width="34" height="60" rx="8" fill="none" stroke="#0a8a63" stroke-width="2.5"/>
+<rect x="224" y="258" width="34" height="12" rx="4" fill="#faf7f2"/>
+<rect x="286" y="220" width="34" height="110" rx="8" fill="none" stroke="#40dca9" stroke-width="2.5"/>
+<rect x="286" y="208" width="34" height="12" rx="4" fill="#faf7f2"/>
+<rect x="348" y="246" width="34" height="84" rx="8" fill="none" stroke="#0a8a63" stroke-width="2.5"/>
+<rect x="348" y="234" width="34" height="12" rx="4" fill="#faf7f2"/>
+<path d="M80 330h340" stroke="#33413b" stroke-width="3"/>
+<rect x="480" y="100" width="250" height="150" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="502" y="132" text-anchor="13" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">PRESCRIPTION RX-88</text>
+<text x="502" y="162" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">AMOXICILLIN 500G</text>
+<text x="708" y="162" text-anchor="end" fill="#40dca9" font-family="ui-monospace, monospace" font-size="12">OK</text>
+<text x="502" y="192" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">PARACETAMOL</text>
+<text x="708" y="192" text-anchor="end" fill="#d9a441" font-family="ui-monospace, monospace" font-size="12">LOW</text>
+<text x="502" y="222" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">INSULIN</text>
+<text x="708" y="222" text-anchor="end" fill="#40dca9" font-family="ui-monospace, monospace" font-size="12">IN STOCK</text>
+<rect x="480" y="280" width="250" height="90" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="502" y="312" text-anchor="12" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">REORDER SUGGESTED</text>
+<text x="502" y="344" text-anchor="14" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">SUPPLIER ORDER DRAFTED</text>
+<path d="M420 200h40" stroke="#aeb9b4" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+<text x="60" y="464" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="15">PRESCRIBE -> VERIFY -> DISPENSE -> REORDER</text>
+</svg>

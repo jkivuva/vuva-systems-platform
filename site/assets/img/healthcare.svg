@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Healthcare — patient care, appointments and clinical operations">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="cross" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#087957"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <!-- ECG pulse -->
+  <path d="M80 120 H 260 L 290 120 L 320 60 L 360 180 L 390 120 H 720" fill="none" stroke="#40dca9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+
+  <!-- medical cross -->
+  <g transform="translate(360 210)">
+    <rect x="22" y="0" width="36" height="120" rx="10" fill="url(#cross)"/>
+    <rect x="0" y="42" width="80" height="36" rx="10" fill="url(#cross)"/>
+    <rect x="40" y="0" width="120" height="120" rx="14" fill="none" stroke="#40dca9" stroke-opacity=".25" stroke-width="2"/>
+  </g>
+
+  <!-- appointment card -->
+  <g transform="translate(560 210)">
+    <rect x="0" y="0" width="180" height="120" rx="10" fill="#0f1513" stroke="#2b3530"/>
+    <rect x="14" y="14" width="44" height="10" rx="5" fill="#40dca9" opacity=".85"/>
+    <rect x="14" y="38" width="120" height="6" rx="3" fill="#2b3530"/>
+    <rect x="14" y="52" width="96" height="6" rx="3" fill="#2b3530"/>
+    <rect x="14" y="78" width="152" height="2" fill="#2b3530"/>
+    <circle cx="28" cy="98" r="8" fill="#4f9de0"/>
+    <rect x="44" y="92" width="90" height="6" rx="3" fill="#2b3530"/>
+    <text x="150" y="103" text-anchor="middle" fill="#40dca9" font-family="ui-monospace, monospace" font-size="16" font-weight="700">10:30</text>
+  </g>
+
+  <!-- labels -->
+  <text x="80" y="90" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="14">VITALS · LIVE</text>
+  <text x="640" y="188" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="14">APPOINTMENTS</text>
+</svg>

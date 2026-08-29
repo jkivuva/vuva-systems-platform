@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Product launch campaign concept — countdown, reveal and share moments">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<path d="M120 400Q400 380 560 220T680 90" fill="none" stroke="#d9a441" stroke-width="3" stroke-dasharray="2 10"/>
+<path d="M560 220q40-60 120-130" fill="none" stroke="#d9a441" stroke-width="4"/>
+<circle cx="680" cy="90" r="14" fill="url(#goldgrad)"/>
+<circle cx="520" cy="250" r="8" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<circle cx="470" cy="290" r="13" fill="none" stroke="#faf7f2" stroke-opacity="0.38"/>
+<circle cx="415" cy="330" r="18" fill="none" stroke="#faf7f2" stroke-opacity="0.26"/>
+<rect x="90" y="110" width="180" height="90" rx="10" fill="#101216" stroke="#2a2c34" stroke-width="1.5"/>
+<text x="180" y="148" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="12">LAUNCH DAY</text>
+<text x="180" y="182" text-anchor="middle" fill="#d9a441" font-family="ui-monospace, monospace" font-size="18">T-07 : 12 : 44</text>
+<text x="90" y="452" text-anchor="start" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="12">TEASER -> REVEAL -> WAITLIST -> FIRST ORDER</text>
+</svg>

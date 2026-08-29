@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Brand identity board with logo, type and palette">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14161b"/><stop offset="1" stop-color="#0a0c10"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ecc06a"/><stop offset="1" stop-color="#a97c2f"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect x="70" y="90" width="300" height="300" rx="12" fill="#1c1f26" stroke="#2c2f38"/>
+<path d="M220 150l-52 150h104z" fill="none" stroke="url(#gold)" stroke-width="7"/>
+<circle cx="220" cy="150" r="8" fill="#faf7f2"/>
+<text x="220" y="350" text-anchor="middle" fill="#b9ac93" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="bold" letter-spacing="3">MARK</text>
+<rect x="410" y="90" width="320" height="140" rx="12" fill="#1c1f26" stroke="#2c2f38"/>
+<text x="436" y="160" font-family="Space Grotesk, sans-serif" font-size="52" font-weight="700" fill="#faf7f2">Aa</text>
+<text x="530" y="160" font-family="Georgia, serif" font-size="52" fill="#b9ac93">Aa</text>
+<text x="436" y="200" text-anchor="start" fill="#8a8272" font-family="ui-monospace, monospace" font-size="13" font-weight="normal" letter-spacing="0">DISPLAY / TEXT PAIRING</text>
+<rect x="410" y="250" width="320" height="140" rx="12" fill="#1c1f26" stroke="#2c2f38"/>
+<rect x="434" y="286" width="48" height="48" rx="8" fill="#d9a441" stroke="#3a3d46"/>
+<rect x="492" y="286" width="48" height="48" rx="8" fill="#8a5a3b" stroke="#3a3d46"/>
+<rect x="550" y="286" width="48" height="48" rx="8" fill="#faf7f2" stroke="#3a3d46"/>
+<rect x="608" y="286" width="48" height="48" rx="8" fill="#14161b" stroke="#3a3d46"/>
+<rect x="666" y="286" width="48" height="48" rx="8" fill="#4a4238" stroke="#3a3d46"/>
+<text x="434" y="366" text-anchor="start" fill="#8a8272" font-family="ui-monospace, monospace" font-size="13" font-weight="normal" letter-spacing="0">PALETTE · 5 TOKENS</text>
+<text x="70" y="440" text-anchor="start" fill="#d9a441" font-family="ui-monospace, monospace" font-size="15" font-weight="bold" letter-spacing="3">BRAND FOUNDATION · V.02</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".3"/>
+</svg>

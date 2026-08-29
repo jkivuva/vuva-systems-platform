@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Container port at night">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f1c26"/><stop offset="1" stop-color="#081018"/></linearGradient><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12303e"/><stop offset="1" stop-color="#0a1a24"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient><radialGradient id="moon" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#cfe3f5" stop-opacity=".7"/><stop offset="1" stop-color="#cfe3f5" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#sea)"/><circle cx="150" cy="90" r="34" fill="url(#moon)"/>
+<g stroke="#0d1a22" stroke-width="10" fill="none"><path d="M300 420V230l90-40M300 230h-70"/></g>
+<path d="M352 264v54" stroke="#c98a3e" stroke-width="6"/>
+<rect x="334" y="318" width="40" height="26" fill="#31576b"/>
+<g stroke="#0d1a22" stroke-width="10" fill="none"><path d="M470 420V212l90-40M470 212h-70"/></g>
+<path d="M522 246v54" stroke="#c98a3e" stroke-width="6"/>
+<rect x="504" y="300" width="40" height="26" fill="#31576b"/>
+<g stroke="#0d1a22" stroke-width="10" fill="none"><path d="M640 420V194l90-40M640 194h-70"/></g>
+<path d="M692 228v54" stroke="#c98a3e" stroke-width="6"/>
+<rect x="674" y="282" width="40" height="26" fill="#31576b"/>
+<rect x="240" y="392" width="62" height="28" fill="#8a3a2e"/>
+<path d="M240 406h62" stroke="#00000044"/>
+<rect x="310" y="392" width="62" height="28" fill="#316b8a"/>
+<path d="M310 406h62" stroke="#00000044"/>
+<rect x="380" y="392" width="62" height="28" fill="#8a9a5b"/>
+<path d="M380 406h62" stroke="#00000044"/>
+<rect x="450" y="392" width="62" height="28" fill="#c98a3e"/>
+<path d="M450 406h62" stroke="#00000044"/>
+<path d="M0 430h800" stroke="#0d2836" stroke-width="40"/>
+<rect x="40" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="135" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="230" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="325" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="420" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="515" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="610" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<rect x="705" y="446" width="60" height="4" rx="2" fill="#3e6b82" opacity=".5"/>
+<text x="40" y="60" text-anchor="start" fill="#bcd8ea" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">PORT RELEASALS · 03:40</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".45"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Portrait of DR. AMINA">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6b58"/><stop offset="1" stop-color="#1b4033"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><g transform="translate(400,430) scale(4.4)"><path d="M-34 46 Q0 18 34 46 L34 60 L-34 60 Z" fill="#f4f8f7"/><circle cx="0" cy="-2" r="20" fill="#8a5a3b"/><path d="M-20 -6 Q-20 -26 0 -26 Q20 -26 20 -6 L20 -12 Q20 -30 0 -30 Q-20 -30 -20 -12 Z" fill="#141110"/></g><path d="M352 300 q-20 60 10 96 M448 300 q20 60 -10 96" stroke="#274238" stroke-width="9" fill="none"/><circle cx="362" cy="404" r="16" fill="#274238"/><text x="400" y="470" text-anchor="middle" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="26" font-weight="bold" letter-spacing="1">DR. AMINA</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".25"/>
+</svg>

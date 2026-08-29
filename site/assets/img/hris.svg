@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="HR and payroll system — team roster, leave and payslips">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<path d="M400 130v40m0 0H250v50m150-50h150v50" stroke="#33413b" stroke-width="2.5" fill="none"/>
+<rect x="340" y="80" width="120" height="50" rx="8" fill="#10241c" stroke="#40dca9" stroke-width="1.5"/>
+<text x="400" y="110" text-anchor="middle" fill="#7dfcc9" font-family="ui-monospace, monospace" font-size="13">HR CORE</text>
+<rect x="185" y="220" width="130" height="54" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="207" cy="247" r="6" fill="#40dca9"/>
+<path d="M225 238h70" stroke="#40dca9" stroke-width="5" opacity=".4" stroke-linecap="round"/>
+<path d="M225 256h46" stroke="#40dca9" stroke-width="4" opacity=".25" stroke-linecap="round"/>
+<rect x="340" y="220" width="130" height="54" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="362" cy="247" r="6" fill="#40dca9"/>
+<path d="M380 238h70" stroke="#40dca9" stroke-width="5" opacity=".4" stroke-linecap="round"/>
+<path d="M380 256h46" stroke="#40dca9" stroke-width="4" opacity=".25" stroke-linecap="round"/>
+<rect x="495" y="220" width="130" height="54" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="517" cy="247" r="6" fill="#40dca9"/>
+<path d="M535 238h70" stroke="#40dca9" stroke-width="5" opacity=".4" stroke-linecap="round"/>
+<path d="M535 256h46" stroke="#40dca9" stroke-width="4" opacity=".25" stroke-linecap="round"/>
+<text x="185" y="296" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12"></text>
+<text x="340" y="296" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12"></text>
+<text x="495" y="296" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12"></text>
+<text x="250" y="300" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">LEAVE · 6</text>
+<text x="405" y="300" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">ON DUTY · 41</text>
+<text x="560" y="300" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">PAYROLL · RUN</text>
+<rect x="150" y="350" width="220" height="90" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<rect x="170" y="370" width="180" height="10" rx="3" fill="#0a8a63" opacity=".7"/>
+<rect x="170" y="390" width="130" height="10" rx="3" fill="#0a8a63" opacity=".45"/>
+<rect x="170" y="410" width="160" height="10" rx="3" fill="#0a8a63" opacity=".3"/>
+<rect x="430" y="350" width="220" height="90" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="452" y="380" text-anchor="13" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">PAYSLIPS SENT</text>
+<text x="452" y="412" text-anchor="20" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">47 / 47 ✓</text>
+</svg>

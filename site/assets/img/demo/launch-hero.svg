@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Product launch hero with spotlight">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101018"/><stop offset="1" stop-color="#08080e"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ecc06a"/><stop offset="1" stop-color="#a97c2f"/></linearGradient><radialGradient id="hal" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#d9a441" stop-opacity=".3"/><stop offset="1" stop-color="#d9a441" stop-opacity="0"/></radialGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#hal)"/><ellipse cx="400" cy="420" rx="200" ry="26" fill="#00000055"/>
+<rect x="300" y="330" width="200" height="70" rx="10" fill="#1c1f26" stroke="#3a3d46"/>
+<g transform="translate(400,240)">
+<path d="M-46-40q-14 90 0 150t92 0q14-60 0-150l-16-30h-60z" fill="#c94f3d"/>
+<rect x="-20" y="-92" width="40" height="56" rx="8" fill="#2c2018"/>
+<rect x="-34" y="-6" width="68" height="86" rx="6" fill="#f4f1ea"/>
+<circle cx="0" cy="36" r="20" fill="#c94f3d"/>
+</g>
+<text x="400" y="452" text-anchor="middle" fill="#ecc06a" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="bold" letter-spacing="4">KICKOFF · 08.08 · NAIROBI</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".35"/>
+</svg>

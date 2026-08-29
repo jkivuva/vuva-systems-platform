@@ -1,0 +1,16 @@
+{
+  "name": "Vuva Systems",
+  "short_name": "Vuva",
+  "description": "Digital systems, software, automation, integrations and practical AI for businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f6f4",
+  "theme_color": "#111715",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

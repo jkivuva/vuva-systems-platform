@@ -1,0 +1,422 @@
+[
+ {
+  "file": "photos/truck-highway.jpg",
+  "category": "logistics",
+  "pexels": 2199293
+ },
+ {
+  "file": "photos/truck-fleet.jpg",
+  "category": "logistics",
+  "pexels": 93398
+ },
+ {
+  "file": "photos/warehouse-shelves.jpg",
+  "category": "logistics",
+  "pexels": 4481259
+ },
+ {
+  "file": "photos/warehouse-worker.jpg",
+  "category": "logistics",
+  "pexels": 4483610
+ },
+ {
+  "file": "photos/cargo-containers.jpg",
+  "category": "logistics",
+  "pexels": 906494
+ },
+ {
+  "file": "photos/delivery-rider.jpg",
+  "category": "logistics",
+  "pexels": 4425793
+ },
+ {
+  "file": "photos/delivery-van.jpg",
+  "category": "logistics",
+  "pexels": 4391479
+ },
+ {
+  "file": "photos/port-crane.jpg",
+  "category": "logistics",
+  "pexels": 1117210
+ },
+ {
+  "file": "photos/forklift.jpg",
+  "category": "logistics",
+  "pexels": 1267338
+ },
+ {
+  "file": "photos/driver-cab.jpg",
+  "category": "logistics",
+  "pexels": 2199293
+ },
+ {
+  "file": "photos/clinic-doctor.jpg",
+  "category": "healthcare",
+  "pexels": 5215024
+ },
+ {
+  "file": "photos/doctor-patient.jpg",
+  "category": "healthcare",
+  "pexels": 7578803
+ },
+ {
+  "file": "photos/medical-team.jpg",
+  "category": "healthcare",
+  "pexels": 5327585
+ },
+ {
+  "file": "photos/lab-samples.jpg",
+  "category": "healthcare",
+  "pexels": 9545851
+ },
+ {
+  "file": "photos/pharmacy-shelves.jpg",
+  "category": "healthcare",
+  "pexels": 4173239
+ },
+ {
+  "file": "photos/telehealth.jpg",
+  "category": "healthcare",
+  "pexels": 4386466
+ },
+ {
+  "file": "photos/dental-chair.jpg",
+  "category": "healthcare",
+  "pexels": 3845810
+ },
+ {
+  "file": "photos/nurse-tablet.jpg",
+  "category": "healthcare",
+  "pexels": 5407206
+ },
+ {
+  "file": "photos/hotel-lobby.jpg",
+  "category": "hospitality",
+  "pexels": 2034335
+ },
+ {
+  "file": "photos/hotel-room.jpg",
+  "category": "hospitality",
+  "pexels": 164595
+ },
+ {
+  "file": "photos/hotel-suite.jpg",
+  "category": "hospitality",
+  "pexels": 271624
+ },
+ {
+  "file": "photos/hotel-pool.jpg",
+  "category": "hospitality",
+  "pexels": 189296
+ },
+ {
+  "file": "photos/restaurant-dining.jpg",
+  "category": "hospitality",
+  "pexels": 67468
+ },
+ {
+  "file": "photos/chef-kitchen.jpg",
+  "category": "hospitality",
+  "pexels": 887827
+ },
+ {
+  "file": "photos/breakfast-tray.jpg",
+  "category": "hospitality",
+  "pexels": 2456435
+ },
+ {
+  "file": "photos/reception-desk.jpg",
+  "category": "hospitality",
+  "pexels": 943967
+ },
+ {
+  "file": "photos/event-hall.jpg",
+  "category": "hospitality",
+  "pexels": 2263436
+ },
+ {
+  "file": "photos/food-pizza.jpg",
+  "category": "hospitality",
+  "pexels": 315755
+ },
+ {
+  "file": "photos/retail-store.jpg",
+  "category": "retail",
+  "pexels": 264636
+ },
+ {
+  "file": "photos/supermarket-aisle.jpg",
+  "category": "retail",
+  "pexels": 1005638
+ },
+ {
+  "file": "photos/product-watch.jpg",
+  "category": "retail",
+  "pexels": 190819
+ },
+ {
+  "file": "photos/product-headphones.jpg",
+  "category": "retail",
+  "pexels": 3394650
+ },
+ {
+  "file": "photos/product-backpack.jpg",
+  "category": "retail",
+  "pexels": 2905238
+ },
+ {
+  "file": "photos/product-sneaker.jpg",
+  "category": "retail",
+  "pexels": 2529148
+ },
+ {
+  "file": "photos/product-water.jpg",
+  "category": "retail",
+  "pexels": 1000084
+ },
+ {
+  "file": "photos/checkout-counter.jpg",
+  "category": "retail",
+  "pexels": 2292919
+ },
+ {
+  "file": "photos/clothing-rack.jpg",
+  "category": "retail",
+  "pexels": 462410
+ },
+ {
+  "file": "photos/market-stall.jpg",
+  "category": "retail",
+  "pexels": 264537
+ },
+ {
+  "file": "photos/apartment-building.jpg",
+  "category": "realestate",
+  "pexels": 323780
+ },
+ {
+  "file": "photos/house-exterior.jpg",
+  "category": "realestate",
+  "pexels": 106399
+ },
+ {
+  "file": "photos/living-room.jpg",
+  "category": "realestate",
+  "pexels": 1571460
+ },
+ {
+  "file": "photos/modern-kitchen.jpg",
+  "category": "realestate",
+  "pexels": 1080721
+ },
+ {
+  "file": "photos/bedroom-interior.jpg",
+  "category": "realestate",
+  "pexels": 1648776
+ },
+ {
+  "file": "photos/keys-handover.jpg",
+  "category": "realestate",
+  "pexels": 2102587
+ },
+ {
+  "file": "photos/city-skyline.jpg",
+  "category": "realestate",
+  "pexels": 466685
+ },
+ {
+  "file": "photos/classroom-students.jpg",
+  "category": "education",
+  "pexels": 8471835
+ },
+ {
+  "file": "photos/teacher-board.jpg",
+  "category": "education",
+  "pexels": 5212345
+ },
+ {
+  "file": "photos/students-laptops.jpg",
+  "category": "education",
+  "pexels": 1595391
+ },
+ {
+  "file": "photos/library-study.jpg",
+  "category": "education",
+  "pexels": 256541
+ },
+ {
+  "file": "photos/graduation.jpg",
+  "category": "education",
+  "pexels": 267885
+ },
+ {
+  "file": "photos/kids-classroom.jpg",
+  "category": "education",
+  "pexels": 8617942
+ },
+ {
+  "file": "photos/online-learning.jpg",
+  "category": "education",
+  "pexels": 4145153
+ },
+ {
+  "file": "photos/meeting-room.jpg",
+  "category": "business",
+  "pexels": 1181406
+ },
+ {
+  "file": "photos/handshake-deal.jpg",
+  "category": "business",
+  "pexels": 3184292
+ },
+ {
+  "file": "photos/finance-charts.jpg",
+  "category": "business",
+  "pexels": 590022
+ },
+ {
+  "file": "photos/cards-payment.jpg",
+  "category": "business",
+  "pexels": 259200
+ },
+ {
+  "file": "photos/phone-payment.jpg",
+  "category": "business",
+  "pexels": 6863183
+ },
+ {
+  "file": "photos/office-work.jpg",
+  "category": "business",
+  "pexels": 373076
+ },
+ {
+  "file": "photos/team-whiteboard.jpg",
+  "category": "business",
+  "pexels": 3184291
+ },
+ {
+  "file": "photos/documents-signing.jpg",
+  "category": "business",
+  "pexels": 5904929
+ },
+ {
+  "file": "photos/accountant-desk.jpg",
+  "category": "business",
+  "pexels": 4386366
+ },
+ {
+  "file": "photos/call-center.jpg",
+  "category": "business",
+  "pexels": 8867482
+ },
+ {
+  "file": "photos/server-room.jpg",
+  "category": "business",
+  "pexels": 325229
+ },
+ {
+  "file": "photos/network-cables.jpg",
+  "category": "business",
+  "pexels": 1148820
+ },
+ {
+  "file": "photos/solar-panels.jpg",
+  "category": "business",
+  "pexels": 356036
+ },
+ {
+  "file": "photos/farm-field.jpg",
+  "category": "business",
+  "pexels": 2589457
+ },
+ {
+  "file": "photos/construction-site.jpg",
+  "category": "business",
+  "pexels": 585418
+ },
+ {
+  "file": "photos/factory-line.jpg",
+  "category": "business",
+  "pexels": 1267338
+ },
+ {
+  "file": "photos/security-lock.jpg",
+  "category": "business",
+  "pexels": 5386754
+ },
+ {
+  "file": "photos/data-center.jpg",
+  "category": "business",
+  "pexels": 1181354
+ },
+ {
+  "file": "photos/voice-headset.jpg",
+  "category": "business",
+  "pexels": 845451
+ },
+ {
+  "file": "photos/microphone-studio.jpg",
+  "category": "business",
+  "pexels": 164829
+ },
+ {
+  "file": "photos/documents-pile.jpg",
+  "category": "business",
+  "pexels": 590016
+ },
+ {
+  "file": "photos/analytics-screen.jpg",
+  "category": "business",
+  "pexels": 590020
+ },
+ {
+  "file": "photos/creative-studio.jpg",
+  "category": "creative",
+  "pexels": 1194420
+ },
+ {
+  "file": "photos/design-workspace.jpg",
+  "category": "creative",
+  "pexels": 196644
+ },
+ {
+  "file": "photos/camera-gear.jpg",
+  "category": "creative",
+  "pexels": 122400
+ },
+ {
+  "file": "photos/art-gallery.jpg",
+  "category": "creative",
+  "pexels": 1674049
+ },
+ {
+  "file": "photos/stage-lights.jpg",
+  "category": "creative",
+  "pexels": 1105666
+ },
+ {
+  "file": "photos/neon-installation.jpg",
+  "category": "creative",
+  "pexels": 1938348
+ },
+ {
+  "file": "photos/print-shop.jpg",
+  "category": "creative",
+  "pexels": 4467739
+ },
+ {
+  "file": "photos/packaging-boxes.jpg",
+  "category": "creative",
+  "pexels": 4464482
+ },
+ {
+  "file": "photos/motion-blur-city.jpg",
+  "category": "creative",
+  "pexels": 315938
+ },
+ {
+  "file": "photos/typography-print.jpg",
+  "category": "creative",
+  "pexels": 1616403
+ }
+]

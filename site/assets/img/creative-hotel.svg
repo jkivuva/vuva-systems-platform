@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Hotel guest journey concept — booking to checkout in one flow">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<circle cx="130" cy="160" r="36" fill="#101216" stroke="#d9a441" stroke-width="2"/>
+<text x="130" y="165" text-anchor="middle" fill="#d9d4c8" font-family="ui-monospace, monospace" font-size="10">BOOK</text>
+<circle cx="320" cy="120" r="36" fill="#101216" stroke="#d9a441" stroke-width="2"/>
+<text x="320" y="125" text-anchor="middle" fill="#d9d4c8" font-family="ui-monospace, monospace" font-size="10">CHECK-IN</text>
+<circle cx="520" cy="160" r="36" fill="#101216" stroke="#d9a441" stroke-width="2"/>
+<text x="520" y="165" text-anchor="middle" fill="#d9d4c8" font-family="ui-monospace, monospace" font-size="10">ROOM KEY</text>
+<circle cx="620" cy="300" r="36" fill="#101216" stroke="#d9a441" stroke-width="2"/>
+<text x="620" y="305" text-anchor="middle" fill="#d9d4c8" font-family="ui-monospace, monospace" font-size="10">CONCIERGE</text>
+<circle cx="380" cy="360" r="36" fill="#101216" stroke="#d9a441" stroke-width="2"/>
+<text x="380" y="365" text-anchor="middle" fill="#d9d4c8" font-family="ui-monospace, monospace" font-size="10">CHECKOUT</text>
+<circle cx="160" cy="300" r="36" fill="#101216" stroke="#d9a441" stroke-width="2"/>
+<text x="160" y="305" text-anchor="middle" fill="#d9d4c8" font-family="ui-monospace, monospace" font-size="10">REVIEW</text>
+<path d="M130 160Q243 114 320 120" fill="none" stroke="#d9a441" stroke-opacity=".4" stroke-dasharray="2 8"/>
+<path d="M320 120Q438 114 520 160" fill="none" stroke="#d9a441" stroke-opacity=".4" stroke-dasharray="2 8"/>
+<path d="M520 160Q588 204 620 300" fill="none" stroke="#d9a441" stroke-opacity=".4" stroke-dasharray="2 8"/>
+<path d="M620 300Q518 304 380 360" fill="none" stroke="#d9a441" stroke-opacity=".4" stroke-dasharray="2 8"/>
+<path d="M380 360Q288 304 160 300" fill="none" stroke="#d9a441" stroke-opacity=".4" stroke-dasharray="2 8"/>
+<path d="M320 120q90-60 200 40" fill="none" stroke="#faf7f2" stroke-opacity=".2" stroke-width="30" stroke-linecap="round"/>
+<text x="400" y="452" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="13">ONE NUMBER FOR THE GUEST · WHATSAPP NATIVE</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Laboratory diagnostics — samples tracked from collection to results">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<path d="M90 380h300" stroke="#33413b" stroke-width="3"/>
+<path d="M110 250v100a12 12 0 0 0 24 0v-100z" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<path d="M110 350a12 12 0 0 0 24 0v-60z" fill="#40dca9" opacity=".7"/>
+<rect x="110" y="238" width="24" height="12" fill="#faf7f2"/>
+<path d="M168 250v100a12 12 0 0 0 24 0v-100z" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<path d="M168 350a12 12 0 0 0 24 0v-90z" fill="#40dca9" opacity=".7"/>
+<rect x="168" y="238" width="24" height="12" fill="#faf7f2"/>
+<path d="M226 250v100a12 12 0 0 0 24 0v-100z" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<path d="M226 350a12 12 0 0 0 24 0v-40z" fill="#40dca9" opacity=".7"/>
+<rect x="226" y="238" width="24" height="12" fill="#faf7f2"/>
+<path d="M284 250v100a12 12 0 0 0 24 0v-100z" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<path d="M284 350a12 12 0 0 0 24 0v-105z" fill="#d9a441" opacity=".7"/>
+<rect x="284" y="238" width="24" height="12" fill="#faf7f2"/>
+<path d="M342 250v100a12 12 0 0 0 24 0v-100z" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<path d="M342 350a12 12 0 0 0 24 0v-75z" fill="#40dca9" opacity=".7"/>
+<rect x="342" y="238" width="24" height="12" fill="#faf7f2"/>
+<rect x="470" y="110" width="250" height="160" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="492" y="142" text-anchor="13" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">SAMPLE #L-2291</text>
+<rect x="492" y="164" width="175" height="10" rx="3" fill="#40dca9"/>
+<rect x="492" y="164" width="206" height="10" rx="3" fill="none" stroke="#33413b" opacity=".4"/>
+<rect x="492" y="190" width="113" height="10" rx="3" fill="#0a8a63"/>
+<rect x="492" y="190" width="206" height="10" rx="3" fill="none" stroke="#33413b" opacity=".4"/>
+<rect x="492" y="216" width="148" height="10" rx="3" fill="#40dca9"/>
+<rect x="492" y="216" width="206" height="10" rx="3" fill="none" stroke="#33413b" opacity=".4"/>
+<rect x="492" y="242" width="61" height="10" rx="3" fill="#d9a441"/>
+<rect x="492" y="242" width="206" height="10" rx="3" fill="none" stroke="#33413b" opacity=".4"/>
+<text x="492" y="262" text-anchor="12" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">RESULT RANGE WITHIN LIMITS</text>
+<rect x="470" y="300" width="250" height="70" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="492" y="330" text-anchor="12" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">DOCTOR NOTIFIED · PATIENT SMS</text>
+<text x="492" y="354" text-anchor="14" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">READY IN 26 MIN AVG</text>
+</svg>

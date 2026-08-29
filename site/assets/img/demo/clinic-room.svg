@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Clinic examination room">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef4f2"/><stop offset="1" stop-color="#d5e5df"/></linearGradient><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7faf9"/><stop offset="1" stop-color="#e3eeea"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient><radialGradient id="glow" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#ffffff" stop-opacity=".5"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#wall)"/><rect x="0" y="360" width="800" height="140" fill="#c9dcd4"/><rect x="0" y="360" width="800" height="140" fill="#ffffff" opacity=".25"/><rect x="70" y="300" width="250" height="26" rx="10" fill="#ffffff"/>
+<rect x="86" y="326" width="14" height="60" fill="#9fbcb2"/>
+<rect x="290" y="326" width="14" height="60" fill="#9fbcb2"/>
+<rect x="70" y="292" width="70" height="16" rx="8" fill="#e2efea"/>
+<rect x="420" y="70" width="300" height="200" rx="10" fill="#bfe0f2"/>
+<path d="M420 70h300v90q-150 40-300 0z" fill="#d8eefb" opacity=".8"/>
+<rect x="565" y="70" width="8" height="200" fill="#ffffff" opacity=".7"/>
+<rect x="420" y="165" width="300" height="8" fill="#ffffff" opacity=".7"/>
+<g opacity=".16"><rect x="420" y="70" width="300" height="200" rx="6" fill="#fff8e7"/><rect x="568.0" y="70" width="4" height="200" fill="#00000022"/></g><g transform="translate(600,330) scale(1.7)"><path d="M-34 46 Q0 18 34 46 L34 60 L-34 60 Z" fill="#3ba183"/><circle cx="0" cy="-2" r="20" fill="#8a5a3b"/><path d="M-20 -6 Q-20 -26 0 -26 Q20 -26 20 -6 L20 -12 Q20 -30 0 -30 Q-20 -30 -20 -12 Z" fill="#1d1a17"/></g><rect x="560" y="352" width="80" height="12" rx="6" fill="#ffffff" opacity=".85"/>
+<g transform="translate(430,342) scale(1.45)"><path d="M-34 46 Q0 18 34 46 L34 60 L-34 60 Z" fill="#7d8ea0"/><circle cx="0" cy="-2" r="20" fill="#c68958"/><path d="M-20 -6 Q-20 -26 0 -26 Q20 -26 20 -6 L20 -12 Q20 -30 0 -30 Q-20 -30 -20 -12 Z" fill="#33261d"/></g><rect x="120" y="150" width="150" height="100" rx="8" fill="#10201b"/>
+<path d="M135 220h34v-34l20 22 18-40 16 52 14-28h28" stroke="#43e0a6" stroke-width="4" fill="none"/>
+<rect x="180" y="250" width="30" height="26" fill="#7fa295"/>
+<text x="60" y="60" text-anchor="start" fill="#3c7a64" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">VUVA CARE · EXAM ROOM 2</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".38"/>
+</svg>

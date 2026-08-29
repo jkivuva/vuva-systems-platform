@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="3D product visualisation concept — one render, every angle">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<g>
+<polygon points="300,220 420,220 480,160 360,160" fill="#2a2e38"/>
+<polygon points="300,220 360,160 360,256 300,316" fill="#14161c"/>
+<polygon points="300,220 420,220 420,316 300,316" fill="#1c1f26" stroke="#faf7f2" stroke-opacity=".4"/>
+</g>
+<g>
+<polygon points="480,260 560,260 600,220 520,220" fill="#332b3a"/>
+<polygon points="480,260 520,220 520,284 480,324" fill="#181420"/>
+<polygon points="480,260 560,260 560,324 480,324" fill="#26202c" stroke="#faf7f2" stroke-opacity=".4"/>
+</g>
+<ellipse cx="400" cy="380" rx="220" ry="30" fill="none" stroke="#faf7f2" stroke-opacity=".25" stroke-dasharray="2 10"/>
+<path d="M620 140a60 60 0 0 1 40 56" fill="none" stroke="#d9a441" stroke-width="2.5"/>
+<path d="M660 196l8-12m-8 12l-14-4" stroke="#d9a441" stroke-width="2.5" fill="none"/>
+<text x="400" y="452" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="13">MODELLING · LIGHTING · WEB GL TURNAROUND</text>
+</svg>

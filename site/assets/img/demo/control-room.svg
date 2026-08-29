@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Operations control room with dashboard wall">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20262c"/><stop offset="1" stop-color="#101418"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect x="90" y="80" width="620" height="240" rx="12" fill="#0c1210" stroke="#2c3e38"/>
+<rect x="110" y="100" width="180" height="90" rx="6" fill="#12201a"/>
+<path d="M122 172l36-30 26 12 34-34 30 22 30-26" stroke="#43e0a6" stroke-width="4" fill="none"/>
+<rect x="306" y="100" width="180" height="90" rx="6" fill="#12201a"/>
+<circle cx="396" cy="145" r="30" fill="none" stroke="#43e0a6" stroke-width="9"/>
+<path d="M396 145l20-14" stroke="#d9a441" stroke-width="4"/>
+<rect x="502" y="100" width="188" height="90" rx="6" fill="#12201a"/>
+<rect x="516" y="132" width="26" height="40" fill="#3e8a6b"/>
+<rect x="558" y="108" width="26" height="64" fill="#3e8a6b"/>
+<rect x="600" y="144" width="26" height="28" fill="#3e8a6b"/>
+<rect x="642" y="120" width="26" height="52" fill="#3e8a6b"/>
+<rect x="110" y="204" width="580" height="96" rx="6" fill="#12201a"/>
+<rect x="124" y="216" width="420" height="8" rx="3" fill="#3e8a6b" opacity="0.9"/>
+<rect x="124" y="238" width="300" height="8" rx="3" fill="#3e8a6b" opacity="0.75"/>
+<rect x="124" y="260" width="480" height="8" rx="3" fill="#3e8a6b" opacity="0.6000000000000001"/>
+<rect x="124" y="282" width="220" height="8" rx="3" fill="#3e8a6b" opacity="0.45000000000000007"/>
+<g transform="translate(400,420) scale(1.5)"><path d="M-34 46 Q0 18 34 46 L34 60 L-34 60 Z" fill="#2c3e38"/><circle cx="0" cy="-2" r="20" fill="#8a5a3b"/><path d="M-20 -6 Q-20 -26 0 -26 Q20 -26 20 -6 L20 -12 Q20 -30 0 -30 Q-20 -30 -20 -12 Z" fill="#141110"/></g><text x="40" y="60" text-anchor="start" fill="#bfe8d6" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">OPERATIONS · ALL SYSTEMS NOMINAL</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".5"/>
+</svg>

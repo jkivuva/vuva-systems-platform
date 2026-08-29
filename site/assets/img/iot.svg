@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="IoT telemetry — field sensors reporting to one gateway">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<rect x="120" y="140" width="26" height="34" rx="4" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<circle cx="133" cy="132" r="4" fill="#40dca9"/>
+<path d="M133 128Q217 170 400 160" fill="none" stroke="#0a8a63" stroke-width="1.8" stroke-dasharray="1 7"/>
+<rect x="150" y="330" width="26" height="34" rx="4" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<circle cx="163" cy="322" r="4" fill="#40dca9"/>
+<path d="M163 318Q238 227 400 160" fill="none" stroke="#0a8a63" stroke-width="1.8" stroke-dasharray="1 7"/>
+<rect x="660" y="150" width="26" height="34" rx="4" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<circle cx="673" cy="142" r="4" fill="#40dca9"/>
+<path d="M673 138Q595 173 400 160" fill="none" stroke="#0a8a63" stroke-width="1.8" stroke-dasharray="1 7"/>
+<rect x="640" y="340" width="26" height="34" rx="4" fill="none" stroke="#aeb9b4" stroke-width="2.5"/>
+<circle cx="653" cy="332" r="4" fill="#40dca9"/>
+<path d="M653 328Q581 230 400 160" fill="none" stroke="#0a8a63" stroke-width="1.8" stroke-dasharray="1 7"/>
+<rect x="330" y="160" width="140" height="80" rx="10" fill="#10241c" stroke="#40dca9" stroke-width="2"/>
+<text x="400" y="192" text-anchor="middle" fill="#7dfcc9" font-family="ui-monospace, monospace" font-size="13">GATEWAY</text>
+<text x="400" y="216" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="11">UPLINK LIVE</text>
+<rect x="560" y="340" width="180" height="90" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="582" y="372" text-anchor="12" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">READINGS TODAY</text>
+<text x="582" y="404" text-anchor="13" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">184,220 OK · 3 RETRY</text>
+<text x="60" y="464" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="15">SENSORS -> GATEWAY -> DASHBOARD -> ALERTS</text>
+</svg>

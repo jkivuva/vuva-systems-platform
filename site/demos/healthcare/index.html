@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111715">
+  <title>VuvaCare · Healthcare Management Demonstration</title>
+  <meta name="description" content="Interactive demonstration of VuvaCare, a two-sided healthcare platform: patient booking and a hospital operations dashboard. Demonstration system, not a live hospital.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/demos/demo.css?v=3">
+  <link rel="stylesheet" href="/demos/healthcare/healthcare.css?v=3">
+</head>
+<body>
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> VuvaCare</span>
+      <div class="vc-mode-toggle" role="tablist" aria-label="VuvaCare view">
+        <button type="button" role="tab" data-vc-mode="patient" aria-selected="true"><span aria-hidden="true">🧑</span> <span class="vc-mode-label">Patient Experience</span></button>
+        <button type="button" role="tab" data-vc-mode="hospital" aria-selected="false"><span aria-hidden="true">🏥</span> <span class="vc-mode-label">Hospital Operations</span></button>
+      </div>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Demonstration system</span>
+    </header>
+
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav" id="vc-nav-patient">
+          <li><button class="demo-nav-btn" data-vc-nav="p-home"><span class="d-icon">🏥</span>Home</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="p-book"><span class="d-icon">📅</span>Book Appointment</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="p-appointments"><span class="d-icon">▤</span>My Appointments</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="p-payments"><span class="d-icon">◈</span>Payments</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="p-notifications"><span class="d-icon">🔔</span>Notifications</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="p-profile"><span class="d-icon">◫</span>Profile</button></li>
+        </ul>
+        <ul class="demo-nav hidden" id="vc-nav-hospital">
+          <li><button class="demo-nav-btn" data-vc-nav="h-dashboard"><span class="d-icon">▦</span>Overview</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-appointments"><span class="d-icon">▤</span>Appointments</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-reception"><span class="d-icon">◎</span>Reception</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-queues"><span class="d-icon">⇢</span>Queues</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-doctors"><span class="d-icon">◉</span>Doctors</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-departments"><span class="d-icon">▣</span>Departments</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-payments"><span class="d-icon">◈</span>Payments</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-analytics"><span class="d-icon">▥</span>Analytics</button></li>
+          <li><button class="demo-nav-btn" data-vc-nav="h-notifications"><span class="d-icon">✉</span>Notifications</button></li>
+        </ul>
+        <div class="demo-side-note">Fictional demonstration data only. VuvaCare is not deployed in a real hospital. It shows what Vuva can engineer.</div>
+      </aside>
+
+      <main class="demo-main">
+        <!-- ============ PATIENT SIDE ============ -->
+        <section class="demo-panel" id="p-home">
+          <div class="vc-demo-strip"><strong>VuvaCare · Healthcare Management Demonstration.</strong> An example of a healthcare platform Vuva Systems can design and engineer. All patients, doctors and data are fictional.</div>
+          <div class="vc-hero">
+            <div>
+              <span class="vc-subtitle">VuvaCare Medical Centre · Patient experience</span>
+              <h2>Book an appointment in a few taps.</h2>
+              <p>Choose a department and doctor, pick a time that suits you, pay your consultation fee online and receive an instant confirmation with a verification code.</p>
+              <div class="vc-hero-actions">
+                <button class="button button-accent" type="button" data-vc-nav="p-book">Book an appointment →</button>
+                <button class="button button-quiet" type="button" data-ai-open>Ask VuvaCare AI</button>
+              </div>
+            </div>
+            <div class="vc-hero-facts">
+              <div class="vc-hero-fact"><span class="f-icon">🩺</span><div><strong>8 departments</strong><small>General to Emergency</small></div></div>
+              <div class="vc-hero-fact"><span class="f-icon">👩‍⚕️</span><div><strong>6 specialists</strong><small>Cardiology, Pediatrics &amp; more</small></div></div>
+              <div class="vc-hero-fact"><span class="f-icon">📱</span><div><strong>Pay with M-Pesa</strong><small>or card / bank</small></div></div>
+              <div class="vc-hero-fact"><span class="f-icon">🔢</span><div><strong>Instant verification code</strong><small>present at reception</small></div></div>
+            </div>
+          </div>
+
+          <div class="demo-panel-head mt"><div><h2>Departments &amp; fees</h2><p>Browse services, then book the one you need.</p></div></div>
+          <div class="d-grid" data-render="home-depts"></div>
+
+          <div class="demo-panel-head mt"><div><h2>Our specialists</h2><p>Meet the doctors you can book with.</p></div></div>
+          <div class="vc-doctor-grid" data-render="home-doctors"></div>
+
+          <div class="d-card mt">
+            <div class="d-card-head"><h3>How booking works</h3></div>
+            <div class="d-card-body">
+              <div class="d-stats">
+                <div class="d-stat"><span class="d-label">1 · Choose</span><span class="d-value sm">Department &amp; doctor</span></div>
+                <div class="d-stat"><span class="d-label">2 · Pick</span><span class="d-value sm">Date &amp; time</span></div>
+                <div class="d-stat"><span class="d-label">3 · Pay</span><span class="d-value sm">Consultation fee</span></div>
+                <div class="d-stat"><span class="d-label">4 · Arrive</span><span class="d-value sm">Show your code</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="p-book">
+          <div class="demo-panel-head"><div><h2>Book an appointment</h2><p>A short guided booking. This demo uses simulated data.</p></div></div>
+          <div class="d-card">
+            <div class="d-card-body">
+              <div class="vc-steps" data-booking-steps></div>
+              <div data-booking-stage></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="p-appointments">
+          <div class="demo-panel-head"><div><h2>My appointments</h2><p>Upcoming bookings with your reference and verification code.</p></div></div>
+          <div class="d-card mt"><div class="d-card-head"><h3>Upcoming</h3></div><div class="d-card-body" data-render="appointments"></div></div>
+          <div class="d-card mt"><div class="d-card-head"><h3>History</h3></div><div class="d-card-body" data-render="history"></div></div>
+        </section>
+
+        <section class="demo-panel" id="p-payments">
+          <div class="demo-panel-head"><div><h2>Payments</h2><p>Your consultation payments.</p></div></div>
+          <div class="d-card"><div class="d-card-body" data-render="p-payments"></div></div>
+        </section>
+
+        <section class="demo-panel" id="p-notifications">
+          <div class="demo-panel-head"><div><h2>Notifications</h2><p>Appointment reminders and status updates (simulated).</p></div></div>
+          <div class="d-card"><div class="d-card-body pad-feed">
+            <div class="vc-notif"><span class="n-icon">✅</span><div class="n-main"><strong>Appointment confirmed</strong><p>Your VuvaCare appointment is confirmed for 10:30 AM.</p><small>just now</small></div></div>
+            <div class="vc-notif"><span class="n-icon">🔔</span><div class="n-main"><strong>Appointment reminder</strong><p>Reminder: you have a cardiology appointment tomorrow at 10:30 AM.</p><small>1h ago</small></div></div>
+            <div class="vc-notif"><span class="n-icon">🕒</span><div class="n-main"><strong>Queue update</strong><p>You are number 2 in the cardiology queue.</p><small>2h ago</small></div></div>
+            <div class="vc-notif"><span class="n-icon">✓</span><div class="n-main"><strong>Appointment completed</strong><p>Your appointment has been completed. Thank you for visiting.</p><small>Yesterday</small></div></div>
+          </div></div>
+        </section>
+
+        <section class="demo-panel" id="p-profile">
+          <div class="demo-panel-head"><div><h2>Profile</h2><p>Basic patient profile (demonstration).</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <div class="d-kv">
+              <div><dt>Name</dt><dd>Demo Patient</dd></div>
+              <div><dt>Phone</dt><dd>0712 345 678</dd></div>
+              <div><dt>Email</dt><dd>demo.patient@example.com</dd></div>
+              <div><dt>Patient ID</dt><dd>PT-DEMO-0001</dd></div>
+            </div>
+            <p class="muted-note">This is a fictional profile for demonstration only. VuvaCare only collects what it needs for booking and stores no real medical records here.</p>
+          </div></div>
+        </section>
+
+        <!-- ============ HOSPITAL SIDE ============ -->
+        <section class="demo-panel" id="h-dashboard">
+          <div class="demo-panel-head"><div><h2>Today's overview</h2><p>Live operational view across the hospital (demo data).</p></div><span class="badge is-ok">Live</span></div>
+          <div class="d-stats" data-render="h-stats"></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Appointments per day</h3><span class="d-hint">7 days</span></div><div class="d-card-body">
+              <svg class="d-chart" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true">
+                <rect x="15" y="110" width="40" height="30" fill="#40dca9"/><rect x="70" y="80" width="40" height="60" fill="#40dca9" opacity=".7"/><rect x="125" y="120" width="40" height="20" fill="#087957"/><rect x="180" y="100" width="40" height="40" fill="#40dca9"/><rect x="235" y="130" width="40" height="10" fill="#087957" opacity=".7"/><rect x="290" y="120" width="40" height="20" fill="#40dca9" opacity=".7"/><rect x="345" y="140" width="40" height="4" fill="#4f9de0"/>
+              </svg>
+            </div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Queue load</h3><span class="d-hint">Live</span></div><div class="d-card-body">
+              <svg class="d-chart" viewBox="0 0 400 160" aria-hidden="true"><rect x="30" y="90" width="70" height="50" fill="#40dca9"/><rect x="130" y="50" width="70" height="90" fill="#d9a441"/><rect x="230" y="110" width="70" height="30" fill="#4f9de0"/><rect x="330" y="120" width="50" height="20" fill="#087957"/><text x="65" y="150" text-anchor="middle" font-size="10">Cardio</text><text x="165" y="150" text-anchor="middle" font-size="10">General</text><text x="265" y="150" text-anchor="middle" font-size="10">Pediatric</text><text x="355" y="150" text-anchor="middle" font-size="10">Dental</text></svg>
+            </div></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="h-appointments">
+          <div class="demo-panel-head"><div><h2>Appointments</h2><p>Book, confirm, manage and track every appointment.</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <div class="d-toolbar">
+              <select class="minw" data-filter="dept" aria-label="Filter by department"><option value="">All departments</option><option value="general">General Medicine</option><option value="cardiology">Cardiology</option><option value="pediatrics">Pediatrics</option><option value="dental">Dental</option><option value="maternity">Maternity</option><option value="dermatology">Dermatology</option><option value="laboratory">Laboratory</option><option value="emergency">Emergency</option></select>
+              <select class="minw" data-filter="doctor" aria-label="Filter by doctor"><option value="">All doctors</option><option>Dr. Jane Mwangi</option><option>Dr. Brian Otieno</option><option>Dr. Sarah Kamau</option><option>Dr. David Kiprono</option><option>Dr. Achieng Odhiambo</option><option>Dr. Njeri Wambui</option><option>First available doctor</option></select>
+              <select class="minw" data-filter="status" aria-label="Filter by status"><option value="">All statuses</option><option value="confirmed">Confirmed</option><option value="checked_in">Checked in</option><option value="waiting">In queue</option><option value="called">Called</option><option value="in_consultation">In consultation</option><option value="completed">Completed</option><option value="cancelled">Cancelled</option></select>
+            </div>
+          </div></div>
+          <div class="d-card mt"><div class="d-card-body tight" data-render="h-appointments"></div></div>
+        </section>
+
+        <section class="demo-panel" id="h-reception">
+          <div class="demo-panel-head"><div><h2>Reception</h2><p>Verify a patient's booking and check them in.</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <label class="d-label" for="rc-input">Booking reference or verification code</label>
+            <div class="vc-search mt">
+              <input id="rc-input" type="text" placeholder="e.g. VC-2026-1044 or 918376" data-reception-input autocomplete="off">
+              <button class="button button-accent" type="button" data-reception-go>Search</button>
+            </div>
+            <p class="muted-note">Try one of the seeded references (e.g. <strong>VC-2026-1042</strong>) or the code from a new booking.</p>
+            <div data-render="h-reception-result"></div>
+          </div></div>
+        </section>
+
+        <section class="demo-panel" id="h-queues">
+          <div class="demo-panel-head"><div><h2>Queues</h2><p>See each department queue and move patients through.</p></div></div>
+          <div data-render="h-queues"></div>
+        </section>
+
+        <section class="demo-panel" id="h-doctors">
+          <div class="demo-panel-head"><div><h2>Doctors</h2><p>Today's schedule for each specialist.</p></div></div>
+          <div class="d-grid" data-render="h-doctors"></div>
+        </section>
+
+        <section class="demo-panel" id="h-departments">
+          <div class="demo-panel-head"><div><h2>Departments</h2><p>Doctors, load, queue and revenue per department.</p></div></div>
+          <div data-render="h-departments"></div>
+        </section>
+
+        <section class="demo-panel" id="h-payments">
+          <div class="demo-panel-head"><div><h2>Payments</h2><p>Consultation revenue by method (demonstration transactions).</p></div></div>
+          <div data-render="h-payments"></div>
+        </section>
+
+        <section class="demo-panel" id="h-analytics">
+          <div class="demo-panel-head"><div><h2>Analytics</h2><p>Hospital performance at a glance.</p></div></div>
+          <div data-render="h-analytics"></div>
+        </section>
+
+        <section class="demo-panel" id="h-notifications">
+          <div class="demo-panel-head"><div><h2>Notifications</h2><p>Automated patient communications (simulated).</p></div></div>
+          <div data-render="h-notifications"></div>
+        </section>
+
+        <p class="demo-disclaimer"><strong>Demonstration system.</strong> VuvaCare is a fictional healthcare platform built to show what Vuva Systems can engineer. It uses fictional patients, doctors and payments only. There are no real medical records here, and no claim of a real hospital deployment.</p>
+      </main>
+    </div>
+  </div>
+
+  <button class="demo-ai-fab" data-ai-open>◈ Ask VuvaCare AI</button>
+  <div class="demo-ai-modal" data-ai-modal>
+    <div class="demo-ai-card">
+      <div class="demo-ai-head"><span class="ai-avatar">V</span><span class="ai-id">VuvaCare AI</span><span class="ai-sub">Service &amp; appointment assistant</span><button class="demo-ai-close" data-ai-close aria-label="Close">×</button></div>
+      <div class="demo-ai-suggest" data-ai-suggest></div>
+      <div class="demo-ai-body" data-ai-body></div>
+      <div class="demo-ai-input"><input type="text" data-ai-input placeholder="Ask about departments, fees or booking…" aria-label="Ask VuvaCare AI"><button data-ai-send aria-label="Send">→</button></div>
+    </div>
+  </div>
+
+  <script type="module" src="/demos/healthcare/healthcare.js"></script>
+</body>
+</html>

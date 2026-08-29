@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111715">
+  <title>Vuva CommerceOS · Retail &amp; Distribution (Demo)</title>
+  <meta name="description" content="Interactive demonstration of Vuva CommerceOS: inventory, warehouses, branches, orders, suppliers and analytics.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/demos/demo.css?v=3">
+</head>
+<body data-demo="retail">
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> Vuva CommerceOS</span>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Demonstration system</span>
+    </header>
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav">
+          <li><button class="demo-nav-btn" data-panel-nav="dashboard"><span class="d-icon">▦</span>Dashboard</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="inventory"><span class="d-icon">▤</span>Inventory</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="warehouses"><span class="d-icon">▣</span>Warehouses</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="branches"><span class="d-icon">▦</span>Branches</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="orders"><span class="d-icon">⇢</span>Orders</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="customers"><span class="d-icon">◫</span>Customers</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="suppliers"><span class="d-icon">◉</span>Suppliers</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="sales"><span class="d-icon">◈</span>Sales</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="payments"><span class="d-icon">✉</span>Payments</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="deliveries"><span class="d-icon">◎</span>Deliveries</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="analytics"><span class="d-icon">◔</span>Analytics</button></li>
+        </ul>
+        <div class="demo-side-note">Sample data only. Vuva CommerceOS is not a live production system.</div>
+      </aside>
+
+      <main class="demo-main">
+        <section class="demo-panel" id="dashboard">
+          <div class="demo-panel-head"><div><h2>Commerce Overview</h2><p>Stock, sales and orders across the business.</p></div><span class="badge is-ok">Live</span></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Total stock</span><span class="d-value">12,480</span><span class="d-delta flat">units</span></div>
+            <div class="d-stat"><span class="d-label">Sales today</span><span class="d-value">KSh 486k</span><span class="d-delta up">▲ 9%</span></div>
+            <div class="d-stat"><span class="d-label">Orders today</span><span class="d-value">142</span><span class="d-delta up">▲ 14</span></div>
+            <div class="d-stat"><span class="d-label">Low stock items</span><span class="d-value">7</span><span class="d-delta down">▼ reorder</span></div>
+          </div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Sales trend</h3><span class="d-hint">7 days</span></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,120 50,110 100,115 150,80 200,90 250,55 300,65 350,35 400,45" fill="none" stroke="#40dca9" stroke-width="3"/></svg></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Stock by warehouse</h3><span class="d-hint">Units</span></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 160" aria-hidden="true"><rect x="20" y="100" width="90" height="40" fill="#40dca9"/><rect x="140" y="60" width="90" height="80" fill="#087957"/><rect x="260" y="90" width="90" height="50" fill="#4f9de0"/><text x="65" y="152" text-anchor="middle" font-size="10">Nairobi</text><text x="185" y="152" text-anchor="middle" font-size="10">Mombasa</text><text x="305" y="152" text-anchor="middle" font-size="10">Kisumu</text></svg></div></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="inventory">
+          <div class="demo-panel-head"><div><h2>Inventory</h2><p>What is on the shelves and what needs ordering.</p></div><span class="badge is-warn">7 low stock</span></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Product</th><th>Category</th><th>Stock</th><th>Reorder level</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Maize Flour 2kg</td><td class="muted">Staples</td><td class="num">142</td><td class="num">150</td><td><span class="badge is-danger">Low</span></td></tr>
+              <tr><td class="strong">Cooking Oil 5L</td><td class="muted">Groceries</td><td class="num">88</td><td class="num">120</td><td><span class="badge is-danger">Low</span></td></tr>
+              <tr><td class="strong">Sugar 1kg</td><td class="muted">Staples</td><td class="num">1,240</td><td class="num">300</td><td><span class="badge is-ok">In stock</span></td></tr>
+              <tr><td class="strong">Rice 5kg</td><td class="muted">Staples</td><td class="num">96</td><td class="num">100</td><td><span class="badge is-warn">Low</span></td></tr>
+              <tr><td class="strong">Detergent 1L</td><td class="muted">Home</td><td class="num">210</td><td class="num">80</td><td><span class="badge is-ok">In stock</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="warehouses">
+          <div class="demo-panel-head"><div><h2>Warehouses</h2><p>Your warehouses and how full they are.</p></div></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-head"><h3>Nairobi</h3><span class="badge is-ok">Active</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Stock</dt><dd>4,820</dd></div><div><dt>Capacity</dt><dd>68%</dd></div><div><dt>Outbound today</dt><dd>64</dd></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Mombasa</h3><span class="badge is-ok">Active</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Stock</dt><dd>5,110</dd></div><div><dt>Capacity</dt><dd>74%</dd></div><div><dt>Outbound today</dt><dd>51</dd></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Kisumu</h3><span class="badge is-ok">Active</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Stock</dt><dd>2,550</dd></div><div><dt>Capacity</dt><dd>42%</dd></div><div><dt>Outbound today</dt><dd>27</dd></div></div></div></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="branches">
+          <div class="demo-panel-head"><div><h2>Branches</h2><p>How each shop is performing.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Branch</th><th>Location</th><th>Sales today</th><th>Staff</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Westlands</td><td class="muted">Nairobi</td><td class="num">KSh 148k</td><td class="num">12</td><td><span class="badge is-ok">Open</span></td></tr>
+              <tr><td class="strong">Kilimani</td><td class="muted">Nairobi</td><td class="num">KSh 121k</td><td class="num">10</td><td><span class="badge is-ok">Open</span></td></tr>
+              <tr><td class="strong">South C</td><td class="muted">Nairobi</td><td class="num">KSh 96k</td><td class="num">8</td><td><span class="badge is-ok">Open</span></td></tr>
+              <tr><td class="strong">Mombasa Rd</td><td class="muted">Nairobi</td><td class="num">KSh 74k</td><td class="num">7</td><td><span class="badge is-neutral">Closing soon</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="orders">
+          <div class="demo-panel-head"><div><h2>Orders</h2><p>Customer orders from placement to delivery.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="num strong">SO-1182</td><td class="muted">Beacon Retail</td><td class="num">14</td><td class="num">KSh 86,400</td><td><span class="badge is-info">In transit</span></td></tr>
+              <tr><td class="num strong">SO-1181</td><td class="muted">Uplift Farms</td><td class="num">6</td><td class="num">KSh 24,100</td><td><span class="badge is-ok">Delivered</span></td></tr>
+              <tr><td class="num strong">SO-1180</td><td class="muted">Simba Motors</td><td class="num">3</td><td class="num">KSh 9,750</td><td><span class="badge is-neutral">Processing</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="customers">
+          <div class="demo-panel-head"><div><h2>Customers</h2><p>Customers and what they buy.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Customer</th><th>Type</th><th>Orders</th><th>Lifetime value</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Beacon Retail</td><td class="muted">Wholesale</td><td class="num">86</td><td class="num">KSh 4.2M</td><td><span class="badge is-ok">Active</span></td></tr>
+              <tr><td class="strong">Uplift Farms</td><td class="muted">Wholesale</td><td class="num">41</td><td class="num">KSh 1.8M</td><td><span class="badge is-ok">Active</span></td></tr>
+              <tr><td class="strong">Simba Motors</td><td class="muted">Business</td><td class="num">23</td><td class="num">KSh 640k</td><td><span class="badge is-ok">Active</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="suppliers">
+          <div class="demo-panel-head"><div><h2>Suppliers</h2><p>Suppliers and the orders you place with them.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Supplier</th><th>Category</th><th>Open POs</th><th>Lead time</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Mills Ltd</td><td class="muted">Staples</td><td class="num">2</td><td class="num">3 days</td><td><span class="badge is-ok">Reliable</span></td></tr>
+              <tr><td class="strong">Coast Foods</td><td class="muted">Groceries</td><td class="num">1</td><td class="num">5 days</td><td><span class="badge is-warn">Pending</span></td></tr>
+              <tr><td class="strong">HomeCare Ltd</td><td class="muted">Home</td><td class="num">0</td><td class="num">4 days</td><td><span class="badge is-ok">Reliable</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="sales">
+          <div class="demo-panel-head"><div><h2>Sales</h2><p>What sold today.</p></div></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Sales today</span><span class="d-value">KSh 486k</span></div>
+            <div class="d-stat"><span class="d-label">Transactions</span><span class="d-value">142</span></div>
+            <div class="d-stat"><span class="d-label">Avg basket</span><span class="d-value">KSh 3,423</span></div>
+            <div class="d-stat"><span class="d-label">Top branch</span><span class="d-value">Westlands</span></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="payments">
+          <div class="demo-panel-head"><div><h2>Payments</h2><p>Payments taken and how they add up.</p></div></div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">M-Pesa</span><span class="d-value">54%</span></div>
+            <div class="d-stat"><span class="d-label">Card</span><span class="d-value">29%</span></div>
+            <div class="d-stat"><span class="d-label">Bank transfer</span><span class="d-value">12%</span></div>
+            <div class="d-stat"><span class="d-label">Cash</span><span class="d-value">5%</span></div>
+          </div>
+        </section>
+
+        <section class="demo-panel" id="deliveries">
+          <div class="demo-panel-head"><div><h2>Deliveries</h2><p>Deliveries going out and where they are.</p></div></div>
+          <div class="d-card"><div class="d-card-body tight"><table class="d-table">
+            <thead><tr><th>Delivery</th><th>Order</th><th>Destination</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td class="num strong">DEL-441</td><td class="num">SO-1182</td><td class="muted">Westlands branch</td><td><span class="badge is-info">In transit</span></td></tr>
+              <tr><td class="num strong">DEL-440</td><td class="num">SO-1181</td><td class="muted">Uplift Farms</td><td><span class="badge is-ok">Delivered</span></td></tr>
+              <tr><td class="num strong">DEL-439</td><td class="num">SO-1179</td><td class="muted">South C branch</td><td><span class="badge is-neutral">Scheduled</span></td></tr>
+            </tbody>
+          </table></div></div>
+        </section>
+
+        <section class="demo-panel" id="analytics">
+          <div class="demo-panel-head"><div><h2>Analytics</h2><p>How everything is performing.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Best sellers this month</h3></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><rect x="20" y="120" width="70" height="40" fill="#40dca9"/><rect x="110" y="90" width="70" height="70" fill="#087957"/><rect x="200" y="60" width="70" height="100" fill="#40dca9" opacity=".7"/><rect x="290" y="100" width="70" height="60" fill="#4f9de0"/></svg></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Stock value</h3></div><div class="d-card-body"><svg class="d-chart" viewBox="0 0 400 180" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,140 60,130 120,110 180,120 240,80 300,90 360,60 400,70" fill="none" stroke="#40dca9" stroke-width="3"/></svg></div></div>
+          </div>
+        </section>
+
+        <p class="demo-disclaimer"><strong>Demonstration system.</strong> Vuva CommerceOS uses fictional demonstration data only. It demonstrates what Vuva can engineer for retail and distribution. It is not a client system.</p>
+      </main>
+    </div>
+  </div>
+
+  <button class="demo-ai-fab" data-ai-open>◈ Ask the Commerce AI</button>
+  <div class="demo-ai-modal" data-ai-modal>
+    <div class="demo-ai-card">
+      <div class="demo-ai-head"><span class="ai-avatar">V</span><span class="ai-id">Commerce AI</span><span class="ai-sub">Demo data</span><button class="demo-ai-close" data-ai-close aria-label="Close">×</button></div>
+      <div class="demo-ai-suggest" data-ai-suggest></div>
+      <div class="demo-ai-body" data-ai-body></div>
+      <div class="demo-ai-input"><input type="text" data-ai-input placeholder="Ask about stock, sales, suppliers…" aria-label="Ask the Commerce AI"><button data-ai-send aria-label="Send">→</button></div>
+    </div>
+  </div>
+  <script type="module" src="/demos/demo.js"></script>
+</body>
+</html>

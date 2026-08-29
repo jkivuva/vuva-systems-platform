@@ -1,0 +1,124 @@
+/* Vuva AI — Prospecting (internal dashboard). Complements /demos/demo.css shell. */
+
+.int-banner {
+  display: flex; gap: .7rem; align-items: flex-start;
+  padding: .9rem 1rem; margin-bottom: 1.25rem;
+  color: #b5862a; background: rgba(217,164,65,.1); border: 1px solid rgba(217,164,65,.4); border-radius: 8px;
+  font-size: .88rem; line-height: 1.5;
+}
+.int-banner strong { color: var(--warn); }
+
+.score-big { font-size: 3rem; font-weight: 700; letter-spacing: -.04em; line-height: 1; }
+.score-big small { font-size: 1rem; color: var(--muted); font-weight: 600; }
+.score-bar { height: 8px; margin-top: .6rem; background: var(--paper-muted); border-radius: 999px; overflow: hidden; }
+.score-bar i { display: block; height: 100%; background: var(--accent-dark); border-radius: 999px; }
+.score-bar.hi i { background: #1f9d6b; }
+.score-bar.mid i { background: var(--accent-dark); }
+.score-bar.lo i { background: var(--warn); }
+
+.factor-row { display: grid; grid-template-columns: minmax(180px, 1.2fr) 1.4fr auto; gap: .8rem; align-items: center; padding-block: .6rem; border-bottom: 1px solid var(--line); font-size: .86rem; line-height: 1.35; }
+.factor-row:last-child { border-bottom: 0; }
+.factor-row .f-weight { color: var(--muted); font-family: var(--mono); font-size: .72rem; white-space: nowrap; }
+
+.prospect-row { display: flex; gap: 1rem; align-items: center; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); cursor: pointer; }
+.prospect-row:hover { background: var(--paper-muted); }
+.prospect-row .p-score { flex: none; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); font-weight: 800; font-size: .95rem; }
+.prospect-row .p-score.hi { background: var(--accent); }
+.prospect-row .p-score.mid { background: #9fd8c4; }
+.prospect-row .p-score.lo { background: #e4c98f; }
+.prospect-row .p-main { flex: 1; min-width: 0; }
+.prospect-row .p-main strong { display: block; font-size: 1rem; }
+.prospect-row .p-main small { display: block; margin-top: .1rem; color: var(--muted); font-size: .8rem; }
+
+.outreach-box { white-space: pre-wrap; padding: 1rem; margin-top: .6rem; background: var(--paper-muted); border: 1px solid var(--line); border-radius: 8px; font-size: .88rem; line-height: 1.6; }
+
+.discover-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.discover-form .field { display: flex; flex-direction: column; }
+.discover-form label { margin-bottom: .4rem; font-size: .82rem; font-weight: 700; }
+.discover-form input, .discover-form select { height: 44px; padding: 0 .7rem; border: 1px solid #8b9892; border-radius: 0; background: var(--paper-strong); }
+.discover-form .field-wide { grid-column: 1 / -1; }
+
+.obs-fact { border-left: 3px solid var(--accent-dark); background: var(--paper-muted); }
+.obs-infer { border-left: 3px solid var(--warn); background: #fbf6ec; }
+.obs-item { padding: .6rem .9rem; margin-bottom: .5rem; border-radius: 4px; font-size: .88rem; line-height: 1.5; }
+.obs-item .obs-tag { display: block; margin-bottom: .15rem; font-family: var(--mono); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+
+.settings-list { display: flex; flex-direction: column; }
+.settings-list > div { display: flex; gap: 1rem; justify-content: space-between; align-items: center; padding-block: .8rem; border-bottom: 1px solid var(--line); }
+.settings-list dt { font-weight: 700; font-size: .92rem; line-height: 1.35; }
+.settings-list dd { color: var(--muted); font-size: .88rem; line-height: 1.45; text-align: right; max-width: 420px; }
+
+.kbd { padding: .15rem .45rem; background: var(--ink-elev); color: var(--accent); border: 1px solid var(--line-dark); border-radius: 4px; font-family: var(--mono); font-size: .76rem; }
+.minw { min-width: 220px; }
+
+/* Connected prospecting additions */
+.discover-result { cursor: default; align-items: flex-start; }
+.prospect-url { display: block; margin-top: .15rem; color: var(--accent-dark); font-family: var(--mono); font-size: .78rem; overflow-wrap: anywhere; }
+.prospect-url:hover { text-decoration: underline; }
+.signal-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .45rem; }
+.signal-tags .tag { font-size: .62rem; padding: .18rem .45rem; }
+.discover-actions { flex: none; display: flex; flex-direction: column; gap: .4rem; align-items: flex-end; }
+.discover-actions .button { min-height: 38px; padding: .45rem .8rem; font-size: .78rem; gap: .6rem; }
+.row-delete { flex: none; width: 34px; height: 34px; display: grid; place-items: center; color: var(--muted); background: none; border: 0; border-radius: 6px; cursor: pointer; font-size: 1.15rem; line-height: 1; }
+.row-delete:hover { color: var(--danger); background: rgba(189,61,61,.1); }
+.prospect-snippet { font-size: .86rem; line-height: 1.55; white-space: pre-wrap; word-break: break-word; }
+.config-row { display: flex; gap: 1rem; justify-content: space-between; align-items: center; padding-block: .8rem; border-bottom: 1px solid var(--line); }
+.config-row dt { font-weight: 700; font-size: .92rem; }
+
+/* ---- WhatsApp Inbox ---- */
+.nav-unread { display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: .4rem; padding: 0 .3rem; color: var(--ink); background: var(--warn); border-radius: 999px; font-family: var(--mono); font-size: .68rem; font-weight: 700; }
+.inbox-shell { display: grid; grid-template-columns: 300px 1fr; gap: 0; min-height: 560px; background: var(--paper-strong); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+.inbox-list { border-right: 1px solid var(--line); overflow-y: auto; max-height: 640px; }
+.inbox-item { display: flex; gap: .7rem; align-items: flex-start; width: 100%; padding: .85rem 1rem; background: none; border: 0; border-bottom: 1px solid var(--line); cursor: pointer; text-align: left; font: inherit; }
+.inbox-item:hover { background: var(--paper-muted); }
+.inbox-item.is-active { background: var(--paper-muted); box-shadow: inset 3px 0 0 var(--accent-dark); }
+.inbox-item .i-avatar { flex: none; display: grid; width: 38px; height: 38px; place-items: center; color: var(--paper); background: var(--ink); border-radius: 50%; font-weight: 700; }
+.inbox-item .i-main { flex: 1; min-width: 0; }
+.inbox-item .i-top { display: flex; gap: .5rem; align-items: baseline; justify-content: space-between; }
+.inbox-item .i-name { font-weight: 700; font-size: .92rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.inbox-item .i-time { flex: none; color: var(--muted); font-family: var(--mono); font-size: .66rem; }
+.inbox-item .i-preview { display: block; margin-top: .15rem; color: var(--muted); font-size: .8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.inbox-item .i-badges { display: flex; gap: .3rem; margin-top: .3rem; }
+.inbox-unread { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 .3rem; color: var(--ink); background: var(--accent); border-radius: 999px; font-family: var(--mono); font-size: .68rem; font-weight: 700; }
+.inbox-manual-tag { display: inline-block; padding: .1rem .45rem; color: #b5862a; background: rgba(217,164,65,.15); border-radius: 999px; font-family: var(--mono); font-size: .62rem; font-weight: 700; text-transform: uppercase; }
+.inbox-thread { display: flex; flex-direction: column; min-width: 0; }
+.inbox-empty { display: grid; flex: 1; place-items: center; text-align: center; padding: 2rem; }
+.inbox-convo { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.inbox-convo-head { display: flex; gap: 1rem; align-items: center; justify-content: space-between; padding: .9rem 1.2rem; border-bottom: 1px solid var(--line); background: var(--paper-muted); }
+.inbox-convo-head strong { font-size: 1rem; }
+.inbox-convo-head small { display: block; color: var(--muted); font-family: var(--mono); font-size: .72rem; }
+.inbox-messages { flex: 1; overflow-y: auto; max-height: 460px; display: flex; flex-direction: column; gap: .5rem; padding: 1.2rem; background: var(--paper); }
+.im { max-width: 78%; padding: .6rem .85rem; border-radius: 12px; font-size: .88rem; line-height: 1.5; }
+.im.in { align-self: flex-start; color: var(--ink); background: var(--paper-strong); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+.im.out { align-self: flex-end; color: var(--ink); background: #d9f4e8; border: 1px solid #b5e3cf; border-bottom-right-radius: 4px; }
+.im.failed { border-color: rgba(189,61,61,.5); background: #fbeeec; }
+.im .im-meta { display: flex; gap: .5rem; align-items: center; margin-top: .25rem; color: var(--muted); font-family: var(--mono); font-size: .62rem; }
+.inbox-compose { display: flex; gap: .6rem; padding: .8rem 1.2rem; border-top: 1px solid var(--line); background: var(--paper-strong); }
+.inbox-compose input { flex: 1; height: 44px; padding: 0 .8rem; border: 1px solid #8b9892; border-radius: 6px; background: var(--paper); }
+.inbox-compose .button { min-height: 44px; }
+.inbox-note { padding: 0 1.2rem .8rem; }
+.inbox-day { align-self: center; padding: .15rem .7rem; color: var(--muted); background: var(--paper-muted); border-radius: 999px; font-family: var(--mono); font-size: .64rem; }
+.inbox-status-select { height: 34px; padding: 0 .5rem; border: 1px solid var(--line-dark); border-radius: 6px; background: var(--paper); font: inherit; font-size: .82rem; }
+.inbox-status.st-active { color: #1e7a4f; background: rgba(64,167,110,.14); }
+.inbox-status.st-waiting { color: #8a6d1d; background: rgba(217,164,65,.16); }
+.inbox-status.st-needs_human { color: #b3261e; background: rgba(189,61,61,.12); }
+.inbox-status.st-resolved { color: var(--muted); background: var(--paper-muted); }
+.inbox-status { display: inline-block; margin-right: .35rem; padding: .12rem .5rem; border-radius: 999px; font-family: var(--mono); font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .02em; }
+
+@media (max-width: 860px) {
+  .inbox-shell { grid-template-columns: 1fr; }
+  .inbox-list { max-height: 240px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .inbox-messages { max-height: 380px; }
+  .im { max-width: 88%; }
+}
+
+@media (max-width: 640px) {
+  .discover-form { grid-template-columns: 1fr; }
+  .factor-row { grid-template-columns: 1fr 1.2fr; }
+  .factor-row .f-weight { display: none; }
+  .discover-result { flex-wrap: wrap; }
+  .discover-actions { width: 100%; align-items: stretch; }
+  .inbox-convo-head { flex-wrap: wrap; }
+  .head-actions { width: 100%; justify-content: space-between; gap: .6rem; }
+  .inbox-status-select { flex: 1; min-width: 0; }
+}

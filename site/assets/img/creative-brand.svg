@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Brand experience concept — identity system brought to life digitally">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<path d="M400 90l120 300h-70L400 190 350 390h-70z" fill="none" stroke="url(#goldgrad)" stroke-width="6"/>
+<circle cx="265" cy="162" r="6" fill="#faf7f2"/>
+<circle cx="400" cy="134" r="6" fill="#faf7f2"/>
+<circle cx="535" cy="162" r="6" fill="#faf7f2"/>
+<ellipse cx="400" cy="250" rx="240" ry="130" fill="none" stroke="#faf7f2" stroke-opacity=".25" stroke-dasharray="2 10"/>
+<text x="400" y="452" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="13">IDENTITY · MOTION · INTERACTION</text>
+</svg>

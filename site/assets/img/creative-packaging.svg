@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Packaging and unboxing concept — dielines to shelf presence">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<path d="M280 160l120-40 120 40-120 40z" fill="#1a1d24" stroke="#d9a441"/>
+<path d="M280 160v120l120 44v-124z" fill="#14161c" stroke="#d9a441"/>
+<path d="M520 160v120l-120 44v-124z" fill="#1e2129" stroke="#d9a441"/>
+<path d="M340 200l120-38m-120 70l120-38" stroke="#faf7f2" stroke-opacity=".5"/>
+<circle cx="400" cy="235" r="26" fill="none" stroke="#d9a441" stroke-width="2"/>
+<text x="400" y="243" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="22" fill="#faf7f2">V</text>
+<path d="M640 120l40 20-40 20-40-20z" fill="none" stroke="#faf7f2" stroke-opacity=".6"/>
+<path d="M640 160v40" stroke="#faf7f2" stroke-opacity=".6" stroke-dasharray="3 5"/>
+<text x="400" y="452" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="13">DIELINE -> PRINT PROOF -> UNBOXING FILM</text>
+</svg>

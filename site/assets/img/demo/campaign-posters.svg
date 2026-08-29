@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Campaign poster series">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101018"/><stop offset="1" stop-color="#08080e"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ecc06a"/><stop offset="1" stop-color="#a97c2f"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><g transform="translate(90,100) rotate(-4)">
+<rect width="170" height="240" rx="8" fill="#1c1f26" stroke="#3a3d46"/>
+<circle cx="85" cy="90" r="46" fill="none" stroke="#d9a441" stroke-width="6"/>
+<circle cx="85" cy="90" r="18" fill="#d9a441"/>
+<text x="85" y="190" text-anchor="middle" fill="#b9ac93" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="bold" letter-spacing="2">TEASER</text>
+</g>
+<g transform="translate(320,100) rotate(2)">
+<rect width="170" height="240" rx="8" fill="#1c1f26" stroke="#3a3d46"/>
+<path d="M30 60h110M30 96h110M30 132h70" stroke="#faf7f2" stroke-width="10"/>
+<rect x="30" y="160" width="70" height="26" fill="#d9a441"/>
+<text x="85" y="218" text-anchor="middle" fill="#b9ac93" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="bold" letter-spacing="2">REVEAL</text>
+</g>
+<g transform="translate(550,100) rotate(-2)">
+<rect width="170" height="240" rx="8" fill="#1c1f26" stroke="#3a3d46"/>
+<path d="M40 200L85 60l45 140" fill="none" stroke="#d9a441" stroke-width="6"/>
+<circle cx="85" cy="60" r="10" fill="#faf7f2"/>
+<text x="85" y="226" text-anchor="middle" fill="#b9ac93" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="bold" letter-spacing="2">WAITLIST</text>
+</g>
+<text x="70" y="420" text-anchor="start" fill="#d9a441" font-family="ui-monospace, monospace" font-size="15" font-weight="bold" letter-spacing="3">ONE STORY · THREE BEATS</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".3"/>
+</svg>

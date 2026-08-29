@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Running sneaker product shot">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22291f"/><stop offset="1" stop-color="#131811"/></linearGradient><radialGradient id="hal" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#hal)"/><ellipse cx="400" cy="420" rx="220" ry="30" fill="#00000033"/>
+<g transform="translate(400,260) rotate(-8)">
+<path d="M-170 40q-10-44 30-52l60-10q30-40 70-30l90 22q40 10 46 44l4 26h-300z" fill="#d9a441"/>
+<path d="M-170 40h300q14 0 14 16t-16 16h-298z" fill="#f4f1ea"/>
+<path d="M-80 -22q40-26 90-6" stroke="#22291f" stroke-width="8" fill="none"/>
+<path d="M-150 30h280" stroke="#c98a3e" stroke-width="6"/>
+</g>
+<text x="400" y="452" text-anchor="middle" fill="#e8e4de" font-family="ui-monospace, monospace" font-size="17" font-weight="bold" letter-spacing="2">TRAIL RUNNER X · KSH 8,900</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".2"/>
+</svg>

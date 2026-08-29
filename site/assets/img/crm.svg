@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Customer CRM pipeline — leads moving through deal stages">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<rect x="90" y="120" width="130" height="26" rx="6" fill="#101815" stroke="#33413b"/>
+<text x="155" y="138" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">NEW</text>
+<rect x="250" y="120" width="130" height="26" rx="6" fill="#101815" stroke="#33413b"/>
+<text x="315" y="138" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">CONTACTED</text>
+<rect x="410" y="120" width="130" height="26" rx="6" fill="#101815" stroke="#33413b"/>
+<text x="475" y="138" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">QUOTE</text>
+<rect x="570" y="120" width="130" height="26" rx="6" fill="#101815" stroke="#33413b"/>
+<text x="635" y="138" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">WON</text>
+<rect x="100" y="190" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="118" cy="217" r="5" fill="#0a8a63"/>
+<path d="M134 212h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<rect x="170" y="240" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="188" cy="267" r="5" fill="#40dca9"/>
+<path d="M204 262h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<rect x="255" y="205" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="273" cy="232" r="5" fill="#0a8a63"/>
+<path d="M289 227h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<rect x="330" y="260" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="348" cy="287" r="5" fill="#40dca9"/>
+<path d="M364 282h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<rect x="425" y="195" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="443" cy="222" r="5" fill="#0a8a63"/>
+<path d="M459 217h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<rect x="500" y="250" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="518" cy="277" r="5" fill="#40dca9"/>
+<path d="M534 272h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<rect x="585" y="215" width="106" height="54" rx="6" fill="#101815" stroke="#33413b" stroke-width="1.5"/>
+<circle cx="603" cy="242" r="5" fill="#0a8a63"/>
+<path d="M619 237h52" stroke="#40dca9" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+<path d="M220 133h30M380 133h30M540 133h30" stroke="#aeb9b4" stroke-width="2.5" marker-end="none"/>
+<path d="M700 133l-12 -8v16z" fill="#E2E8F0"/>
+<rect x="90" y="360" width="300" height="70" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="112" y="388" text-anchor="13" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">PIPELINE VALUE</text>
+<text x="112" y="416" text-anchor="22" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">KSh 4.8M</text>
+<rect x="430" y="360" width="280" height="70" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="452" y="388" text-anchor="13" fill="#aeb9b4" font-family="ui-monospace, monospace" font-size="15">FOLLOW-UPS DUE TODAY</text>
+<text x="452" y="416" text-anchor="18" fill="#40dca9" font-family="ui-monospace, monospace" font-size="15">9 TASKS QUEUED</text>
+</svg>

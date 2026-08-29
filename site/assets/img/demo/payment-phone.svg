@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Mobile payment confirmation">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#122018"/><stop offset="1" stop-color="#08110c"/></linearGradient><linearGradient id="acc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#43e0a6"/><stop offset="1" stop-color="#0a8a63"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect x="300" y="90" width="200" height="320" rx="26" fill="#0c1611" stroke="#2c4a3a" stroke-width="3"/>
+<rect x="316" y="130" width="168" height="120" rx="10" fill="#10241c"/>
+<circle cx="400" cy="190" r="30" fill="none" stroke="#43e0a6" stroke-width="5"/>
+<path d="M386 190l10 10 20-22" stroke="#43e0a6" stroke-width="5" fill="none"/>
+<text x="400" y="286" text-anchor="middle" fill="#43e0a6" font-family="Space Grotesk, sans-serif" font-size="26" font-weight="bold" letter-spacing="0">KSH 12,500</text>
+<text x="400" y="314" text-anchor="middle" fill="#7aa890" font-family="ui-monospace, monospace" font-size="12" font-weight="normal" letter-spacing="0">RECEIVED · TILL 884210</text>
+<rect x="330" y="340" width="140" height="36" rx="18" fill="#43e0a6"/>
+<text x="400" y="364" text-anchor="middle" fill="#06110c" font-family="ui-monospace, monospace" font-size="14" font-weight="bold" letter-spacing="0">DONE</text>
+<circle cx="150" cy="180" r="34" fill="#d9a441"/>
+<circle cx="150" cy="180" r="24" fill="none" stroke="#a97c2f" stroke-width="4"/>
+<circle cx="190" cy="240" r="34" fill="#d9a441"/>
+<circle cx="190" cy="240" r="24" fill="none" stroke="#a97c2f" stroke-width="4"/>
+<circle cx="640" cy="170" r="34" fill="#d9a441"/>
+<circle cx="640" cy="170" r="24" fill="none" stroke="#a97c2f" stroke-width="4"/>
+<circle cx="610" cy="250" r="34" fill="#d9a441"/>
+<circle cx="610" cy="250" r="24" fill="none" stroke="#a97c2f" stroke-width="4"/>
+<text x="40" y="60" text-anchor="start" fill="#9fd8bf" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">PAYMENT CONFIRMED · LEDGER SYNCED</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".45"/>
+</svg>

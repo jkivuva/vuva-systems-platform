@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Industrial tanks with IoT sensors">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101c26"/><stop offset="1" stop-color="#081018"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect x="110" y="150" width="120" height="200" rx="20" fill="#1c2c38" stroke="#3e5a6b" stroke-width="4"/>
+<rect x="118" y="220" width="104" height="122" rx="14" fill="#2c4a5c"/>
+<rect x="300" y="190" width="100" height="160" rx="16" fill="#1c2c38" stroke="#3e5a6b" stroke-width="4"/>
+<rect x="307" y="260" width="86" height="82" rx="12" fill="#2c4a5c"/>
+<path d="M230 250h70M400 270h60" stroke="#3e5a6b" stroke-width="8"/>
+<circle cx="170" cy="140" r="9" fill="#43e0a6"/>
+<path d="M170 126a22 22 0 0 1 16 0M170 114a34 34 0 0 1 24 0" stroke="#43e0a6" stroke-width="3" fill="none"/>
+<circle cx="350" cy="180" r="9" fill="#43e0a6"/>
+<path d="M350 166a22 22 0 0 1 16 0M350 154a34 34 0 0 1 24 0" stroke="#43e0a6" stroke-width="3" fill="none"/>
+<circle cx="520" cy="210" r="9" fill="#43e0a6"/>
+<path d="M520 196a22 22 0 0 1 16 0M520 184a34 34 0 0 1 24 0" stroke="#43e0a6" stroke-width="3" fill="none"/>
+<rect x="480" y="240" width="180" height="90" rx="12" fill="#10241c" stroke="#43e0a6" stroke-width="3"/>
+<text x="570" y="280" text-anchor="middle" fill="#43e0a6" font-family="ui-monospace, monospace" font-size="15" font-weight="bold" letter-spacing="0">GATEWAY</text>
+<text x="570" y="306" text-anchor="middle" fill="#7aa890" font-family="ui-monospace, monospace" font-size="11" font-weight="normal" letter-spacing="0">UPLINK LIVE</text>
+<text x="40" y="60" text-anchor="start" fill="#9fd8bf" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">COLD ROOM B · 3.4°C · NOMINAL</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".45"/>
+</svg>

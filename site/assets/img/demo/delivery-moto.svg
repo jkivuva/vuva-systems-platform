@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Delivery rider navigating city streets">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22303c"/><stop offset="1" stop-color="#101a22"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect x="60" y="90" width="8" height="330" fill="#2c3e4c"/>
+<rect x="190" y="90" width="8" height="330" fill="#2c3e4c"/>
+<rect x="320" y="90" width="8" height="330" fill="#2c3e4c"/>
+<rect x="450" y="90" width="8" height="330" fill="#2c3e4c"/>
+<rect x="580" y="90" width="8" height="330" fill="#2c3e4c"/>
+<rect x="710" y="90" width="8" height="330" fill="#2c3e4c"/>
+<rect x="40" y="130" width="720" height="8" fill="#2c3e4c"/>
+<rect x="40" y="220" width="720" height="8" fill="#2c3e4c"/>
+<rect x="40" y="310" width="720" height="8" fill="#2c3e4c"/>
+<rect x="40" y="400" width="720" height="8" fill="#2c3e4c"/>
+<path d="M100 420 Q260 300 420 340 T740 200" stroke="#43e0a6" stroke-width="5" fill="none" stroke-dasharray="2 14" stroke-linecap="round"/>
+<g transform="translate(420,340)">
+<circle cx="-26" cy="26" r="16" fill="none" stroke="#e8e4de" stroke-width="5"/>
+<circle cx="26" cy="26" r="16" fill="none" stroke="#e8e4de" stroke-width="5"/>
+<path d="M-26 26 L0 -6 L26 26 M0 -6 L-10 26" stroke="#e8e4de" stroke-width="5" fill="none"/>
+<circle cx="0" cy="-22" r="12" fill="#c98a3e"/>
+<rect x="14" y="-30" width="34" height="24" rx="4" fill="#43e0a6"/>
+</g>
+<text x="40" y="60" text-anchor="start" fill="#bfe8d6" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">LAST MILE · RIDER K-04 · 6 STOPS LEFT</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".5"/>
+</svg>

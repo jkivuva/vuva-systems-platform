@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Minimal watch product shot">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20242c"/><stop offset="1" stop-color="#12151a"/></linearGradient><radialGradient id="hal" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#hal)"/><ellipse cx="400" cy="420" rx="220" ry="30" fill="#00000033"/>
+<g transform="translate(400,240)">
+<rect x="-26" y="-150" width="52" height="90" rx="10" fill="#3c4148"/>
+<rect x="-26" y="66" width="52" height="90" rx="10" fill="#3c4148"/>
+<rect x="-84" y="-84" width="168" height="168" rx="42" fill="#e8e4de"/>
+<rect x="-70" y="-70" width="140" height="140" rx="34" fill="#14171c"/>
+<path d="M0 0L-30 -34M0 0L36 20" stroke="#e8e4de" stroke-width="7" stroke-linecap="round"/>
+<circle cx="0" cy="0" r="7" fill="#c94f3d"/>
+</g>
+<text x="400" y="458" text-anchor="middle" fill="#e8e4de" font-family="ui-monospace, monospace" font-size="17" font-weight="bold" letter-spacing="2">MERIDIAN 40 · KSH 24,500</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".2"/>
+</svg>

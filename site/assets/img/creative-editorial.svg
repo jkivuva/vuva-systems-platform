@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Editorial and content design concept — long-form reading online">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<rect x="140" y="90" width="240" height="320" fill="#101216" stroke="#faf7f2" stroke-opacity=".5"/>
+<rect x="420" y="90" width="240" height="320" fill="#101216" stroke="#faf7f2" stroke-opacity=".5"/>
+<rect x="164" y="114" width="192" height="120" fill="url(#goldgrad)" opacity=".55"/>
+<rect x="164" y="260" width="180" height="8" rx="3" fill="#faf7f2" opacity=".4"/>
+<rect x="164" y="282" width="160" height="8" rx="3" fill="#faf7f2" opacity=".4"/>
+<rect x="164" y="304" width="190" height="8" rx="3" fill="#faf7f2" opacity=".4"/>
+<rect x="164" y="326" width="120" height="8" rx="3" fill="#faf7f2" opacity=".4"/>
+<rect x="164" y="348" width="170" height="8" rx="3" fill="#faf7f2" opacity=".4"/>
+<rect x="164" y="370" width="150" height="8" rx="3" fill="#faf7f2" opacity=".4"/>
+<text x="444" y="150" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="#d9a441">THE</text>
+<text x="444" y="184" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="#d9a441">SYSTEM</text>
+<text x="444" y="218" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="none" stroke="#faf7f2">ISSUE</text>
+<rect x="444" y="250" width="190" height="7" rx="3" fill="#faf7f2" opacity=".35"/>
+<rect x="444" y="270" width="160" height="7" rx="3" fill="#faf7f2" opacity=".35"/>
+<rect x="444" y="290" width="130" height="7" rx="3" fill="#faf7f2" opacity=".35"/>
+<rect x="444" y="310" width="190" height="7" rx="3" fill="#faf7f2" opacity=".35"/>
+<rect x="444" y="330" width="160" height="7" rx="3" fill="#faf7f2" opacity=".35"/>
+<rect x="444" y="350" width="130" height="7" rx="3" fill="#faf7f2" opacity=".35"/>
+<text x="400" y="452" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="13">GRIDS · TYPE SCALE · READING RHYTHM</text>
+</svg>

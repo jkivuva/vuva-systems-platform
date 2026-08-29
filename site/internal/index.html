@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#111715">
+  <title>Vuva AI — Prospecting (Internal)</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="/demos/demo.css">
+  <link rel="stylesheet" href="/internal/internal.css">
+</head>
+<body>
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> Vuva AI — Prospecting</span>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Internal · protected</span>
+    </header>
+
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav">
+          <li><button class="demo-nav-btn" data-panel-nav="overview"><span class="d-icon">▦</span>Overview</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="inbox"><span class="d-icon">✆</span>WhatsApp Inbox<span class="nav-unread" data-nav-unread hidden></span></button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="discover"><span class="d-icon">◎</span>Discover Companies</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="prospects"><span class="d-icon">◫</span>Prospects</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="research"><span class="d-icon">▤</span>Research</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="opportunities"><span class="d-icon">◈</span>Opportunities</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="outreach"><span class="d-icon">✉</span>Outreach</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="reports"><span class="d-icon">▥</span>Reports</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="settings"><span class="d-icon">⚙</span>Settings</button></li>
+        </ul>
+        <div class="demo-side-note">Protected area. Discover, save and reach out to real companies — third-party keys stay server-side.</div>
+      </aside>
+
+      <main class="demo-main">
+        <!-- OVERVIEW -->
+        <section class="demo-panel" id="overview">
+          <div class="demo-panel-head"><div><h2>Overview</h2><p>Prospecting pipeline at a glance.</p></div></div>
+          <div class="int-banner"><strong>Live prospecting.</strong> Companies here are found via web search and stored in your D1 database. Nothing is sent to anyone until you explicitly review and send it in Outreach.</div>
+          <div class="d-stats" data-overview-stats></div>
+          <div class="d-card mt"><div class="d-card-head"><h3>Top opportunities</h3><span class="d-hint">By score</span></div><div class="d-card-body tight" data-top-prospects></div></div>
+        </section>
+
+        <!-- WHATSAPP INBOX -->
+        <section class="demo-panel" id="inbox">
+          <div class="demo-panel-head">
+            <div><h2>WhatsApp Inbox</h2><p>Customer conversations — Hermes auto-replies unless you take over.</p></div>
+            <span class="badge is-ok" data-inbox-live>● Live</span>
+          </div>
+          <div class="inbox-shell" data-inbox>
+            <aside class="inbox-list" data-inbox-list aria-label="Conversations"></aside>
+            <div class="inbox-thread" data-inbox-thread>
+              <div class="inbox-empty" data-inbox-empty>
+                <p><strong>Select a conversation</strong></p>
+                <p class="muted-note">Customer chats appear here as they arrive. New messages show an unread badge in the list.</p>
+              </div>
+              <div class="inbox-convo hidden" data-inbox-convo>
+                <header class="inbox-convo-head">
+                  <div>
+                    <strong data-convo-name>—</strong>
+                    <small data-convo-id></small>
+                  </div>
+                  <div class="head-actions">
+                    <label class="inbox-status-label" for="convo-status">
+                      <select id="convo-status" data-convo-status class="inbox-status-select" aria-label="Conversation status">
+                        <option value="active">Active</option>
+                        <option value="waiting">Waiting</option>
+                        <option value="needs_human">Needs Human</option>
+                        <option value="resolved">Resolved</option>
+                      </select>
+                    </label>
+                    <button class="chip is-dark" type="button" data-mode-btn>Take Over</button>
+                  </div>
+                </header>
+                <div class="inbox-messages" data-inbox-messages aria-live="polite"></div>
+                <form class="inbox-compose" data-inbox-compose>
+                  <input type="text" data-inbox-input placeholder="Type a message as Vuva Systems…" aria-label="Message" autocomplete="off">
+                  <button class="button button-accent" type="submit">Send</button>
+                </form>
+                <p class="muted-note inbox-note" data-mode-note></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DISCOVER -->
+        <section class="demo-panel" id="discover">
+          <div class="demo-panel-head"><div><h2>Discover Companies</h2><p>Define the search — Vuva AI finds and scores potential prospects from the web.</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <form class="discover-form" data-discover-form>
+              <div class="field"><label for="d-industry">Industry</label>
+                <select id="d-industry" name="industry">
+                  <option value="all">Any industry</option>
+                  <option>Logistics & Transportation</option>
+                  <option>Healthcare</option>
+                  <option>Real Estate</option>
+                  <option>Hospitality & Restaurants</option>
+                  <option>Retail & Distribution</option>
+                  <option>Professional Services</option>
+                  <option>Manufacturing</option>
+                  <option>Education</option>
+                  <option>Construction</option>
+                </select>
+              </div>
+              <div class="field"><label for="d-country">Country</label><input id="d-country" name="country" type="text" value="Kenya"></div>
+              <div class="field"><label for="d-city">City / region</label><input id="d-city" name="city" type="text" placeholder="e.g. Nairobi"></div>
+              <div class="field"><label for="d-size">Company size</label>
+                <select id="d-size" name="size"><option value="">Any size</option><option>1–10</option><option>11–50</option><option>50+</option><option>Multiple branches</option></select>
+              </div>
+              <div class="field field-wide"><label for="d-keywords">Keywords / indicators</label><input id="d-keywords" name="keywords" type="text" placeholder="e.g. logistics, no online booking, manual payments"></div>
+              <div class="field-wide"><button class="button button-accent" type="submit">Discover prospects →</button></div>
+            </form>
+            <div class="d-card mt"><div class="d-card-head"><h3>Results</h3></div><div class="d-card-body tight" data-discover-results></div></div>
+          </div></div>
+        </section>
+
+        <!-- PROSPECTS -->
+        <section class="demo-panel" id="prospects">
+          <div class="demo-panel-head"><div><h2>Prospects</h2><p>Scored, saved companies from your database.</p></div>
+            <select class="minw" data-industry-filter aria-label="Filter by industry">
+              <option value="all">All industries</option>
+              <option>Logistics & Transportation</option><option>Healthcare</option><option>Real Estate</option><option>Hospitality & Restaurants</option><option>Retail & Distribution</option><option>Professional Services</option><option>Education</option><option>Construction</option>
+            </select>
+          </div>
+          <div class="d-card"><div class="d-card-body tight" data-prospect-list></div></div>
+        </section>
+
+        <!-- RESEARCH -->
+        <section class="demo-panel" id="research">
+          <div class="demo-panel-head"><div><h2>Research</h2><p>Select a prospect to view its full profile.</p></div></div>
+          <div data-prospect-detail>
+            <div class="d-card"><div class="d-card-body"><p class="muted-note">Click a company in <strong>Prospects</strong> or <strong>Overview</strong> to load its researched profile here.</p></div></div>
+          </div>
+        </section>
+
+        <!-- OPPORTUNITIES -->
+        <section class="demo-panel" id="opportunities">
+          <div class="demo-panel-head"><div><h2>Opportunities</h2><p>How Vuva AI analyses a company's public presence.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Signals it looks for</h3></div><div class="d-card-body"><div class="d-kv">
+              <div><dt>Outdated website</dt><dd>Low digital maturity</dd></div>
+              <div><dt>No customer portal</dt><dd>Self-service gap</dd></div>
+              <div><dt>No online ordering / booking</dt><dd>Automation gap</dd></div>
+              <div><dt>Manual contact process</dt><dd>Efficiency gap</dd></div>
+              <div><dt>No tracking</dt><dd>Visibility gap</dd></div>
+              <div><dt>Manual payments</dt><dd>Payment integration gap</dd></div>
+            </div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Observed vs. inferred</h3></div><div class="d-card-body">
+              <div class="obs-item obs-fact"><span class="obs-tag">Observed fact</span>Publicly visible, verifiable — e.g. "no online booking on the website".</div>
+              <div class="obs-item obs-infer"><span class="obs-tag">Heuristic signal</span>Detected from public text by keyword rules — an estimate, never a confirmed fact.</div>
+              <p class="muted-note">Every score is an internal prioritization estimate, not a scientific measure.</p>
+            </div></div>
+          </div>
+        </section>
+
+        <!-- OUTREACH -->
+        <section class="demo-panel" id="outreach">
+          <div class="demo-panel-head"><div><h2>Outreach</h2><p>Personalized drafts — reviewed and sent by you, never automatically.</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <form class="discover-form" data-outreach-form>
+              <div class="field field-wide"><label for="o-prospect">Prospect</label><select id="o-prospect" data-outreach-prospect></select></div>
+              <div class="field field-wide"><label for="o-phone">Recipient WhatsApp number</label><input id="o-phone" name="phone" type="tel" inputmode="tel" placeholder="e.g. 2547XXXXXXXX" data-outreach-phone></div>
+            </form>
+            <div data-outreach-output></div>
+          </div></div>
+        </section>
+
+        <!-- REPORTS -->
+        <section class="demo-panel" id="reports">
+          <div class="demo-panel-head"><div><h2>Reports</h2><p>Prospecting snapshot from your saved database.</p></div></div>
+          <div class="d-card"><div class="d-card-body">
+            <h3>Vuva AI — Prospecting Snapshot</h3>
+            <div class="d-stats mt" data-report-stats></div>
+            <div class="d-card mt"><div class="d-card-head"><h3>Top opportunity</h3></div><div class="d-card-body" data-report-top></div></div>
+          </div></div>
+        </section>
+
+        <!-- SETTINGS -->
+        <section class="demo-panel" id="settings">
+          <div class="demo-panel-head"><div><h2>Settings</h2><p>Configuration, pricing and integration status.</p></div></div>
+          <div class="d-card"><div class="d-card-head"><h3>Pricing configuration</h3><span class="d-hint">Centralized · single source</span></div><div class="d-card-body">
+            <p class="muted-note">The public Vuva AI quotation engine reads from <span data-pricing-path>/assets/js/pricing.js</span>. Edit that one file to change every estimate site-wide.</p>
+            <dl class="settings-list mt" data-pricing-list></dl>
+          </div></div>
+          <div class="d-card mt"><div class="d-card-head"><h3>Integration status</h3><span class="d-hint">Live</span></div><div class="d-card-body">
+            <dl class="settings-list" data-config-status></dl>
+            <p class="muted-note">Set these as Worker secrets to enable each service. Keys stay server-side — never in the browser.</p>
+            <dl class="settings-list">
+              <div><dt>Web search</dt><dd><code class="kbd">TAVILY_API_KEY</code> · api.tavily.com</dd></div>
+              <div><dt>Outreach</dt><dd><code class="kbd">WHATSAPP_ACCESS_TOKEN</code> + <code class="kbd">WHATSAPP_PHONE_NUMBER_ID</code> · Meta WhatsApp Cloud API</dd></div>
+              <div><dt>Database</dt><dd><code class="kbd">D1</code> binding · vuva-prospects</dd></div>
+              <div><dt>Internal auth</dt><dd><code class="kbd">INTERNAL_AUTH_USER</code> / <code class="kbd">INTERNAL_AUTH_PASS</code> · gate this area</dd></div>
+            </dl>
+          </div></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="/internal/internal.js"></script>
+</body>
+</html>

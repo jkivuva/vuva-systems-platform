@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Wireless headphones product shot">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c222a"/><stop offset="1" stop-color="#10151b"/></linearGradient><radialGradient id="hal" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#hal)"/><ellipse cx="400" cy="420" rx="220" ry="30" fill="#00000033"/>
+<g transform="translate(400,240)">
+<path d="M-120 30a120 120 0 0 1 240 0" stroke="#e8e4de" stroke-width="22" fill="none"/>
+<rect x="-152" y="10" width="58" height="96" rx="26" fill="#c94f3d"/>
+<rect x="94" y="10" width="58" height="96" rx="26" fill="#c94f3d"/>
+<rect x="-140" y="24" width="34" height="68" rx="16" fill="#8a3328"/>
+<rect x="106" y="24" width="34" height="68" rx="16" fill="#8a3328"/>
+</g>
+<text x="400" y="452" text-anchor="middle" fill="#e8e4de" font-family="ui-monospace, monospace" font-size="17" font-weight="bold" letter-spacing="2">AURA PODS · KSH 6,500</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".2"/>
+</svg>

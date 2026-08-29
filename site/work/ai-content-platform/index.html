@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f0d">
+  <title>AI Content Experience Platform — Case Study | Vuva Systems</title>
+  <meta name="description" content="How I built the Vuva AI Content Experience Platform: headless CMS, RAG with cited sources, a human approval step before publishing, and what I would change for production.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/work/ai-content-platform/page.css">
+</head>
+<body>
+
+  <header class="cs-topbar">
+    <a href="/">← vuvasystems.com</a>
+  </header>
+
+  <section class="cs-hero">
+    <div class="container">
+      <p class="cs-kicker">TECHNICAL DEMONSTRATION · PORTFOLIO PROJECT</p>
+      <h1>A content platform where<br>AI drafts and people decide.</h1>
+      <p class="cs-lede">
+        I built this as my Forward Deployed Engineer portfolio piece: a complete content platform
+        with a headless CMS underneath, an AI assistant for drafting and search on top, and a
+        workflow that refuses to publish anything until a person signs off. This page documents
+        what I built, how it works, and what I&rsquo;d change for production.
+      </p>
+      <div class="cs-actions">
+        <a class="cs-btn cs-btn-solid" href="https://vuva-ai-content-platform.vuva-systems.workers.dev/" rel="noopener">Open the live demo ↗</a>
+        <a class="cs-btn cs-btn-outline" href="#how">Read how it works ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-body-wrap">
+    <main class="container">
+      <article class="cs-article">
+
+        <h2 id="why">What I was trying to solve</h2>
+        <p>
+          Three problems show up in nearly every content operation I looked at. Editors can&rsquo;t find
+          things, so they rewrite work that already exists. AI drafting tools arrived faster than the
+          governance around them, so nobody can say who approved a paragraph or where it came from.
+          And a CEO and a developer need different versions of the same document, which most systems
+          solve by making someone maintain two copies.
+        </p>
+        <p>
+          The interesting question wasn&rsquo;t whether to add AI. It was whether one platform could do all
+          three jobs well enough that editors wouldn&rsquo;t quietly route around it.
+        </p>
+
+        <h2 id="approach">The approach</h2>
+        <p>
+          I designed it contract-first. Every boundary in the system is a typed interface: the app
+          talks to the CMS through one <code>ContentPort</code> interface, the AI layer talks to language models
+          through one provider interface, and every API returns the same response envelope. That is why
+          the whole thing runs locally with no keys or database at all — swap the seed adapter for
+          Contentful or the demo model for DeepSeek and nothing above those interfaces changes.
+        </p>
+
+        <h2 id="how">How the platform works</h2>
+
+        <h3>The AI workflow</h3>
+        <p>
+          Editors get nine assistant operations: outlines, summaries, rewrites, audience adaptations,
+          SEO descriptions, tag suggestions, FAQ generation, unsupported-claim screening and an
+          accessibility pre-check. Anything the assistant produces carries an <strong>AI GENERATED
+          DRAFT</strong> label that follows it through every state change.
+        </p>
+        <p>
+          The draft then moves through evaluation, human review, approval and publication as explicit
+          steps. Each step writes an audit event. Illegal jumps are rejected by the server, publishing
+          requires a prior human approval, and the automation account itself is barred from publishing.
+          There&rsquo;s a test suite that proves each of those rules.
+        </p>
+
+        <h3>RAG, with sources attached</h3>
+        <p>
+          Search questions hit a BM25 index over the structured corpus. Retrieved passages get wrapped
+          in delimiters, stripped of instruction-style phrasing, and passed to the model as quoted data
+          next to a system prompt that says: answer only from these sources. Responses cite specific
+          passages, and the API validates those citations against what retrieval actually returned, so
+          the model can&rsquo;t invent a source. When coverage is thin the endpoint refuses rather than
+          guessing — ask it about vacation policy and you&rsquo;ll see the refusal, not a confident hallucination.
+        </p>
+
+        <h3>Evaluation</h3>
+        <p>
+          Drafts can be scored on seven dimensions: grounding, relevance, completeness, tone, safety,
+          accessibility and source coverage. Scores are advisory by design; a person still approves.
+          Machines catch the mechanical failure classes so reviewers spend attention on judgement calls.
+        </p>
+
+        <dl class="cs-facts">
+          <div><dt>FRONT END</dt><dd>Next.js 15 App Router, React 19, TypeScript strict mode, Tailwind CSS.</dd></div>
+          <div><dt>CONTENT</dt><dd>Typed content models behind a CMS port interface; local seed corpus now, Contentful adapter when credentials exist.</dd></div>
+          <div><dt>AI LAYER</dt><dd>OpenAI-compatible provider protocol (DeepSeek-ready), circuit breaker, deterministic demo model.</dd></div>
+          <div><dt>RETRIEVAL</dt><dd>BM25 ranking over structured records with passage extraction; vector search slots into the same interface later.</dd></div>
+          <div><dt>DELIVERY</dt><dd>Static export served from Cloudflare Workers with the API running at the edge.</dd></div>
+          <div><dt>TESTING</dt><dd>38 tests covering retrieval relevance, RAG guardrails, workflow rules and API contracts.</dd></div>
+        </dl>
+
+        <h2 id="governance">Governance you can inspect</h2>
+        <p>
+          Most governance failures happen when the rule lives in a policy document but not in the tool.
+          Here the rule lives in code: the transition table rejects illegal moves, rejections require a
+          reason, provenance labels persist on every AI artefact, and the audit log reconstructs who did
+          what to which revision. A dashboard surfaces all of it rather than hiding it in documentation.
+        </p>
+        <p>
+          Accessibility and performance were treated as engineering requirements too: semantic landmarks,
+          keyboard-complete flows, visible focus states, reduced-motion support, pre-rendered pages and
+          no third-party scripts anywhere in the public site.
+        </p>
+
+        <h2 id="demo-vs-real">What&rsquo;s real versus simulated</h2>
+        <p>
+          Being straight about this matters more than looking bigger than I am.
+        </p>
+        <ul>
+          <li><strong>Real implementation:</strong> the CMS abstraction, search indexing and ranking, RAG pipeline with citation checking and refusals, the workflow engine and audit log, the evaluation harness, every API, the dashboards reading from them, and the test suite.</li>
+          <li><strong>Simulated, labelled everywhere it appears:</strong> model output in demo mode (a deterministic heuristic engine stands in for an LLM) and usage telemetry such as token counts and cost figures.</li>
+        </ul>
+
+        <div class="cs-note">
+          No client was involved in this project and none is claimed. It exists to demonstrate how I
+          engineer AI features into real products: with provenance, review gates and honest labels.
+        </div>
+
+        <h2 id="production">What I&rsquo;d change for production</h2>
+        <ul>
+          <li><strong>Persistence.</strong> Workflow state and audit events live in memory here. Production gets Postgres (or D1 on this same Cloudflare setup) with append-only audit storage.</li>
+          <li><strong>Retrieval.</strong> BM25 over 25 documents is fine; over 50,000 it isn&rsquo;t. Managed vector search goes behind the same interface, with hybrid ranking before reaching for rerankers.</li>
+          <li><strong>Auth.</strong> The dashboard has no login because it demonstrates mechanics. Production needs identity, roles and per-editor approval rights first.</li>
+          <li><strong>Rate limiting.</strong> Any live-provider deployment needs per-key and per-IP limits with budget ceilings before launch; in demo mode cost is zero by construction.</li>
+          <li><strong>Evaluation.</strong> The heuristic scorer shows the shape of the harness. Production would use a model-judged rubric plus a fixed question bank run in CI after every corpus or prompt change.</li>
+        </ul>
+
+        <h2>Stack summary</h2>
+        <div class="cs-stack">
+          <span>Next.js 15</span><span>React 19</span><span>TypeScript strict</span><span>Tailwind CSS</span>
+          <span>Headless CMS (ContentPort)</span><span>RAG + BM25</span><span>OpenAI-compatible LLM layer</span>
+          <span>Cloudflare Workers</span><span>Vitest · 38 tests</span>
+        </div>
+
+      </article>
+    </main>
+  </div>
+
+  <section class="cs-cta">
+    <div class="container">
+      <h2>Try the platform yourself</h2>
+      <p>No sign-up, no API keys. Ask it a question, run an assist through review, try to publish without approving — the system will stop you, politely.</p>
+      <div class="cs-actions">
+        <a class="cs-btn cs-btn-solid" href="https://vuva-ai-content-platform.vuva-systems.workers.dev/" rel="noopener">Open the live demo ↗</a>
+        <a class="cs-btn cs-btn-outline" href="/">Back to vuvasystems.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cs-footer">
+    <span>Vuva Systems — Technical Demonstration · Built in Nairobi, deployed at the edge</span>
+    <span><a href="https://wa.me/254796117443">WhatsApp</a> · <a href="mailto:hello@vuvasystems.com">hello@vuvasystems.com</a></span>
+  </footer>
+
+</body>
+</html>

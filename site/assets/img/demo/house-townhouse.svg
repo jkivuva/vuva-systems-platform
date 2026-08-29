@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Townhouse with garden">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8e2d4"/><stop offset="1" stop-color="#cfc6b2"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><path d="M0 330l220-120 220 120z" fill="#8a5a3b"/>
+<path d="M0 330h440v130H0z" fill="#a9773f"/>
+<path d="M40 330l180-96 180 96z" fill="#6b4530"/>
+<rect x="180" y="360" width="80" height="100" fill="#5a3a24"/>
+<rect x="60" y="360" width="70" height="60" fill="#e8d9b8"/>
+<rect x="310" y="360" width="70" height="60" fill="#e8d9b8"/>
+<path d="M480 460V240l60-40 60 40v220z" fill="#7a8a92"/>
+<rect x="500" y="300" width="80" height="70" fill="#bfe0f2"/>
+<path d="M540 240v-60" stroke="#4a4238" stroke-width="8"/>
+<circle cx="540" cy="170" r="20" fill="#8a9a5b"/>
+<rect x="0" y="460" width="800" height="40" fill="#8a9a5b"/>
+<text x="40" y="60" text-anchor="start" fill="#5a4a34" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">NGONG ROAD · 4-BED TOWNHOUSE · KSH 18.5M</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".25"/>
+</svg>

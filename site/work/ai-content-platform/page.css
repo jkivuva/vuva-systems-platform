@@ -1,0 +1,169 @@
+/* Case study page — uses the site's global tokens from /assets/css/styles.css.
+   Page-specific layout only; nothing here affects other pages. */
+
+.cs-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .8rem clamp(1rem, 4vw, 2.5rem);
+  background: rgba(11, 15, 13, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line-dark);
+}
+.cs-topbar a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.cs-topbar a:hover { color: var(--accent); }
+
+.cs-hero {
+  background: var(--bg);
+  color: var(--text-light);
+  padding-block: clamp(4rem, 9vw, 7.5rem);
+}
+.cs-kicker {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .14em;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+.cs-hero p.cs-lede {
+  max-width: 46rem;
+  margin-top: 1.6rem;
+  font-size: 1.06rem;
+  line-height: 1.7;
+  color: var(--muted-dark);
+}
+.cs-actions { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 2.4rem; }
+.cs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .85rem 1.5rem;
+  border-radius: .6rem;
+  font-weight: 600;
+  font-size: .92rem;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+}
+.cs-btn:hover { transform: translateY(-1px); }
+.cs-btn-solid { background: var(--accent); color: #06110c; }
+.cs-btn-outline { border: 1px solid var(--line-dark); color: var(--text-light); }
+.cs-btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.cs-body-wrap { background: var(--paper); color: var(--text-dark); }
+.cs-article {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+.cs-article h2 {
+  font-family: var(--display-font);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -.02em;
+  margin-top: 3rem;
+  margin-bottom: .9rem;
+}
+.cs-article h2:first-child { margin-top: 0; }
+.cs-article h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+.cs-article p, .cs-article li {
+  line-height: 1.75;
+  color: var(--muted-light);
+  margin-bottom: 1rem;
+}
+.cs-article strong { color: var(--text-dark); }
+.cs-article ul { padding-left: 1.2rem; margin-bottom: 1.2rem; }
+.cs-article li { margin-bottom: .45rem; }
+.cs-article a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
+.cs-article code {
+  font-family: var(--mono);
+  font-size: .85em;
+  background: rgba(16, 24, 20, .07);
+  padding: .12em .4em;
+  border-radius: .35em;
+}
+
+.cs-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.6rem 0;
+}
+.cs-facts > div {
+  background: var(--paper-card);
+  border: 1px solid var(--line-light-soft);
+  border-radius: .8rem;
+  padding: 1.1rem 1.25rem;
+}
+.cs-facts dt {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .12em;
+  color: var(--muted-light);
+  margin-bottom: .45rem;
+}
+.cs-facts dd { font-size: .93rem; line-height: 1.6; color: var(--text-dark); }
+
+.cs-note {
+  border-left: 3px solid var(--gold);
+  background: rgba(217, 164, 65, .08);
+  border-radius: 0 .6rem .6rem 0;
+  padding: 1rem 1.25rem;
+  margin: 1.6rem 0;
+  font-size: .92rem;
+  line-height: 1.65;
+  color: var(--muted-light);
+}
+
+.cs-stack { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.2rem 0; }
+.cs-stack span {
+  font-family: var(--mono);
+  font-size: .74rem;
+  padding: .38rem .8rem;
+  border: 1px solid var(--line-light);
+  border-radius: 999px;
+  color: var(--text-dark);
+  background: var(--paper-card);
+}
+
+.cs-cta {
+  background: var(--bg);
+  color: var(--text-light);
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+  text-align: center;
+}
+.cs-cta h2 {
+  font-family: var(--display-font);
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  letter-spacing: -.02em;
+}
+.cs-cta p { color: var(--muted-dark); margin: 1rem auto 0; max-width: 34rem; line-height: 1.7; }
+.cs-cta .cs-actions { justify-content: center; }
+
+.cs-footer {
+  background: var(--bg);
+  color: var(--muted-dark);
+  border-top: 1px solid var(--line-dark);
+  padding: 1.4rem clamp(1rem, 4vw, 2.5rem);
+  font-size: .78rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  justify-content: space-between;
+}
+.cs-footer a { color: var(--muted-dark); }
+.cs-footer a:hover { color: var(--accent); }

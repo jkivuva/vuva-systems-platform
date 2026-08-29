@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Packaging family on display">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#181420"/><stop offset="1" stop-color="#0d0a12"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ecc06a"/><stop offset="1" stop-color="#a97c2f"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/><ellipse cx="400" cy="430" rx="280" ry="30" fill="#00000044"/>
+<g transform="translate(180,220)">
+<path d="M0 40l70-30 70 30-70 30z" fill="#2c2438"/>
+<path d="M0 40v90l70 30v-90z" fill="#1c1826"/>
+<path d="M140 40v90l-70 30v-90z" fill="#241e30"/>
+<circle cx="70" cy="85" r="20" fill="none" stroke="#d9a441" stroke-width="3"/>
+</g>
+<g transform="translate(420,240)">
+<rect x="0" y="0" width="90" height="170" rx="18" fill="#c94f3d"/>
+<rect x="0" y="0" width="90" height="44" rx="18" fill="#a03a2c"/>
+<rect x="24" y="70" width="42" height="60" rx="6" fill="#f4f1ea"/>
+</g>
+<g transform="translate(580,230)">
+<path d="M0 30q50-26 100 0l10 140h-120z" fill="#316b8a"/>
+<path d="M0 30q50-26 100 0l4 50h-108z" fill="#27566e"/>
+<circle cx="50" cy="110" r="24" fill="#f4f1ea"/>
+</g>
+<text x="70" y="452" text-anchor="start" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="14" font-weight="bold" letter-spacing="3">DIELINE -> PROOF -> SHELF</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".35"/>
+</svg>

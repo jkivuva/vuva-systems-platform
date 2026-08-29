@@ -1,0 +1,22 @@
+{
+  "name": "vuva-systems-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vuva Systems production website and WhatsApp Business Cloud API webhook",
+  "scripts": {
+    "test": "node --test",
+    "check": "npm test && npx wrangler deploy --dry-run",
+    "preview": "wrangler dev",
+    "start": "node --env-file-if-exists=.env src/node-server.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "verify:production": "node scripts/verify-production.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.32.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

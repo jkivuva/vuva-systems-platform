@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111715">
+  <title>Vuva Logistics Intelligence Platform (Demo)</title>
+  <meta name="description" content="Interactive demonstration of the Vuva Logistics Intelligence Platform: dispatch, fleet, shipment tracking and operations dashboard.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/demos/demo.css?v=3">
+</head>
+<body data-demo="logistics">
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> Vuva Logistics Intelligence</span>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Demonstration environment</span>
+    </header>
+
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav">
+          <li><button class="demo-nav-btn" data-panel-nav="overview"><span class="d-icon">◈</span>Overview</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="dashboard"><span class="d-icon">▦</span>Operations Dashboard</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="shipments"><span class="d-icon">▤</span>Shipments</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="tracking"><span class="d-icon">◎</span>Tracking</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="dispatch"><span class="d-icon">⇢</span>Dispatch</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="driverapp"><span class="d-icon">◉</span>Driver App</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="customer"><span class="d-icon">◫</span>Customer Portal</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="ai"><span class="d-icon">✦</span>AI Layer</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="fleet"><span class="d-icon">▣</span>Fleet</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="drivers"><span class="d-icon">◉</span>Drivers</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="customers"><span class="d-icon">◫</span>Customers</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="branches"><span class="d-icon">▦</span>Branches</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="notifications"><span class="d-icon">✉</span>Notifications</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="analytics"><span class="d-icon">◈</span>Analytics</button></li>
+        </ul>
+        <div class="demo-side-note">Sample data only. This is a demonstration of what Vuva can engineer, not a production system.</div>
+      </aside>
+
+      <main class="demo-main">
+        <!-- OVERVIEW -->
+        <section class="demo-panel" id="overview">
+          <div class="demo-panel-head"><div><h2>Platform Overview</h2><p>One system for the whole operation. Use the menu on the left to see each screen.</p></div><span class="badge is-ok">Demonstration</span></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-head"><h3>The business problem</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">Freight businesses run on phone calls and paper. Customers cannot see where their cargo is, dispatch coordinates drivers over WhatsApp and management hears about delays from complaints.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>What the system does</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">One platform handles bookings, dispatch, drivers, tracking, customer updates and payments. When something changes, everyone who needs to know finds out on their own.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Who uses it</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">Customers book and track their cargo. Drivers get their routes and capture proof of delivery. Dispatch assigns work and management sees revenue and problems as they happen.</p></div></div>
+          </div>
+          <div class="d-grid mt">
+            <div class="d-card"><div class="d-card-head"><h3>Automation built in</h3><span class="d-hint">No staff time required</span></div><div class="d-card-body tight"><div class="d-feed pad-feed">
+              <div class="d-feed-item"><span class="d-time">01</span><div class="d-body"><strong>Status changes go to WhatsApp</strong><small>The customer hears at pickup, in transit, out for delivery and delivered.</small></div></div>
+              <div class="d-feed-item"><span class="d-time">02</span><div class="d-body"><strong>Delays get flagged</strong><small>The system notices late shipments and tells the customer before they ask.</small></div></div>
+              <div class="d-feed-item"><span class="d-time">03</span><div class="d-body"><strong>Invoices go out on delivery</strong><small>Proof of delivery closes the trip and the invoice follows.</small></div></div>
+            </div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Can integrate with</h3><span class="d-hint">Where APIs exist</span></div><div class="d-card-body">
+              <div style="display:flex;flex-wrap:wrap;gap:.45rem">
+                <span class="badge is-neutral">Maps &amp; routing</span>
+                <span class="badge is-neutral">M-Pesa / cards</span>
+                <span class="badge is-neutral">WhatsApp Business API</span>
+                <span class="badge is-neutral">SMS / Email</span>
+                <span class="badge is-neutral">CRM</span>
+                <span class="badge is-neutral">ERP / Inventory</span>
+              </div>
+              <p class="muted-note">The ideas here are similar to what DHL, Uber or Glovo offer their customers. Those companies are not Vuva clients.</p>
+            </div></div>
+          </div>
+        </section>
+
+        <!-- DASHBOARD -->
+        <section class="demo-panel" id="dashboard">
+          <div class="demo-panel-head">
+            <div><h2>Operations Dashboard</h2><p>Shipments, fleet and drivers in one view.</p></div>
+            <div class="head-actions"><button class="chip" type="button">Today</button><button class="chip is-dark" type="button">Export</button></div>
+          </div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Active shipments</span><span class="d-value">128</span><span class="d-delta up">▲ 12% vs yesterday</span></div>
+            <div class="d-stat"><span class="d-label">In transit</span><span class="d-value">34</span><span class="d-delta flat">— 26 delivered today</span></div>
+            <div class="d-stat"><span class="d-label">Drivers on duty</span><span class="d-value">18</span><span class="d-delta up">▲ 2 joined</span></div>
+            <div class="d-stat"><span class="d-label">Delayed</span><span class="d-value">3</span><span class="d-delta down">▼ needs attention</span></div>
+          </div>
+          <div class="d-grid">
+            <div class="d-card">
+              <div class="d-card-head"><h3>Delivery trend</h3><span class="d-hint">7 days</span></div>
+              <div class="d-card-body">
+                <svg class="d-chart" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true">
+                  <polyline points="0,120 50,100 100,110 150,70 200,82 250,48 300,60 350,30 400,40" fill="none" stroke="#40dca9" stroke-width="3"/>
+                  <polyline points="0,120 50,100 100,110 150,70 200,82 250,48 300,60 350,30 400,40" fill="none" stroke="#40dca9" stroke-width="1" opacity=".3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="d-card">
+              <div class="d-card-head"><h3>Shipment status</h3><span class="d-hint">Live</span></div>
+              <div class="d-card-body">
+                <svg class="d-chart" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true">
+                  <rect x="10" y="70" width="80" height="60" fill="#40dca9" opacity=".9"/>
+                  <rect x="110" y="40" width="80" height="90" fill="#087957"/>
+                  <rect x="210" y="90" width="80" height="40" fill="#4f9de0"/>
+                  <rect x="310" y="110" width="80" height="20" fill="#d9a441"/>
+                  <text x="50" y="150">Delivered</text><text x="150" y="150">Transit</text><text x="250" y="150">Warehouse</text><text x="350" y="150">Delayed</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="d-card mt">
+            <div class="d-card-head"><h3>Recent activity</h3><span class="d-hint">Operations feed</span></div>
+            <div class="d-card-body tight">
+              <div class="d-feed pad-feed">
+                <div class="d-feed-item"><span class="d-time">09:42</span><div class="d-body">Shipment <strong>VU-2041</strong> marked delivered; proof of delivery captured.<small>Nairobi → Mombasa</small></div></div>
+                <div class="d-feed-item"><span class="d-time">09:31</span><div class="d-body">Driver <strong>D. Otieno</strong> accepted dispatch <strong>DP-118</strong>.<small>Kilimani branch</small></div></div>
+                <div class="d-feed-item"><span class="d-time">09:15</span><div class="d-body">Automated tracking update sent to <strong>K. Mwangi</strong> via WhatsApp.<small>Shipment VU-2038 in transit</small></div></div>
+                <div class="d-feed-item"><span class="d-time">09:02</span><div class="d-body">New shipment <strong>VU-2043</strong> registered; awaiting dispatch.<small>Westlands warehouse</small></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SHIPMENTS -->
+        <section class="demo-panel" id="shipments">
+          <div class="demo-panel-head">
+            <div><h2>Shipments</h2><p>All shipments with their current status.</p></div>
+            <div class="d-toolbar"><button class="chip is-dark" type="button">All</button><button class="chip" type="button">In transit</button><button class="chip" type="button">Delivered</button><button class="chip" type="button">Delayed</button></div>
+          </div>
+          <div class="d-card">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>ID</th><th>Origin → Destination</th><th>Customer</th><th>Status</th><th>Driver</th><th>ETA</th></tr></thead>
+                <tbody>
+                  <tr><td class="num strong">VU-2041</td><td>Nairobi → Mombasa</td><td>K. Mwangi</td><td><span class="badge is-ok">Delivered</span></td><td class="muted">D. Otieno</td><td class="num">09:40</td></tr>
+                  <tr><td class="num strong">VU-2042</td><td>Nairobi → Kisumu</td><td>Beacon Retail</td><td><span class="badge is-info">In transit</span></td><td class="muted">J. Achieng</td><td class="num">14:20</td></tr>
+                  <tr><td class="num strong">VU-2043</td><td>Mombasa → Nairobi</td><td>Coast Distributors</td><td><span class="badge is-neutral">Warehouse</span></td><td class="muted">—</td><td class="num">Tomorrow</td></tr>
+                  <tr><td class="num strong">VU-2038</td><td>Nairobi → Eldoret</td><td>K. Mwangi</td><td><span class="badge is-info">In transit</span></td><td class="muted">M. Kiprono</td><td class="num">12:05</td></tr>
+                  <tr><td class="num strong">VU-2039</td><td>Nairobi → Nakuru</td><td>Uplift Farms</td><td><span class="badge is-danger">Delayed</span></td><td class="muted">S. Wanjiku</td><td class="num">11:30</td></tr>
+                  <tr><td class="num strong">VU-2040</td><td>Nairobi → Thika</td><td>Simba Motors</td><td><span class="badge is-ok">Delivered</span></td><td class="muted">D. Otieno</td><td class="num">08:55</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- TRACKING -->
+        <section class="demo-panel" id="tracking">
+          <div class="demo-panel-head"><div><h2>Tracking</h2><p>Live positions of active vehicles and shipments.</p></div><span class="badge is-ok">Live</span></div>
+          <div class="d-card">
+            <div class="d-card-body">
+              <svg viewBox="0 0 720 320" class="d-chart chart-dark" aria-hidden="true">
+                <g stroke="#2b3530" stroke-width="1"><path d="M60,260 C140,180 120,120 240,80 S420,60 520,120 S660,160 680,90"/><path d="M60,60 C180,80 260,140 380,150 S600,200 660,240"/></g>
+                <g fill="#40dca9"><circle cx="240" cy="80" r="7"/><circle cx="520" cy="120" r="7"/><circle cx="380" cy="150" r="7"/></g>
+                <g fill="#4f9de0"><circle cx="680" cy="90" r="6"/><circle cx="660" cy="240" r="6"/></g>
+                <text x="230" y="66" fill="#aeb9b4" font-size="10">VU-2042 · Nakuru road</text>
+                <text x="510" y="106" fill="#aeb9b4" font-size="10">VU-2038 · A104</text>
+                <text x="368" y="136" fill="#aeb9b4" font-size="10">DP-118 · Thika</text>
+              </svg>
+              <p class="d-hint muted-note">Illustrative map. Live GPS feeds connect in a real deployment.</p>
+            </div>
+          </div>
+          <div class="d-grid mt">
+            <div class="d-card"><div class="d-card-head"><h3>Shipment VU-2042</h3><span class="badge is-info">In transit</span></div>
+              <div class="d-card-body"><div class="d-kv"><div><dt>Origin</dt><dd>Nairobi</dd></div><div><dt>Destination</dt><dd>Kisumu</dd></div><div><dt>Last update</dt><dd>09:31 · passed Naivasha</dd></div><div><dt>ETA</dt><dd>14:20</dd></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Customer notifications</h3><span class="d-hint">Automated</span></div>
+              <div class="d-card-body"><div class="d-feed"><div class="d-feed-item"><span class="d-time">09:31</span><div class="d-body">WhatsApp: “Your shipment VU-2042 is in transit.”<small>To K. Mwangi</small></div></div><div class="d-feed-item"><span class="d-time">09:40</span><div class="d-body">WhatsApp: “VU-2041 delivered ✓”<small>To K. Mwangi</small></div></div></div></div></div>
+          </div>
+        </section>
+
+        <!-- DISPATCH -->
+        <section class="demo-panel" id="dispatch">
+          <div class="demo-panel-head"><div><h2>Dispatch</h2><p>Hand runs to drivers and follow the day.</p></div><button class="button button-accent" type="button">New dispatch ↗</button></div>
+          <div class="d-card">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>Dispatch</th><th>Shipments</th><th>Route</th><th>Driver</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td class="num strong">DP-118</td><td>4</td><td>Nairobi → Thika</td><td class="muted">D. Otieno</td><td><span class="badge is-ok">On route</span></td></tr>
+                  <tr><td class="num strong">DP-119</td><td>3</td><td>Nairobi → Nakuru</td><td class="muted">S. Wanjiku</td><td><span class="badge is-warn">Delayed</span></td></tr>
+                  <tr><td class="num strong">DP-120</td><td>5</td><td>Nairobi → Kisumu</td><td class="muted">J. Achieng</td><td><span class="badge is-info">Departed</span></td></tr>
+                  <tr><td class="num strong">DP-121</td><td>2</td><td>Mombasa → Nairobi</td><td class="muted">M. Kiprono</td><td><span class="badge is-neutral">Scheduled</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- DRIVER APP -->
+        <section class="demo-panel" id="driverapp">
+          <div class="demo-panel-head"><div><h2>Driver App</h2><p>The driver view, from route to proof of delivery.</p></div><span class="badge is-info">Driver side</span></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Today’s run · D. Otieno</h3><span class="badge is-ok">3 of 6 done</span></div><div class="d-card-body"><div class="d-kv">
+              <div><dt>1. Westlands</dt><dd><span class="badge is-ok">Delivered</span></dd></div>
+              <div><dt>2. Parklands</dt><dd><span class="badge is-ok">Delivered</span></dd></div>
+              <div><dt>3. Kilimani</dt><dd><span class="badge is-ok">Delivered</span></dd></div>
+              <div><dt>4. Lavington</dt><dd><span class="badge is-warn">Next stop</span></dd></div>
+              <div><dt>5. Karen</dt><dd><span class="badge is-neutral">Queued</span></dd></div>
+              <div><dt>6. Langata</dt><dd><span class="badge is-neutral">Queued</span></dd></div>
+            </div></div></div>
+            <div class="d-card">
+              <div class="d-card-head"><h3>Next stop · proof of delivery</h3><span class="d-hint">In-app capture</span></div>
+              <div class="d-card-body"><div class="d-kv">
+                <div><dt>Customer</dt><dd>M. Njeri · +254 7•• ••• 210</dd></div>
+                <div><dt>Consignments</dt><dd>2 parcels · handle with care</dd></div>
+                <div><dt>On arrival</dt><dd>Photo + signature capture</dd></div>
+                <div><dt>Exception?</dt><dd>One tap; reason + photo required</dd></div>
+              </div>
+              <p class="muted-note">Proof uploads sync to the shipment record and the customer’s WhatsApp confirmation fires automatically.</p>
+            </div></div>
+          </div>
+          <div class="d-grid mt">
+            <div class="d-card"><div class="d-card-head"><h3>Navigation &amp; route</h3></div><div class="d-card-body">
+              <svg viewBox="0 0 720 160" class="d-chart chart-dark" aria-hidden="true">
+                <path d="M40,120 C160,120 200,40 340,60 S560,110 680,50" fill="none" stroke="#35e0a1" stroke-width="3"/>
+                <circle cx="40" cy="120" r="8" fill="#35e0a1"/><circle cx="340" cy="60" r="8" fill="#35e0a1" opacity=".6"/><circle cx="680" cy="50" r="10" fill="#58a6e8"/>
+                <text x="52" y="140" fill="#a7b3ad" font-size="11">Current position</text>
+                <text x="600" y="80" fill="#a7b3ad" font-size="11">Stop 4 · Lavington</text>
+              </svg>
+              <p class="muted-note">Turn-by-turn directions hand off to the driver’s preferred maps app. The platform suggests the best stop order.</p>
+            </div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Earnings &amp; performance</h3><span class="d-hint">This week</span></div><div class="d-card-body"><div class="d-kv">
+              <div><dt>Trips completed</dt><dd>34</dd></div>
+              <div><dt>On-time rate</dt><dd>96%</dd></div>
+              <div><dt>Earnings</dt><dd>KSh 18,700</dd></div>
+              <div><dt>Customer rating</dt><dd>4.9 ★</dd></div>
+            </div></div></div>
+          </div>
+        </section>
+
+        <!-- CUSTOMER PORTAL -->
+        <section class="demo-panel" id="customer">
+          <div class="demo-panel-head"><div><h2>Customer Portal</h2><p>Customers book, track and pay on their own.</p></div><span class="badge is-info">Customer side</span></div>
+          <div class="d-grid">
+            <div class="d-card">
+              <div class="d-card-head"><h3>Create a shipment</h3><span class="d-hint">3 fields to start</span></div>
+              <div class="d-card-body"><div class="d-kv">
+                <div><dt>Pick-up</dt><dd>Nairobi · Westlands</dd></div>
+                <div><dt>Drop-off</dt><dd>Mombasa · Nyali</dd></div>
+                <div><dt>Consignment</dt><dd>2 boxes · 34 kg</dd></div>
+                <div><dt>Quote</dt><dd>KSh 3,200 · pickup today</dd></div>
+              </div>
+              <p class="muted-note">The customer gets an instant quote, a WhatsApp confirmation and an M-Pesa payment link. No phone calls needed.</p>
+            </div></div>
+            <div class="d-card">
+              <div class="d-card-head"><h3>Track VU-2042</h3><span class="badge is-info">In transit</span></div>
+              <div class="d-card-body"><div class="d-kv">
+                <div><dt>Status</dt><dd>In transit · past Naivasha</dd></div>
+                <div><dt>ETA</dt><dd>Today 14:20</dd></div>
+                <div><dt>Driver</dt><dd>J. Achieng · KBX 442P</dd></div>
+                <div><dt>Updates</dt><dd>WhatsApp · automatic</dd></div>
+              </div></div></div>
+          </div>
+          <div class="d-grid mt">
+            <div class="d-card"><div class="d-card-head"><h3>Delivery history &amp; documents</h3></div><div class="d-card-body"><div class="d-kv">
+              <div><dt>This month</dt><dd>8 shipments · KSh 21,400</dd></div>
+              <div><dt>Invoices</dt><dd>Downloadable · auto-filed</dd></div>
+              <div><dt>Proof of delivery</dt><dd>Photo + signature on every drop</dd></div>
+            </div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Support</h3><span class="d-hint">Assistant first, people second</span></div><div class="d-card-body">
+              <div class="d-feed">
+                <div class="d-feed-item"><span class="d-time">AI</span><div class="d-body">Delivery questions answered instantly from live status<small>No waiting on hold</small></div></div>
+                <div class="d-feed-item"><span class="d-time">☎</span><div class="d-body">Complicated claims go to a person with the full history attached<small>Nothing gets lost in the handover</small></div></div>
+              </div>
+            </div></div>
+          </div>
+        </section>
+
+        <!-- AI LAYER -->
+        <section class="demo-panel" id="ai">
+          <div class="demo-panel-head"><div><h2>AI Layer</h2><p>Where the AI fits in the operation.</p></div><span class="badge is-warn">Assistive, supervised</span></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-head"><h3>ETA prediction</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">Arrival times update from route progress and past trip data, so the customer hears the same estimate the operations team works from.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Exception detection</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">Late shipments are flagged early. Dispatch sees what is affected and what to do about it before customers start calling.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Route recommendations</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">The system suggests the best stop order for each run. Drivers can change it with one tap and the system learns from those changes.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Demand forecasting</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">Volume forecasts per branch help plan staffing and where vehicles should be parked for the week ahead.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Driver performance analysis</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">On time rates, problems and customer ratings per driver, meant for coaching rather than monitoring.</p></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>AI customer support</h3></div><div class="d-card-body"><p style="font-size:.9rem;line-height:1.6;color:var(--muted)">Answers delivery questions on WhatsApp straight from live records, and passes complicated cases to staff with the full history attached.</p></div></div>
+          </div>
+          <p class="muted-note">The system logs everything the AI does. Customer messages use approved wording, and anything unclear goes to a person.</p>
+        </section>
+
+        <!-- FLEET -->
+        <section class="demo-panel" id="fleet">
+          <div class="demo-panel-head"><div><h2>Fleet</h2><p>Which vehicles are free, busy or in the shop.</p></div><span class="d-hint">26 vehicles</span></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-body"><span class="d-label">Total vehicles</span><div class="d-value">26</div></div></div>
+            <div class="d-card"><div class="d-card-body"><span class="d-label">Active now</span><div class="d-value">23</div></div></div>
+            <div class="d-card"><div class="d-card-body"><span class="d-label">In maintenance</span><div class="d-value">3</div></div></div>
+          </div>
+          <div class="d-card mt">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>Vehicle</th><th>Type</th><th>Status</th><th>Assigned driver</th><th>Next service</th></tr></thead>
+                <tbody>
+                  <tr><td class="strong">KDL 342A</td><td class="muted">Truck · 10t</td><td><span class="badge is-ok">Active</span></td><td class="muted">D. Otieno</td><td class="num">12 Oct</td></tr>
+                  <tr><td class="strong">KDL 117B</td><td class="muted">Truck · 7t</td><td><span class="badge is-ok">Active</span></td><td class="muted">J. Achieng</td><td class="num">28 Oct</td></tr>
+                  <tr><td class="strong">KCG 908X</td><td class="muted">Van · 3t</td><td><span class="badge is-danger">Maintenance</span></td><td class="muted">—</td><td class="num">Today</td></tr>
+                  <tr><td class="strong">KDB 450M</td><td class="muted">Truck · 15t</td><td><span class="badge is-ok">Active</span></td><td class="muted">S. Wanjiku</td><td class="num">05 Nov</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- DRIVERS -->
+        <section class="demo-panel" id="drivers">
+          <div class="demo-panel-head"><div><h2>Drivers</h2><p>Who is driving what today.</p></div><button class="button button-accent" type="button">Add driver</button></div>
+          <div class="d-card">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>Driver</th><th>Branch</th><th>Status</th><th>Assignment</th><th>Trips today</th></tr></thead>
+                <tbody>
+                  <tr><td class="strong">David Otieno</td><td class="muted">Kilimani</td><td><span class="badge is-ok">On route</span></td><td class="muted">DP-118</td><td class="num">6</td></tr>
+                  <tr><td class="strong">Jane Achieng</td><td class="muted">Westlands</td><td><span class="badge is-ok">On route</span></td><td class="muted">DP-120</td><td class="num">4</td></tr>
+                  <tr><td class="strong">Sarah Wanjiku</td><td class="muted">Industrial Area</td><td><span class="badge is-warn">Delayed</span></td><td class="muted">DP-119</td><td class="num">3</td></tr>
+                  <tr><td class="strong">Mike Kiprono</td><td class="muted">Mombasa</td><td><span class="badge is-neutral">Standby</span></td><td class="muted">—</td><td class="num">2</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- CUSTOMERS -->
+        <section class="demo-panel" id="customers">
+          <div class="demo-panel-head"><div><h2>Customers</h2><p>Customer accounts and how they prefer updates.</p></div></div>
+          <div class="d-card">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>Customer</th><th>Type</th><th>Shipments</th><th>Preferred channel</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td class="strong">K. Mwangi</td><td class="muted">Individual</td><td class="num">24</td><td class="muted">WhatsApp</td><td><span class="badge is-ok">Active</span></td></tr>
+                  <tr><td class="strong">Beacon Retail</td><td class="muted">Business</td><td class="num">118</td><td class="muted">Email</td><td><span class="badge is-ok">Active</span></td></tr>
+                  <tr><td class="strong">Coast Distributors</td><td class="muted">Business</td><td class="num">67</td><td class="muted">WhatsApp</td><td><span class="badge is-ok">Active</span></td></tr>
+                  <tr><td class="strong">Uplift Farms</td><td class="muted">Business</td><td class="num">41</td><td class="muted">SMS</td><td><span class="badge is-neutral">Pending</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- BRANCHES -->
+        <section class="demo-panel" id="branches">
+          <div class="demo-panel-head"><div><h2>Branches</h2><p>How each branch is doing.</p></div></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-head"><h3>Nairobi HQ</h3><span class="badge is-ok">Active</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Shipments</dt><dd>74</dd></div><div><dt>Drivers</dt><dd>9</dd></div><div><dt>Vehicles</dt><dd>14</dd></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Mombasa</h3><span class="badge is-ok">Active</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Shipments</dt><dd>38</dd></div><div><dt>Drivers</dt><dd>6</dd></div><div><dt>Vehicles</dt><dd>8</dd></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Kisumu</h3><span class="badge is-neutral">Opening soon</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Shipments</dt><dd>16</dd></div><div><dt>Drivers</dt><dd>3</dd></div><div><dt>Vehicles</dt><dd>4</dd></div></div></div></div>
+          </div>
+        </section>
+
+        <!-- NOTIFICATIONS -->
+        <section class="demo-panel" id="notifications">
+          <div class="demo-panel-head"><div><h2>Notifications</h2><p>Updates the system sent on its own.</p></div></div>
+          <div class="d-card"><div class="d-card-body"><div class="d-feed">
+            <div class="d-feed-item"><span class="d-time">09:40</span><div class="d-body">WhatsApp delivery confirmation → <strong>K. Mwangi</strong><small>Shipment VU-2041 · delivered</small></div></div>
+            <div class="d-feed-item"><span class="d-time">09:31</span><div class="d-body">WhatsApp status update → <strong>K. Mwangi</strong><small>Shipment VU-2038 · in transit</small></div></div>
+            <div class="d-feed-item"><span class="d-time">09:15</span><div class="d-body">SMS dispatch alert → <strong>D. Otieno</strong><small>Dispatch DP-118 assigned</small></div></div>
+            <div class="d-feed-item"><span class="d-time">08:50</span><div class="d-body">Email invoice → <strong>Beacon Retail</strong><small>Monthly billing statement</small></div></div>
+          </div></div></div>
+        </section>
+
+        <!-- ANALYTICS -->
+        <section class="demo-panel" id="analytics">
+          <div class="demo-panel-head"><div><h2>Analytics</h2><p>How the operation is performing.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Deliveries by branch</h3></div><div class="d-card-body">
+              <svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><rect x="30" y="120" width="70" height="40" fill="#40dca9"/><rect x="120" y="70" width="70" height="90" fill="#40dca9" opacity=".7"/><rect x="210" y="100" width="70" height="60" fill="#087957"/><rect x="300" y="40" width="70" height="120" fill="#087957" opacity=".7"/><text x="50" y="172" text-anchor="middle" font-size="10">Mombasa</text><text x="155" y="172" text-anchor="middle" font-size="10">Nairobi</text><text x="245" y="172" text-anchor="middle" font-size="10">Kisumu</text><text x="335" y="172" text-anchor="middle" font-size="10">Eldoret</text></svg>
+            </div></div>
+            <div class="d-card"><div class="d-card-head"><h3>On-time performance</h3></div><div class="d-card-body">
+              <svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><circle cx="200" cy="90" r="70" fill="none" stroke="#2b3530" stroke-width="18"/><circle cx="200" cy="90" r="70" fill="none" stroke="#40dca9" stroke-width="18" stroke-dasharray="410 440" stroke-dashoffset="-50" transform="rotate(-90 200 90)"/><text x="200" y="86" text-anchor="middle" font-size="26" fill="#101614" font-weight="bold">94%</text><text x="200" y="106" text-anchor="middle" font-size="10" fill="#5d6965">on time</text></svg>
+            </div></div>
+          </div>
+        </section>
+
+        <p class="demo-disclaimer"><strong>Demonstration system.</strong> All data on this page is realistic sample data. The Vuva Logistics Intelligence Platform is a capability demonstration. Limitless Logistics is Vuva’s real-world logistics project. This is not a deployed production system.</p>
+      </main>
+    </div>
+  </div>
+
+  <button class="demo-ai-fab" data-ai-open>◈ Ask the Logistics AI</button>
+  <div class="demo-ai-modal" data-ai-modal>
+    <div class="demo-ai-card">
+      <div class="demo-ai-head"><span class="ai-avatar">V</span><span class="ai-id">Logistics AI</span><span class="ai-sub">Demo data</span><button class="demo-ai-close" data-ai-close aria-label="Close">×</button></div>
+      <div class="demo-ai-suggest" data-ai-suggest></div>
+      <div class="demo-ai-body" data-ai-body></div>
+      <div class="demo-ai-input"><input type="text" data-ai-input placeholder="Ask about shipments, fleet, drivers…" aria-label="Ask the Logistics AI"><button data-ai-send aria-label="Send">→</button></div>
+    </div>
+  </div>
+
+  <script type="module" src="/demos/demo.js"></script>
+</body>
+</html>

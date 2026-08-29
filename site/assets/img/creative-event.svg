@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Event and activation concept — stages, streams and second screens">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14161b"/>
+      <stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecc06a"/>
+      <stop offset="1" stop-color="#a97c2f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".65">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbg)"/>
+  <rect width="800" height="500" fill="url(#halo)"/>
+<path d="M140 320h320l-40-120H180z" fill="#101216" stroke="#faf7f2" stroke-width="2.5"/>
+<path d="M220 200l-30 120m30-120l0 120m0-120l30 120" stroke="#d9a441" stroke-opacity="0.8" stroke-width="2"/>
+<path d="M300 200l-30 120m30-120l0 120m0-120l30 120" stroke="#d9a441" stroke-opacity="0.6000000000000001" stroke-width="2"/>
+<path d="M380 200l-30 120m30-120l0 120m0-120l30 120" stroke="#d9a441" stroke-opacity="0.4" stroke-width="2"/>
+<path d="M120 320h360" stroke="#d9a441" stroke-width="4"/>
+<circle cx="150" cy="372" r="9" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<circle cx="202" cy="382" r="9" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<circle cx="254" cy="372" r="9" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<circle cx="306" cy="382" r="9" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<circle cx="358" cy="372" r="9" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<circle cx="410" cy="382" r="9" fill="none" stroke="#faf7f2" stroke-opacity="0.5"/>
+<rect x="560" y="150" width="150" height="260" rx="14" fill="#101216" stroke="#d9a441" stroke-width="2.5"/>
+<rect x="574" y="170" width="122" height="150" fill="url(#goldgrad)" opacity=".35"/>
+<circle cx="635" cy="360" r="14" fill="none" stroke="#faf7f2"/>
+<text x="400" y="452" text-anchor="middle" fill="#b9ac93" font-family="ui-monospace, monospace" font-size="12">IN THE ROOM AND IN THE FEED AT THE SAME TIME</text>
+</svg>

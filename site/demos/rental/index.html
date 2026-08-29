@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c1210">
+  <title>Vuva RentalOS · Vehicle Rental Platform (Demo)</title>
+  <meta name="description" content="Interactive demonstration of Vuva RentalOS: fleet, reservations, deposits, maintenance and AI pricing for vehicle rental businesses.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="/demos/demo.css?v=3">
+</head>
+<body data-demo="rental">
+  <div class="demo-shell">
+    <header class="demo-topbar">
+      <a class="demo-back" href="/">← vuvasystems.com</a>
+      <span class="demo-title"><span class="v">V</span> Vuva RentalOS</span>
+      <span class="demo-clock" data-demo-clock></span>
+      <span class="demo-env-badge">Demonstration environment</span>
+    </header>
+
+    <div class="demo-layout">
+      <aside class="demo-sidebar">
+        <ul class="demo-nav">
+          <li><button class="demo-nav-btn" data-panel-nav="dashboard"><span class="d-icon">▦</span>Fleet Dashboard</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="booking"><span class="d-icon">◫</span>Customer Booking</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="reservations"><span class="d-icon">▤</span>Reservations</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="fleet"><span class="d-icon">▣</span>Vehicles</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="maintenance"><span class="d-icon">✚</span>Maintenance &amp; Status</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="ai"><span class="d-icon">◈</span>AI &amp; Pricing</button></li>
+          <li><button class="demo-nav-btn" data-panel-nav="analytics"><span class="d-icon">◔</span>Analytics</button></li>
+        </ul>
+        <div class="demo-side-note">Sample data only. This is a concept demonstration of what Vuva can engineer for rental businesses.</div>
+      </aside>
+
+      <main class="demo-main">
+        <!-- DASHBOARD -->
+        <section class="demo-panel" id="dashboard">
+          <div class="demo-panel-head">
+            <div><h2>Fleet Dashboard</h2><p>What is out, what is booked and what came back.</p></div>
+            <span class="badge is-ok">Live</span>
+          </div>
+          <div class="d-stats">
+            <div class="d-stat"><span class="d-label">Fleet size</span><span class="d-value">24</span><span class="d-delta flat">3 branches</span></div>
+            <div class="d-stat"><span class="d-label">Out on rent</span><span class="d-value">11</span><span class="d-delta up">▲ 46% utilisation</span></div>
+            <div class="d-stat"><span class="d-label">Reservations today</span><span class="d-value">7</span><span class="d-delta up">▲ 2 walk-ins</span></div>
+            <div class="d-stat"><span class="d-label">Late returns</span><span class="d-value">2</span><span class="d-delta down">▼ reminders sent</span></div>
+          </div>
+          <div class="d-grid">
+            <div class="d-card">
+              <div class="d-card-head"><h3>Utilisation trend</h3><span class="d-hint">14 days</span></div>
+              <div class="d-card-body">
+                <svg class="d-chart" viewBox="0 0 400 160" preserveAspectRatio="none" aria-hidden="true">
+                  <polyline points="0,110 33,95 66,100 99,80 132,88 165,64 198,72 231,52 264,60 297,44 330,50 363,34 400,40" fill="none" stroke="#35e0a1" stroke-width="3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="d-card">
+              <div class="d-card-head"><h3>Today’s movements</h3><span class="d-hint">Checkouts / returns</span></div>
+              <div class="d-card-body tight">
+                <div class="d-feed pad-feed">
+                  <div class="d-feed-item"><span class="d-time">09:10</span><div class="d-body"><strong>KDR 214X · Harrier</strong> checked out to J. Kariuki<small>Deposit of KSh 20,000 confirmed</small></div></div>
+                  <div class="d-feed-item"><span class="d-time">10:05</span><div class="d-body"><strong>KCA 771M · Demio</strong> came back and passed inspection<small>Fuel full · no damage</small></div></div>
+                  <div class="d-feed-item"><span class="d-time">10:32</span><div class="d-body">WhatsApp booking created for the Note this weekend<small>Deposit link sent automatically</small></div></div>
+                  <div class="d-feed-item"><span class="d-time">11:12</span><div class="d-body"><strong>KDJ 908L · Probox</strong> is late, customer reminded<small>Late fee applies after the two hour grace period</small></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CUSTOMER BOOKING -->
+        <section class="demo-panel" id="booking">
+          <div class="demo-panel-head"><div><h2>Customer Booking</h2><p>How a customer books, from browsing to driving away.</p></div><span class="badge is-info">Customer side</span></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-head"><h3>Toyota Harrier</h3><span class="badge is-ok">Available</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Daily rate</dt><dd>KSh 7,500</dd></div><div><dt>Deposit</dt><dd>KSh 20,000</dd></div><div><dt>Transmission</dt><dd>Automatic</dd></div><div><dt>This weekend</dt><dd>Sat 08:00 free</dd></div></div><button class="chip" type="button" style="margin-top:.8rem;width:100%;justify-content:center">Book this vehicle</button></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Nissan Note</h3><span class="badge is-ok">Available</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Daily rate</dt><dd>KSh 4,200</dd></div><div><dt>Deposit</dt><dd>KSh 10,000</dd></div><div><dt>Transmission</dt><dd>Automatic</dd></div><div><dt>This weekend</dt><dd>Sat–Sun free</dd></div></div><button class="chip" type="button" style="margin-top:.8rem;width:100%;justify-content:center">Book this vehicle</button></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Mazda Demio</h3><span class="badge is-warn">Out until 16:00</span></div><div class="d-card-body"><div class="d-kv"><div><dt>Daily rate</dt><dd>KSh 3,800</dd></div><div><dt>Deposit</dt><dd>KSh 10,000</dd></div><div><dt>Transmission</dt><dd>Automatic</dd></div><div><dt>This weekend</dt><dd>Sun only</dd></div></div><button class="chip" type="button" style="margin-top:.8rem;width:100%;justify-content:center">Join waitlist</button></div></div>
+          </div>
+          <div class="d-card mt">
+            <div class="d-card-head"><h3>Booking journey</h3><span class="d-hint">What the customer experiences</span></div>
+            <div class="d-card-body tight">
+              <div class="d-feed pad-feed">
+                <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Browse &amp; filter</strong>: vehicle, dates, transmission, driver option<small>Availability comes straight from the fleet calendar</small></div></div>
+                <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Price shown upfront</strong>: days times rate, plus driver and deposit<small>No surprises at pickup</small></div></div>
+                <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Documents captured</strong>: ID, licence, signed terms<small>Kept on the customer profile</small></div></div>
+                <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Deposit paid</strong>: Paid by M-Pesa or card, refunded after inspection<small>Receipts in WhatsApp</small></div></div>
+                <div class="d-feed-item"><span class="d-time">✓</span><div class="d-body"><strong>Confirmation &amp; reminders</strong>: pickup details and return time<small>Sent automatically on WhatsApp</small></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RESERVATIONS -->
+        <section class="demo-panel" id="reservations">
+          <div class="demo-panel-head"><div><h2>Reservations</h2><p>Every booking, what is paid and what is outstanding.</p></div><button class="button button-accent" type="button">New reservation ↗</button></div>
+          <div class="d-card">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>Booking</th><th>Vehicle</th><th>Customer</th><th>Period</th><th>Total</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td class="num strong">RB-2291</td><td>Harrier</td><td>J. Kariuki</td><td class="num">Fri to Sun</td><td class="num">KSh 22,500</td><td><span class="badge is-ok">Paid · out</span></td></tr>
+                  <tr><td class="num strong">RB-2292</td><td>Nissan Note</td><td>F. Achieng</td><td class="num">Sat to Sun</td><td class="num">KSh 9,400</td><td><span class="badge is-info">Deposit pending</span></td></tr>
+                  <tr><td class="num strong">RB-2293</td><td>Demio</td><td>P. Mutua</td><td class="num">Sun</td><td class="num">KSh 4,300</td><td><span class="badge is-neutral">Confirmed</span></td></tr>
+                  <tr><td class="num strong">RB-2288</td><td>Probox</td><td>G. Wafula</td><td class="num">Wed to Thu</td><td class="num">KSh 7,600</td><td><span class="badge is-danger">Overdue return</span></td></tr>
+                  <tr><td class="num strong">RB-2285</td><td>Hilux Double</td><td>Beacon Ltd</td><td class="num">Mon to Fri</td><td class="num">KSh 42,000</td><td><span class="badge is-ok">Returned ✓</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="muted-note">Deposits are held against the booking and released automatically after pass inspection, with rules configurable per vehicle class.</p>
+        </section>
+
+        <!-- VEHICLES -->
+        <section class="demo-panel" id="fleet">
+          <div class="demo-panel-head"><div><h2>Vehicles</h2><p>Each vehicle, where it is and what it needs next.</p></div><span class="d-hint">24 vehicles</span></div>
+          <div class="d-grid thirds">
+            <div class="d-card"><div class="d-card-body"><span class="d-label">Available now</span><div class="d-value">13</div></div></div>
+            <div class="d-card"><div class="d-card-body"><span class="d-label">On rent</span><div class="d-value">11</div></div></div>
+            <div class="d-card"><div class="d-card-body"><span class="d-label">Service / cleaning</span><div class="d-value">4</div></div></div>
+          </div>
+          <div class="d-card mt">
+            <div class="d-card-body tight">
+              <table class="d-table">
+                <thead><tr><th>Vehicle</th><th>Class</th><th>Status</th><th>Next</th><th>Documents</th></tr></thead>
+                <tbody>
+                  <tr><td class="strong">KDR 214X · Harrier</td><td class="muted">SUV</td><td><span class="badge is-info">On rent</span></td><td class="num">Return Sun 18:00</td><td><span class="badge is-ok">Valid</span></td></tr>
+                  <tr><td class="strong">KCA 771M · Demio</td><td class="muted">Economy</td><td><span class="badge is-warn">Cleaning</span></td><td class="num">Ready 12:30</td><td><span class="badge is-ok">Valid</span></td></tr>
+                  <tr><td class="strong">KDJ 908L · Probox</td><td class="muted">Utility</td><td><span class="badge is-danger">Late return</span></td><td class="num">Reminder sent</td><td><span class="badge is-warn">Inspection due</span></td></tr>
+                  <tr><td class="strong">KBX 442P · Hilux</td><td class="muted">Pickup</td><td><span class="badge is-neutral">Service</span></td><td class="num">Back Tue</td><td><span class="badge is-ok">Valid</span></td></tr>
+                  <tr><td class="strong">KDG 120T · Alphard</td><td class="muted">Executive</td><td><span class="badge is-ok">Available</span></td><td class="num">—</td><td><span class="badge is-warn">Insurance renews in 21d</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- MAINTENANCE -->
+        <section class="demo-panel" id="maintenance">
+          <div class="demo-panel-head"><div><h2>Maintenance &amp; Vehicle Status</h2><p>Cleaning, fuel, damage reports and services.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card">
+              <div class="d-card-head"><h3>Turnaround board</h3><span class="d-hint">Return → ready</span></div>
+              <div class="d-card-body tight">
+                <div class="d-feed pad-feed">
+                  <div class="d-feed-item"><span class="d-time">10:05</span><div class="d-body"><strong>KCA 771M</strong> returned · inspection started<small>Damage photos attached by attendant</small></div></div>
+                  <div class="d-feed-item"><span class="d-time">10:22</span><div class="d-body">Cleaning assigned to <strong>Bay 2</strong><small>Fuel top-up logged · KSh 1,200</small></div></div>
+                  <div class="d-feed-item"><span class="d-time">10:58</span><div class="d-body"><strong>KCA 771M</strong> marked ready, back in bookable stock<small>48-minute turnaround</small></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-card">
+              <div class="d-card-head"><h3>Service schedule</h3><span class="d-hint">Next 30 days</span></div>
+              <div class="d-card-body tight">
+                <table class="d-table">
+                  <thead><tr><th>Vehicle</th><th>Type</th><th>Due</th></tr></thead>
+                  <tbody>
+                    <tr><td class="strong">KBX 442P</td><td class="muted">Major service</td><td class="num">In 3 days</td></tr>
+                    <tr><td class="strong">KDG 120T</td><td class="muted">Tyre rotation</td><td class="num">In 9 days</td></tr>
+                    <tr><td class="strong">KDR 214X</td><td class="muted">Brake pads</td><td class="num">In 14 days</td></tr>
+                    <tr><td class="strong">KCX 556H</td><td class="muted">Insurance renewal</td><td class="num">In 21 days</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="d-card mt">
+            <div class="d-card-head"><h3>Damage &amp; incident log</h3><span class="d-hint">Photos kept with each report</span></div>
+            <div class="d-card-body tight">
+              <div class="d-feed pad-feed">
+                <div class="d-feed-item"><span class="d-time">Thu</span><div class="d-body"><strong>KDJ 908L</strong>: scratch reported at return, rear bumper<small>Photos on file · deposit deduction proposed KSh 6,000</small></div></div>
+                <div class="d-feed-item"><span class="d-time">Mon</span><div class="d-body"><strong>KCA 771M</strong>: tyre wear beyond limit<small>Replaced · cost logged against vehicle P&amp;L</small></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI & PRICING -->
+        <section class="demo-panel" id="ai">
+          <div class="demo-panel-head"><div><h2>AI &amp; Dynamic Pricing</h2><p>Pricing and risk suggestions. A person approves.</p></div><span class="badge is-warn">Recommendations only</span></div>
+          <div class="d-grid">
+            <div class="d-card">
+              <div class="d-card-head"><h3>Demand forecast · this weekend</h3><span class="d-hint">Model suggestion</span></div>
+              <div class="d-card-body">
+                <div class="d-kv"><div><dt>Expected demand</dt><dd>High (+38% vs avg)</dd></div><div><dt>Suggested action</dt><dd>+8% on SUV class</dd></div><div><dt>Economy class</dt><dd>Hold price · push 2-day offers</dd></div></div>
+                <p class="muted-note">Nothing changes until a manager approves it.</p>
+              </div>
+            </div>
+            <div class="d-card">
+              <div class="d-card-head"><h3>Risk flags</h3><span class="d-hint">Reviewed before pickup</span></div>
+              <div class="d-card-body tight">
+                <div class="d-feed pad-feed">
+                  <div class="d-feed-item"><span class="d-time">⚑</span><div class="d-body">Booking RB-2294: licence expires before return date<small>Suggested: request renewal or shorten period</small></div></div>
+                  <div class="d-feed-item"><span class="d-time">⚑</span><div class="d-body">New customer, high-value class: deposit verification advised<small>Manual review queue</small></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-card mt">
+            <div class="d-card-head"><h3>Ask the fleet AI</h3><span class="d-hint">Sample questions</span></div>
+            <div class="d-card-body">
+              <ul class="ui-log">
+                <li><b>Q:</b> Which vehicles earn the most per day available?</li>
+                <li><b>A:</b> Alphard leads at KSh 12,000/day at 61% utilisation; Probox has the highest idle time; consider weekly corporate rates.</li>
+                <li style="margin-top:.4rem"><b>Q:</b> Predict maintenance risk for next month.</li>
+                <li><b>A:</b> KBX 442P shows brake-wear pattern consistent with past failures; schedule service before the Mombasa corporate contract starts.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ANALYTICS -->
+        <section class="demo-panel" id="analytics">
+          <div class="demo-panel-head"><div><h2>Analytics</h2><p>How the fleet is performing.</p></div></div>
+          <div class="d-grid">
+            <div class="d-card"><div class="d-card-head"><h3>Revenue by vehicle class</h3></div><div class="d-card-body">
+              <svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><rect x="30" y="70" width="70" height="90" fill="#35e0a1"/><rect x="120" y="100" width="70" height="60" fill="#35e0a1" opacity=".7"/><rect x="210" y="50" width="70" height="110" fill="#0a8a63"/><rect x="300" y="120" width="70" height="40" fill="#58a6e8"/><text x="65" y="172" text-anchor="middle" font-size="10">SUV</text><text x="155" y="172" text-anchor="middle" font-size="10">Economy</text><text x="245" y="172" text-anchor="middle" font-size="10">Executive</text><text x="335" y="172" text-anchor="middle" font-size="10">Utility</text></svg>
+            </div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Fleet utilisation</h3></div><div class="d-card-body">
+              <svg class="d-chart" viewBox="0 0 400 180" aria-hidden="true"><circle cx="200" cy="90" r="70" fill="none" stroke="#26302b" stroke-width="18"/><circle cx="200" cy="90" r="70" fill="none" stroke="#35e0a1" stroke-width="18" stroke-dasharray="276 440" transform="rotate(-90 200 90)"/><text x="200" y="86" text-anchor="middle" font-size="26" fill="#101614" font-weight="bold">63%</text><text x="200" y="106" text-anchor="middle" font-size="10" fill="#5d6965">this month</text></svg>
+            </div></div>
+          </div>
+          <div class="d-grid mt">
+            <div class="d-card"><div class="d-card-head"><h3>Most booked vehicles</h3></div><div class="d-card-body"><div class="d-kv"><div><dt>Toyota Harrier</dt><dd>31 bookings</dd></div><div><dt>Nissan Note</dt><dd>24 bookings</dd></div><div><dt>Mazda Demio</dt><dd>19 bookings</dd></div></div></div></div>
+            <div class="d-card"><div class="d-card-head"><h3>Downtime &amp; costs</h3></div><div class="d-card-body"><div class="d-kv"><div><dt>Avg turnaround</dt><dd>52 min</dd></div><div><dt>Maintenance downtime</dt><dd>6.2% of fleet-days</dd></div><div><dt>Maintenance cost / km</dt><dd>KSh 4.10</dd></div></div></div></div>
+          </div>
+        </section>
+
+        <p class="demo-disclaimer"><strong>Demonstration system.</strong> All data on this page is realistic sample data. Vuva RentalOS is a capability demonstration for vehicle-rental businesses. Industry models such as Turo or Avis describe the problem space only and are not Vuva clients. This is not a deployed production system.</p>
+      </main>
+    </div>
+  </div>
+
+  <button class="demo-ai-fab" data-ai-open>◈ Ask the Fleet AI</button>
+  <div class="demo-ai-modal" data-ai-modal>
+    <div class="demo-ai-card">
+      <div class="demo-ai-head"><span class="ai-avatar">V</span><span class="ai-id">Fleet AI</span><span class="ai-sub">Demo data</span><button class="demo-ai-close" data-ai-close aria-label="Close">×</button></div>
+      <div class="demo-ai-suggest" data-ai-suggest></div>
+      <div class="demo-ai-body" data-ai-body></div>
+      <div class="demo-ai-input"><input type="text" data-ai-input placeholder="Ask about fleet, bookings, pricing…" aria-label="Ask the Fleet AI"><button data-ai-send aria-label="Send">→</button></div>
+    </div>
+  </div>
+
+  <script type="module" src="/demos/demo.js"></script>
+</body>
+</html>

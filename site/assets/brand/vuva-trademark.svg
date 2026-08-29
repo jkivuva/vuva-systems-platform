@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">Vuva Systems trademark mark</title>
+  <desc id="d">The Vuva V enclosed by a hexagonal ring of six connected nodes.</desc>
+  <!--
+    Vuva Systems brand mark · trademark device
+    Derived directly from the existing symbol (vuva-mark.svg):
+    the same double-stroke V, scaled and enclosed by a hexagonal
+    node-ring. Single colour (currentColor) — inherits any context.
+    Canonical reusable asset; inline copies are stamped by brand.js.
+  -->
+  <g fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- hexagonal system ring, flat-top, centre (32,32) -->
+    <path d="M58 32 L45 54.5 L19 54.5 L6 32 L19 9.5 L45 9.5 Z" stroke-width="3.5"/>
+    <!-- the original Vuva V, scaled into the ring -->
+    <g transform="translate(13.4 15.2) scale(0.57)">
+      <path d="M8 11h11l13 35 13-35h11" stroke-width="7"/>
+      <path d="M18.5 11 32 46 45.5 11" stroke-width="2" opacity=".55"/>
+    </g>
+  </g>
+  <!-- six nodes, one per hexagon vertex -->
+  <g fill="currentColor">
+    <rect x="55" y="29" width="6" height="6"/>
+    <rect x="42" y="51.5" width="6" height="6"/>
+    <rect x="16" y="51.5" width="6" height="6"/>
+    <rect x="3" y="29" width="6" height="6"/>
+    <rect x="16" y="6.5" width="6" height="6"/>
+    <rect x="42" y="6.5" width="6" height="6"/>
+  </g>
+</svg>

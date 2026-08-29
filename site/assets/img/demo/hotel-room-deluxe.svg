@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Deluxe Room · City View">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c2016"/><stop offset="1" stop-color="#1a130c"/></linearGradient><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3826"/><stop offset="1" stop-color="#332619"/></linearGradient><radialGradient id="vig" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs>
+<rect width="800" height="500" fill="url(#wall)"/><rect x="0" y="380" width="800" height="120" fill="#241a10"/><rect x="470" y="60" width="270" height="240" rx="8" fill="#1d2b3a"/>
+<circle cx="640" cy="130" r="30" fill="#f3d9a0" opacity=".9"/>
+<path d="M470 240q70-40 140-10t130-6v76h-270z" fill="#16222e"/>
+<rect x="600" y="60" width="6" height="240" fill="#ffffff" opacity=".35"/>
+<g opacity=".08"><rect x="470" y="60" width="270" height="240" rx="6" fill="#f3d9a0"/><rect x="603.0" y="60" width="4" height="240" fill="#00000022"/></g><rect x="80" y="270" width="320" height="110" rx="14" fill="#6b5138"/>
+<rect x="80" y="240" width="320" height="46" rx="12" fill="#8a6a44"/>
+<rect x="100" y="222" width="120" height="34" rx="10" fill="#ffffff"/>
+<rect x="240" y="222" width="120" height="34" rx="10" fill="#ffffff"/>
+<rect x="96" y="380" width="16" height="60" fill="#00000033"/>
+<rect x="368" y="380" width="16" height="60" fill="#00000033"/>
+<circle cx="440" cy="240" r="26" fill="#f3d9a0" opacity=".85"/>
+<rect x="434" y="262" width="12" height="60" fill="#4a3a28"/>
+<text x="40" y="60" text-anchor="start" fill="#f3e8d0" font-family="ui-monospace, monospace" font-size="16" font-weight="bold" letter-spacing="2">DELUXE ROOM · CITY VIEW</text>
+<rect width="800" height="500" fill="url(#vig)" opacity=".4"/>
+</svg>

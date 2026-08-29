@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Voice AI receptionist — calls answered, transcribed and booked">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121916"/>
+      <stop offset="1" stop-color="#0b0f0e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#40dca9" stroke-opacity=".06"/>
+    </pattern>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40dca9"/>
+      <stop offset="1" stop-color="#0a8a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+<rect x="90" y="130" width="220" height="240" rx="12" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="200" y="162" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="13">INCOMING CALL</text>
+<polyline points="116,239 119,260 119,232 123,267 123,241 126,258 126,245 130,254 130,235 134,264 134,233 137,266 137,244 141,255 141,243 144,256 144,217 148,282 148,224 152,275 152,242 155,257 155,231 159,268 159,216 162,283 162,231 166,268 166,242 170,257 170,224 173,275 173,217 177,282 177,237 180,262 180,239 184,260 184,219 188,280 188,228 191,271 191,243 195,256 195,237 198,262 198,224 202,275 202,233 206,266 206,244 209,255 209,232 213,267 213,224 216,275 216,239 220,260 220,242 224,257 224,227 227,272 227,227 231,272 231,243 234,256 234,238 238,261 238,238 242,261 242,241 245,258 245,247 249,252 249,242 252,257 252,238 256,261 256,244 260,255 260,247 263,252 263,240 267,259 267,239 270,260 270,246 274,253 274,245 278,254 278,238 281,261 281,241 285,258 285,247 288,252" fill="none" stroke="#40dca9" stroke-width="2"/>
+<text x="200" y="330" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">00:42 · EN · SW</text>
+<path d="M310 250h40" stroke="#aeb9b4" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+<rect x="350" y="150" width="190" height="200" rx="10" fill="#10241c" stroke="#40dca9" stroke-width="2"/>
+<text x="445" y="190" text-anchor="middle" fill="#7dfcc9" font-family="ui-monospace, monospace" font-size="14">VOICE AGENT</text>
+<text x="445" y="218" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">TRANSCRIBE</text>
+<text x="445" y="244" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">UNDERSTAND</text>
+<text x="445" y="270" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="12">BOOK + REPLY</text>
+<text x="445" y="310" text-anchor="middle" fill="#d9a441" font-family="ui-monospace, monospace" font-size="11">ESCALATE IF UNSURE</text>
+<path d="M540 250h40" stroke="#aeb9b4" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+<rect x="580" y="170" width="150" height="160" rx="6" fill="#0e1513" stroke="#33413b" stroke-width="1.5"/>
+<text x="655" y="202" text-anchor="middle" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="13">CALENDAR</text>
+<rect x="600" y="220" width="110" height="22" rx="5" fill="#40dca9" opacity=".8"/>
+<text x="655" y="236" text-anchor="middle" fill="#06110c" font-family="ui-monospace, monospace" font-size="11">BOOKED 11:30</text>
+<rect x="600" y="252" width="110" height="22" rx="5" fill="none" stroke="#33413b" stroke-dasharray="3 4"/>
+<rect x="600" y="284" width="110" height="22" rx="5" fill="none" stroke="#33413b" stroke-dasharray="3 4"/>
+<text x="60" y="464" text-anchor="start" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="15">CALLER NEVER WAITS ON HOLD · LOGS TO CRM</text>
+</svg>
